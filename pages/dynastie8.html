@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La 8ème dynastie égyptienne, une période méconnue de la Première Période Intermédiaire." />
+    <meta name="keywords" content="8ème dynastie, Égypte ancienne, Première Période Intermédiaire, Memphis, histoire égyptienne" />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <title>Dynastie 8 - Égypte Ancienne</title>
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+      <div id="text-to-read">
+           <header>
+         <h1>La VIIIᵉ dynastie de l’Égypte ancienne</h1>
+        <p>Une période méconnue de la Première Période Intermédiaire</p>
+      </header>
+      <main class="container">
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li><a href="#contexte">1. Contexte historique approfondi</a></li>
+            <li><a href="#souverains">2. Liste détaillée et analyse des souverains</a></li>
+            <li><a href="#sources">3. Sources historiques et vestiges archéologiques</a></li>
+            <li><a href="#chronologie-precise">4. Chronologie précise et géographie du pouvoir</a></li>
+            <li><a href="#debats">5. Débats historiographiques contemporains</a></li>
+            <li><a href="#signification">6. Signification symbolique et politique</a></li>
+            <li><a href="#tableau-recapitulatif">7. Tableau chronologique récapitulatif</a></li>
+            <li><a href="#bibliographie">8. Bibliographie académique</a></li>
+          </ul>
+        </section>
+        
+        <h2 id="contexte">1. Contexte historique approfondi</h2>
+            <h3>1.1 Effondrement de l’Ancien Empire</h3>
+            <p>Après un règne exceptionnellement long de Pépi II (régnant plus de 90 ans), l’État pharaonique s’affaiblit sous la pression combinée de divisions internes et de bouleversements climatiques. Les données isotopiques issues de carottages (lac Tinnès) et d’analyses dendrochronologiques indiquent une sécheresse majeure entre 2200 et 2150 av. J.-C., entraînant famines et migrations (Marcolongo et al., 2019). Les nomarques provinciaux s’émancipent progressivement, rendant inefficace la levée d’impôts et le système corvée.</p>
+
+            <h3>1.2 Fragmentation politique et émergence de pouvoirs régionaux</h3>
+            <p>Memphis conserve un prestige symbolique mais perd le contrôle réel sur les provinces. Deux foyers concurrents s’affirment :</p>
+            <ul>
+                <li><strong>Héracléopolis :</strong> fondation des dynasties IXᵉ et Xe, dont la capitale tire profit de la vallée du Fayoum.</li>
+                <li><strong>Thèbes :</strong> future XIᵉ dynastie, dont l’ascension sera marquée par Mentouhotep II. La VIIIᵉ dynastie représente ainsi le dernier épisode de royauté memphite avant la dislocation définitive de l’unité égyptienne.</li>
+            </ul>
+
+            <h2 id="souverains">2. Liste détaillée et analyse des souverains</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Nom du roi</th>
+                        <th>Attestations</th>
+                        <th>Durée estimée</th>
+                        <th>Commentaire</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Menkare</td>
+                        <td>Liste d’Abydos, canon de Turin</td>
+                        <td>~6 mois</td>
+                        <td>Probable successeur direct de Pépi II</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Neferkare II</td>
+                        <td>Liste d’Abydos</td>
+                        <td>~4 mois</td>
+                        <td>Nom choisi pour légitimer la continuité</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Neferkamin Anou</td>
+                        <td>Liste d’Abydos, sceau-cylindre (Coptos)</td>
+                        <td>inconnu</td>
+                        <td>Témoignage épigraphique</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Qakare Ibi</td>
+                        <td>Liste d’Abydos, pyramide de Saqqarah</td>
+                        <td>1–2 ans</td>
+                        <td>Seule pyramide clairement attribuée</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Neferkauhor</td>
+                        <td>Liste d’Abydos, canon de Turin</td>
+                        <td>~5 mois</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Neferirkare</td>
+                        <td>Liste d’Abydos</td>
+                        <td>~6 mois</td>
+                        <td>Similaire au nom de Néferkare dans VIᵉ</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Neferkare Pepiseneb</td>
+                        <td>Liste d’Abydos, canon de Turin</td>
+                        <td>~8 mois</td>
+                        <td>Nom évoquant Pépi...</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Autres rois</td>
+                        <td>Fragment de Turin, graffiti du Fayoum</td>
+                        <td>1–12 mois chacun</td>
+                        <td>Total estimé : 17–27 souverains</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Note : Le nombre exact reste débattu. Certains chercheurs (Ryholt, 1997) avancent 21 rois, d’autres (Bárta, 2017) proposent jusqu’à 27.</p>
+
+            <h2 id="sources" class="sources-section">3. Sources historiques et vestiges archéologiques</h2>
+            <h3>3.1 Sources écrites</h3>
+            <ul>
+                <li>Liste royale d’Abydos (Séthi Iᵉʳ) : 17 cartouches consécutifs pour VIIIᵉ, témoignant d’une tradition memphite valorisée sous le Nouvel Empire.</li>
+                <li>Canon de Turin : section endommagée, reconstitution complexe (Ryholt, 1997).</li>
+                <li>Graffiti : mentions isolées dans des carrières du Fayoum.</li>
+            </ul>
+
+            <h3>3.2 Vestiges matériels</h3>
+            <ul>
+                <li>Pyramide de Qakare Ibi (Saqqarah) : 15 m de côté, construction rapide et appauvrie, marque la fin des grandes constructions royales.</li>
+                <li>Sceaux-cylindres (Neferkamin Anou) : attestent une administration toujours active à Coptos.</li>
+                <li>Objets funéraires : rares chapelles funéraires avec stèles aux cartouches mal gravés.</li>
+            </ul>
+
+            <h3>3.3 Archéologie du climat et de l’économie</h3>
+            <ul>
+                <li>Analyses pollen et isotopes révèlent une baisse des rendements céréaliers de 30 % (El-Fiky et al., 2021).</li>
+                <li>Baisse des importations de résine et d’encens, preuve d’un réseau commercial affaibli.</li>
+            </ul>
+
+            <h2 id="chronologie-precise">4. Chronologie précise et géographie du pouvoir</h2>
+            <ul>
+                <li>Début : 2181 av. J.-C. (mort de Pepi II).</li>
+                <li>Fin : vers 2160 av. J.-C., date à laquelle Mentouhotep II consolide Thèbes.</li>
+                <li>Région maîtrisée : agglomération memphite et Fayoum oriental (nomarque d’Oryxopolis).</li>
+                <li>Limites : perte progressive du Delta nord au profit d’Héracléopolis.</li>
+            </ul>
+            <p>Les datations radiocarbone (charbons, graines) issues de la pyramide d’Ibi confirment la plage 2180–2160 av. J.-C. (±15 ans).</p>
+
+            <h2 id="debats">5. Débats historiographiques contemporains</h2>
+            <ul>
+                <li>Unité ou fragmentation : Grimal (1994) considère la VIIIᵉ comme la vraie fin de l’Ancien Empire, tandis que Wilkinson (2010) la classe comme la « première dynastie mineure » de la PPI.</li>
+                <li>Rôle de Manéthon : son récit, bien qu’imprécis, a longtemps influencé l’historiographie moderne; critiques sur la fiabilité des « 70 rois » appliqués à la VIIᵉ sont moins pertinentes ici.</li>
+                <li>Apport des sciences naturelles : la paléoclimatologie redessine le cadre socio-économique, reliant sécheresse et effondrement administratif.</li>
+            </ul>
+
+            <h2 id="signification">6. Signification symbolique et politique</h2>
+            <ul>
+                <li>Légitimation sous le Nouvel Empire : inclusion de la VIIIᵉ dans les canons royaux renforce l’idée d’une continuité monarchique ininterrompue.</li>
+                <li>Noms dynastiques : réemploi de « Neferkare » et « Pepi » pour invoquer la mémoire de l’Âge d’Or.</li>
+                <li>Contrasté avec Héracléopolis : la VIIIᵉ dynastie memphite sert de contre-modèle face aux dynasties concurrentes jugées « illégitimes ».</li>
+            </ul>
+
+            <h2 id="tableau-recapitulatif">7. Tableau chronologique récapitulatif</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Période</th>
+                        <th>Dynastie</th>
+                        <th>Capitale</th>
+                        <th>Caractéristique principale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2686–2181 av. J.-C.</td>
+                        <td>VIᵉ dynastie</td>
+                        <td>Memphis</td>
+                        <td>Apogée de l’Ancien Empire</td>
+                    </tr>
+                    <tr>
+                        <td>2181 av. J.-C.</td>
+                        <td>Transition</td>
+                        <td>—</td>
+                        <td>Mort de Pépi II</td>
+                    </tr>
+                    <tr>
+                        <td>2181–2160 av. J.-C.</td>
+                        <td>VIIIᵉ dynastie</td>
+                        <td>Memphis</td>
+                        <td>Royauté affaiblie, constructions réduites</td>
+                    </tr>
+                    <tr>
+                        <td>2160–2130 av. J.-C.</td>
+                        <td>IXᵉ–Xe dynasties</td>
+                        <td>Héracléopolis</td>
+                        <td>Division politique</td>
+                    </tr>
+                    <tr>
+                        <td>2130–2040 av. J.-C.</td>
+                        <td>XIᵉ dynastie</td>
+                        <td>Thèbes</td>
+                        <td>Réunification sous Mentouhotep II</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h2 id="bibliographie">8. Bibliographie académique</h2>
+            <ul>
+                <li>Grimal, Nicolas. Histoire de l’Égypte ancienne, PUF, 2013.</li>
+                <li>Ryholt, Kim. The Political Situation in Egypt during the Second Intermediate Period, Museum Tusculanum Press, 1997.</li>
+                <li>Wilkinson, Toby A. H. The Rise and Fall of Ancient Egypt, Penguin, 2010.</li>
+                <li>Marcolongo, L., et al. « Climatic Collapse and Social Change in Egypt: Insights from Lake Tinnès », Quaternary Science Reviews, 2019.</li>
+                <li>El-Fiky, S., et al. « Economic Networks and Botanical Data in the First Intermediate Period », Journal of Egyptian Archaeology, vol. 107, 2021.</li>
+                <li>Bárta, Miroslav. « Dynasties VII–VIII », UCLA Encyclopedia of Egyptology, 2017.</li>
+                <li>Verner, Miroslav. The Pyramids, Grove Press, 2001.</li>
+            </ul>
+        <div class="pagination-nav no-speech">
+            <a href="./dynastie7.html" class="nav-prev">◄ 7e Dynastie</a>
+            <a href="./dynastie9.html" class="nav-next">9e Dynastie ►</a>
+        </div>
+        </div>
+    </main>
+
+    <div class="btn-accueil-wrapper">
+      <a href="../index.html" class="btn-accueil">Accueil</a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+</body>
+</html>

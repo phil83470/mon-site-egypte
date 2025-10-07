@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description de la page" />
+    <title>Nouvelle page</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+<figure class="centered-image">
+  <img src="/images/pharaons/Ramses2-statue.jpg" 
+       alt="Statue de Ramsès II" 
+       class="page-banner-img"/>
+  <figcaption>
+    RamsèsII
+    (<a href="https://www.futura-sciences.com/sciences/questions-reponses/histoire-etait-ramses-ii-elu-re-8867/" target="_blank" rel="noopener">futura-sciences.com</a>)</figcaption>
+</figure>
+    <main>
+      <div id="text-to-read">
+      <h1>Titre de la nouvelle page</h1>
+      <p>Ton contenu ici…</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez Sekhemkhet, le pharaon oublié de la IIIe dynastie, son règne, sa pyramide inachevée à Saqqarah, et les mystères entourant son sarcophage vide."
+    />
+    <meta
+      name="keywords"
+      content="Sekhemkhet, Djoser-Ti, pharaon, IIIe dynastie, pyramide enfouie, Saqqarah, Imhotep, Égypte antique, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Sekhemkhet - Le Pharaon Oublié</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/pharaohx27s-ode-293516.mp3" type="audio/mpeg">
+    </audio>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>Sekhemkhet - Le Pharaon Oublié de la IIIe Dynastie</h1>
+      <!-- Vous pouvez ajouter une image ici si vous en avez une pour Sekhemkhet -->
+      <!-- <img src="/images/sekhemkhet-pyramid.jpg" alt="Pyramide de Sekhemkhet" class="page-banner-img" /> -->
+    </header>
+    <main>
+      <div class="container">
+        
+        <p class="intro">
+          Sekhemkhet, également connu sous son nom personnel Djoser-Ti (ou Dzhoserti, Djoser Teti, Tyreis), est une figure souvent méconnue de la IIIe dynastie de l'Égypte ancienne, mais son règne et son monument ont laissé une marque significative pour les égyptologues modernes. Il fut le **successeur immédiat d'Horus Netjerikhet (Djoser)**. Bien que son nom ne figure pas dans toutes les listes de pharaons post-dynastiques, des découvertes archéologiques ont permis de l'identifier avec les noms de Djoser-Ti ou Dzhoserti trouvés dans des listes ultérieures. Sa place chronologique est généralement acceptée comme le deuxième ou troisième pharaon de la IIIe dynastie.
+        </p>
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li><a href="#role-histoire">Rôle dans l'Histoire de l'Égypte Ancienne</a></li>
+            <li><a href="#pyramide-inachevee">La Pyramide Inachevée : Le Mystère de la "Pyramide Enfouie"</a></li>
+            <li><a href="#enigmes-momie-sarcophage">Les Énigmes de la Momie et du Sarcophage</a></li>
+            <li><a href="#controverses-ambiguites">Controverses et Ambiguïtés</a></li>
+          </ul>
+        </section>
+
+        <section id="role-histoire">
+          <h2>Rôle dans l'Histoire de l'Égypte Ancienne</h2>
+          <p>
+            Le règne de Sekhemkhet, bien que bref, fut une période charnière marquant la **transition entre la période dynastique archaïque et l'Ancien Empire**, caractérisée par la construction de grands monuments comme les pyramides.
+          </p>
+          <ul>
+            <li>
+              <strong>Continuité Architecturale et Influence d'Imhotep</strong> : Sekhemkhet est connu pour avoir commandité la construction de son complexe pyramidal à Saqqarah, poursuivant ainsi le programme architectural de son prédécesseur Djoser. Il est probable que le célèbre vizir et architecte **Imhotep**, concepteur du complexe de Djoser, ait également été impliqué dans la création de la pyramide de Sekhemkhet, son nom ayant été trouvé inscrit à l'encre rouge sur le mur de l'enceinte de la pyramide.
+            </li>
+            <li>
+              <strong>Activités Militaires et Économiques</strong> : Un relief découvert dans le Wadi Maghara, dans le Sinaï, représente Sekhemkhet **massacrant un ennemi bédouin**, ce qui est parfois interprété comme une preuve de son activité militaire, bien que ces représentations soient souvent stéréotypées. La présence de ces reliefs suggère que les mines locales de **cuivre et de turquoise** étaient exploitées sous son règne, une activité poursuivie par toute la IIIe dynastie. Des sceaux portant son nom ont également été trouvés à Éléphantine, indiquant que ce site était actif sous son règne et qu'il avait un contrôle sur les ressources comme l'or, possiblement jusqu'en Nubie, révélant un réseau économique important pour les produits de luxe.
+            </li>
+            <li>
+              <strong>Titulature et Symbolisme</strong> : Le nom "Sekhemkhet" est composé de "Sekhem" (pouvoir, force, vigueur) et "Khet" (corps, ou une essence plus nuancée), signifiant "Puissant de corps" ou "Celui au corps puissant", soulignant sa force, sa puissance et l'intégralité de son autorité en tant que souverain.
+            </li>
+          </ul>
+        </section>
+
+        <section id="pyramide-inachevee">
+          <h2>La Pyramide Inachevée : Le Mystère de la "Pyramide Enfouie"</h2>
+          <p>
+            Le monument funéraire de Sekhemkhet, surnommé la **"Pyramide Enfouie"**, a été découvert à Saqqarah en 1951-1952 par l'archéologue égyptien **Mohammed Zakaria Goneim**. Cette pyramide est l'une des figures les plus énigmatiques de l'histoire égyptienne.
+          </p>
+          <ul>
+            <li>
+              <strong>Ambition Architecturale</strong> : Conçue comme une pyramide à degrés, elle aurait été encore **plus grande et plus magnifique que celle de Djoser** si elle avait été achevée. Sa base mesurait environ 115 à 120 mètres de côté. Elle devait atteindre 73 mètres de hauteur avec six ou sept degrés, avec un angle d'élévation de 51˚50’, similaire à la pyramide de Meïdoum et à la Grande Pyramide de Khéops.
+            </li>
+            <li>
+              <strong>État d'Inachèvement</strong> : Le monument **n'a jamais été terminé**. Seul le premier degré (environ 10 mètres de haut) et un petit rebord du deuxième degré ont été achevés, lui donnant la forme d'un grand mastaba carré. Cet inachèvement corrobore l'idée d'un règne court.
+            </li>
+            <li>
+              <strong>Structure Souterraine</strong> : L'entrée se trouve sur le côté nord de la pyramide, menant à un passage descendant sur soixante mètres. À mi-chemin, un **puits vertical** croise le passage, s'ouvrant à la surface. Ce puits servait à extraire les débris et à ventiler la zone pendant la construction. La structure souterraine comprend également une galerie en forme de U avec plus de cent vingt magasins et deux autres galeries inachevées entourant la chambre funéraire. L'exploration des galeries révèle des **imperfections et des irrégularités** non représentées sur les plans idéalisés, mettant en lumière les défis de la construction souterraine avec des outils rudimentaires dans une roche fragile.
+            </li>
+            <li>
+              <strong>Choix du Site et Matériaux</strong> : Le choix de l'emplacement à Saqqarah n'était pas fortuit, étant une nécropole sacrée et connue. Cependant, la nature de la roche calcaire argileuse et stratifiée n'était **pas la plus adaptée** pour un monument aussi imposant, ce qui a pu causer des dommages. La plupart des blocs de pierre calcaire utilisés provenaient des carrières proches du site même, facilitant le transport.
+            </li>
+            <li>
+              <strong>Techniques de Construction et Main-d'Œuvre</strong> : La construction de la pyramide utilisait la technique des **couches inclinées**, où les blocs de pierre sont inclinés vers le centre du monument (environ 15 degrees) pour plus de stabilité, une technique similaire à celle de Djoser. Des vestiges d'une rampe de construction sur la face ouest de la pyramide ont également été découverts, offrant des indices précieux sur les méthodes de transport des blocs. Le chantier aurait impliqué des **milliers d'ouvriers**, organisés en équipes avec des fonctions spécifiques (tailleurs de pierre, transporteurs, etc.), dirigés par des prêtres. Les travaux les plus ardus, notamment l'excavation des galeries souterraines, étaient peut-être imposés comme punition à des prisonniers ou des condamnés.
+            </li>
+          </ul>
+        </section>
+
+        <section id="enigmes-momie-sarcophage">
+          <h2>Les Énigmes de la Momie et du Sarcophage</h2>
+          <p>
+            Le mystère le plus poignant du complexe de Sekhemkhet concerne l'absence de sa momie.
+          </p>
+          <ul>
+            <li>
+              <strong>Le Sarcophage Vide</strong> : En juin 1954, un **sarcophage en albâtre translucide** a été découvert dans la chambre funéraire, encore scellé avec son mortier d'origine. Cependant, à son ouverture, il s'est avéré **complètement vide**. Ce sarcophage est unique par son système d'ouverture, une trappe coulissante sur sa face avant, et est considéré comme le **plus ancien sarcophage taillé dans la pierre** connu des égyptologues.
+            </li>
+            <li>
+              <strong>Hypothèses sur l'Absence de la Momie et autres découvertes</strong> :
+              <ul>
+                <li>
+                  **Pillage Antique** : Une hypothèse principale est que la pyramide ait été **pillée dans l'Antiquité**. Le puits vertical du couloir descendant aurait pu servir de point d'accès pour les pilleurs, qui auraient pu le nettoyer pour atteindre la chambre funéraire. Les pilleurs démantelaient souvent les momies pour récupérer les bijoux. Cependant, l'absence de signes de rupture sur le sarcophage et les cloisons bloqueuses a semé le doute chez Zakaria Goneim, suggérant initialement qu'il n'y avait pas eu d'intrusion.
+                </li>
+                <li>
+                  **Mort Prématurée et Non-Utilisation** : L'état inachevé de la pyramide et le sarcophage vide pourraient suggérer une **mort prématurée du roi**. Si le roi est décédé subitement avant l'achèvement de sa tombe, le sarcophage n'aurait peut-être jamais été utilisé, et il est possible qu'aucun héritier n'ait voulu prendre la peine de terminer la pyramide ou de lui donner une sépulture décente dans ce lieu.
+                </li>
+                <li>
+                  **Autres Découvertes** : Malgré l'absence de la momie, des **artefacts précieux** ont été trouvés dans une petite chambre près de la chambre funéraire, notamment **vingt-et-un bracelets en or magnifiquement polis et taillés**, et une petite boîte en or en forme de coquille. Ces bijoux, désormais exposés au Musée du Caire, témoignent du contrôle de Sekhemkhet sur les ressources en or et de l'existence d'artisans de grand talent.
+                </li>
+                <li>
+                  **Restes Humains dans la Tombe Sud** : Des **restes humains d'un enfant de deux ans** ont été trouvés dans la Tombe Sud du complexe funéraire de Sekhemkhet. Il est certain que ces restes n'appartiennent pas à Sekhemkhet lui-même, car le roi est toujours représenté comme un jeune adulte.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="controverses-ambiguites">
+          <h2>Controverses et Ambiguïtés</h2>
+          <p>
+            Plusieurs aspects du règne de Sekhemkhet sont sujets à débat parmi les égyptologues :
+          </p>
+          <ul>
+            <li>
+              <strong>Durée du Règne</strong> : Le Canon royal de Turin attribue à Sekhemkhet (sous le nom de Djéserty) une durée de règne de **six ans**. D'autres sources, comme Manéthon, suggèrent **sept ans**. Une proposition de Nabil Swelim d'un règne de dix-neuf ans (le reliant à Tosertasis) est peu acceptée en raison de l'inachèvement de la pyramide.
+            </li>
+            <li>
+              <strong>Relations Familiales</strong> : Il n'est pas clair si Sekhemkhet et son prédécesseur Djoser étaient apparentés. La mère de Sekhemkhet était nommée Batirites, mais aucune source ne la relie à Djoser. Le choix d'un nom d'Horus similaire à celui de Djoser pourrait indiquer une relation. Certains estiment que Sekhemkhet était le fils de Djoser, tandis que d'autres le considèrent comme le frère de Djoser, et donc un fils de Khasekhemwy.
+            </li>
+            <li>
+              <strong>Identité du Nom Nebty</strong> : Son nom Nebty est officiellement Hetep-Ren-Nebty. Cependant, le nom de Nebty Djeseret-Ânkh-Nebty a longtemps été associé à Sekhemkhet en raison de sa découverte dans la pyramide, bien qu'il ait été trouvé sur une étiquette funéraire et non un sceau direct comme Hetep-Ren-Nebty. Aidan Dodson continue d'associer Djeseretnebti à Sekhemkhet comme épouse.
+            </li>
+            <li>
+              <strong>Attribution de la Pyramide et le Destin de Zakaria Goneim</strong> : L'attribution de la pyramide à Sekhemkhet a été contestée par Jean-Pierre Pätznick, qui propose de l'attribuer à Sanakht, en arguant que Sekhemkhet aurait seulement fourni le mobilier funéraire pour son prédécesseur Djeseret-Ânkh-Nebty. Cependant, d'autres égyptologues, comme Andrzej Cwiek, **réfutent cette réattribution, la jugeant spéculative**. L'histoire de la découverte de la pyramide de Sekhemkhet est également entachée de tragédie. L'archéologue Zakaria Goneim fut accusé à tort d'avoir volé des antiquités, ce qui entraîna son bannissement de la communauté scientifique et le poussa au suicide. C'est une histoire teintée de tristesse.
+            </li>
+          </ul>
+          <p>
+            Malgré les nombreuses questions sans réponse, la pyramide de Sekhemkhet, bien qu'inachevée et encore largement enfouie sous le sable, reste un **site archéologique d'une importance capitale** pour comprendre l'évolution de l'architecture pyramidale et les techniques de construction de l'Ancien Empire égyptien. Elle continue de révéler ses secrets grâce aux nouvelles technologies de scan 3D, offrant des détails et des aperçus sans précédent sur sa conception et sa construction.
+          </p>
+        </section>
+      <div class="pagination-nav no-speech">
+          <a href="/pages/Djoser.html" class="nav-prev">Djoser</a>
+          <a href="/pages/Khaba.html" class="nav-next">Khaba</a>
+        </div>
+      </div>
+    </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

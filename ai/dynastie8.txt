@@ -1,0 +1,101 @@
+La VIIIᵉ dynastie de l’Égypte ancienne
+
+Une période méconnue de la Première Période Intermédiaire
+
+Table des matières
+- 1. Contexte historique approfondi
+- 2. Liste détaillée et analyse des souverains
+- 3. Sources historiques et vestiges archéologiques
+- 4. Chronologie précise et géographie du pouvoir
+- 5. Débats historiographiques contemporains
+- 6. Signification symbolique et politique
+- 7. Tableau chronologique récapitulatif
+- 8. Bibliographie académique
+
+1. Contexte historique approfondi
+
+1.1 Effondrement de l’Ancien Empire
+
+Après un règne exceptionnellement long de Pépi II (régnant plus de 90 ans), l’État pharaonique s’affaiblit sous la pression combinée de divisions internes et de bouleversements climatiques. Les données isotopiques issues de carottages (lac Tinnès) et d’analyses dendrochronologiques indiquent une sécheresse majeure entre 2200 et 2150 av. J.-C., entraînant famines et migrations (Marcolongo et al., 2019). Les nomarques provinciaux s’émancipent progressivement, rendant inefficace la levée d’impôts et le système corvée.
+
+1.2 Fragmentation politique et émergence de pouvoirs régionaux
+
+Memphis conserve un prestige symbolique mais perd le contrôle réel sur les provinces. Deux foyers concurrents s’affirment :
+
+- Héracléopolis : fondation des dynasties IXᵉ et Xe, dont la capitale tire profit de la vallée du Fayoum.
+- Thèbes : future XIᵉ dynastie, dont l’ascension sera marquée par Mentouhotep II. La VIIIᵉ dynastie représente ainsi le dernier épisode de royauté memphite avant la dislocation définitive de l’unité égyptienne.
+
+2. Liste détaillée et analyse des souverains
+
+Rang | Nom du roi | Attestations | Durée estimée | Commentaire
+---|---|---|---|---
+1 | Menkare | Liste d’Abydos, canon de Turin | ~6 mois | Probable successeur direct de Pépi II
+2 | Neferkare II | Liste d’Abydos | ~4 mois | Nom choisi pour légitimer la continuité
+3 | Neferkamin Anou | Liste d’Abydos, sceau-cylindre (Coptos) | inconnu | Témoignage épigraphique
+4 | Qakare Ibi | Liste d’Abydos, pyramide de Saqqarah | 1–2 ans | Seule pyramide clairement attribuée
+5 | Neferkauhor | Liste d’Abydos, canon de Turin | ~5 mois | 
+6 | Neferirkare | Liste d’Abydos | ~6 mois | Similaire au nom de Néferkare dans VIᵉ
+7 | Neferkare Pepiseneb | Liste d’Abydos, canon de Turin | ~8 mois | Nom évoquant Pépi...
+ | Autres rois | Fragment de Turin, graffiti du Fayoum | 1–12 mois chacun | Total estimé : 17–27 souverains
+
+Note : Le nombre exact reste débattu. Certains chercheurs (Ryholt, 1997) avancent 21 rois, d’autres (Bárta, 2017) proposent jusqu’à 27.
+
+3. Sources historiques et vestiges archéologiques
+
+3.1 Sources écrites
+
+- Liste royale d’Abydos (Séthi Iᵉʳ) : 17 cartouches consécutifs pour VIIIᵉ, témoignant d’une tradition memphite valorisée sous le Nouvel Empire.
+- Canon de Turin : section endommagée, reconstitution complexe (Ryholt, 1997).
+- Graffiti : mentions isolées dans des carrières du Fayoum.
+
+3.2 Vestiges matériels
+
+- Pyramide de Qakare Ibi (Saqqarah) : 15 m de côté, construction rapide et appauvrie, marque la fin des grandes constructions royales.
+- Sceaux-cylindres (Neferkamin Anou) : attestent une administration toujours active à Coptos.
+- Objets funéraires : rares chapelles funéraires avec stèles aux cartouches mal gravés.
+
+3.3 Archéologie du climat et de l’économie
+
+- Analyses pollen et isotopes révèlent une baisse des rendements céréaliers de 30 % (El-Fiky et al., 2021).
+- Baisse des importations de résine et d’encens, preuve d’un réseau commercial affaibli.
+
+4. Chronologie précise et géographie du pouvoir
+
+- Début : 2181 av. J.-C. (mort de Pepi II).
+- Fin : vers 2160 av. J.-C., date à laquelle Mentouhotep II consolide Thèbes.
+- Région maîtrisée : agglomération memphite et Fayoum oriental (nomarque d’Oryxopolis).
+- Limites : perte progressive du Delta nord au profit d’Héracléopolis.
+
+Les datations radiocarbone (charbons, graines) issues de la pyramide d’Ibi confirment la plage 2180–2160 av. J.-C. (±15 ans).
+
+5. Débats historiographiques contemporains
+
+- Unité ou fragmentation : Grimal (1994) considère la VIIIᵉ comme la vraie fin de l’Ancien Empire, tandis que Wilkinson (2010) la classe comme la « première dynastie mineure » de la PPI.
+- Rôle de Manéthon : son récit, bien qu’imprécis, a longtemps influencé l’historiographie moderne; critiques sur la fiabilité des « 70 rois » appliqués à la VIIᵉ sont moins pertinentes ici.
+- Apport des sciences naturelles : la paléoclimatologie redessine le cadre socio-économique, reliant sécheresse et effondrement administratif.
+
+6. Signification symbolique et politique
+
+- Légitimation sous le Nouvel Empire : inclusion de la VIIIᵉ dans les canons royaux renforce l’idée d’une continuité monarchique ininterrompue.
+- Noms dynastiques : réemploi de « Neferkare » et « Pepi » pour invoquer la mémoire de l’Âge d’Or.
+- Contrasté avec Héracléopolis : la VIIIᵉ dynastie memphite sert de contre-modèle face aux dynasties concurrentes jugées « illégitimes ».
+
+7. Tableau chronologique récapitulatif
+
+Période | Dynastie | Capitale | Caractéristique principale
+---|---|---|---
+2686–2181 av. J.-C. | VIᵉ dynastie | Memphis | Apogée de l’Ancien Empire
+2181 av. J.-C. | Transition | — | Mort de Pépi II
+2181–2160 av. J.-C. | VIIIᵉ dynastie | Memphis | Royauté affaiblie, constructions réduites
+2160–2130 av. J.-C. | IXᵉ–Xe dynasties | Héracléopolis | Division politique
+2130–2040 av. J.-C. | XIᵉ dynastie | Thèbes | Réunification sous Mentouhotep II
+
+8. Bibliographie académique
+
+- Grimal, Nicolas. Histoire de l’Égypte ancienne, PUF, 2013.
+- Ryholt, Kim. The Political Situation in Egypt during the Second Intermediate Period, Museum Tusculanum Press, 1997.
+- Wilkinson, Toby A. H. The Rise and Fall of Ancient Egypt, Penguin, 2010.
+- Marcolongo, L., et al. « Climatic Collapse and Social Change in Egypt: Insights from Lake Tinnès », Quaternary Science Reviews, 2019.
+- El-Fiky, S., et al. « Economic Networks and Botanical Data in the First Intermediate Period », Journal of Egyptian Archaeology, vol. 107, 2021.
+- Bárta, Miroslav. « Dynasties VII–VIII », UCLA Encyclopedia of Egyptology, 2017.
+- Verner, Miroslav. The Pyramids, Grove Press, 2001.

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez Khaba, un pharaon énigmatique de la IIIe dynastie égyptienne, associé à la Pyramide à Tranches de Zaouiet el-Aryan et au Mastaba Z500."
+    />
+    <meta
+      name="keywords"
+      content="Khaba, Hor-Khaba, pharaon, IIIe dynastie, Pyramide à Tranches, Layer Pyramid, Zaouiet el-Aryan, Mastaba Z500, Égypte antique, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Khaba - Un Pharaon Énigmatique</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/pharaohx27s-ode-293516.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>Khaba - Un Pharaon Énigmatique de la IIIe Dynastie</h1>
+      <!-- Vous pouvez ajouter une image ici si vous en avez une pour Khaba -->
+      <!-- <img src="/images/khaba-pyramid.jpg" alt="Pyramide à Tranches de Khaba" class="page-banner-img" /> -->
+    </header>
+    <main>
+      <div class="container">
+        
+        <p class="intro">
+          Khaba, également connu sous le nom d'Hor-Khaba, est un pharaon de l'Égypte ancienne qui a régné pendant la IIIe dynastie, vers la fin de cette période. Sa figure est considérée comme difficile à évaluer par les égyptologues en raison des contradictions dans les listes royales ramessides et du manque d'inscriptions contemporaines festives.
+        </p>
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li><a href="#chronologie-identite">Chronologie et Identité</a></li>
+            <li><a href="#activites-evenements">Activités et Événements sous son Règne</a></li>
+            <li><a href="#constructions-attribuees">Constructions Attribuées</a></li>
+          </ul>
+        </section>
+
+        <section id="chronologie-identite">
+          <h2>Chronologie et Identité</h2>
+          <ul>
+            <li>
+              <strong>Période et Capitale</strong> : La IIIe dynastie a régné de 2647 à 2575 av. J.-C.. Durant cette dynastie, les rois ont choisi Memphis comme résidence et capitale. L'autorité royale était bien établie, entraînant une augmentation du territoire égyptien et des règnes relativement stables.
+            </li>
+            <li>
+              <strong>Nom et Titulature</strong> : Khaba est principalement connu par son nom d'Horus, Hor-Khaba, qui signifie "l'âme d'Horus apparaît". Son *serekh* et son nom d'Horus d'Or sont attestés. Le nom d'Horus d'Or de Khaba est interprété comme *Netjer-nub* ("faucon doré") par certains égyptologues comme Thomas Schneider et Jürgen von Beckerath. C'est l'un des rares rois de l'Ancien Empire à posséder un nom d'Or archéologiquement prouvé avant Snefrou (fondateur de la IVe dynastie). Cependant, son titre *Nisut-Bity* et son nom *Nebty* sont inconnus.
+            </li>
+            <li>
+              <strong>Position Chronologique Contestée</strong> : La position exacte de Khaba au sein de la IIIe dynastie reste disputée.
+              <ul>
+                <li>
+                  Certains égyptologues, comme Iorwerth Eiddon Stephen Edwards, l'identifient au nom de cartouche ramesside **Teti**.
+                </li>
+                <li>
+                  D'autres, comme Wolfgang Helck et Aidan Dodson, suggèrent que Khaba pourrait être identique aux noms ramessides **Sedjes** ou **Hudjefa II**. Ces "noms" seraient en réalité des pseudoparents pour un titre royal illisible par les scribes ramessides. Si cette identification est correcte, il aurait régné environ six ans, comme le suggère le Canon de Turin pour Hudjefa II.
+                </li>
+                <li>
+                  Une minorité de spécialistes modernes, dont Rainer Stadelmann, Nicolas Grimal, Wolfgang Helck et Toby Wilkinson, pensent que Khaba pourrait être identique à **Houni**, le dernier souverain de la IIIe dynastie. Cette hypothèse est en partie basée sur la supposition que la pyramide à degrés attribuée à Khaba aurait été achevée, nécessitant un règne plus long. Si Khaba était Houni, il aurait pu régner 24 ans.
+                </li>
+                <li>
+                  Nabil Swelim propose que Khaba ait pu être le successeur direct du roi Khâsekhemoui (dernier souverain de la IIe dynastie) en raison de la similitude de leurs noms. Cependant, cette théorie n'est pas largement acceptée.
+                </li>
+                <li>
+                  La plupart des égyptologues pensent que Khaba et Houni sont deux rois différents, soulignant l'état inachevé de la pyramide à tranches et identifiant Khaba au roi "Hudjefa" mentionné juste avant Houni sur le Canon royal de Turin.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Durée du Règne</strong> : La durée exacte du règne de Khaba est inconnue. Le Papyrus de Turin lui attribue 6 ans de règne, mais le nom est effacé, ce qui pourrait indiquer des problèmes dynastiques ou une difficulté pour le scribe à déchiffrer les noms des documents plus anciens. Manéthon, quant à lui, l'appelle Mesôchris et lui compte 17 ans de règne.
+            </li>
+          </ul>
+        </section>
+
+        <section id="activites-evenements">
+          <h2>Activités et Événements sous son Règne</h2>
+          <ul>
+            <li>
+              <strong>Exploitation minière</strong> : Bien que les sources ne lient pas directement Khaba à des expéditions minières spécifiques, il est établi que les pharaons de la IIIe dynastie, comme Sekhemkhet (prédécesseur de Khaba), s'intéressaient militairement à la région du Sinaï (Wadi Maghara) pour la turquoise.
+            </li>
+            <li>
+              <strong>Sites Importants</strong> : Les impressions de sceaux trouvées à Éléphantine indiquent que cette île était un lieu important à l'époque de Khaba. Ces inscriptions révèlent que les sceaux et les récipients associés provenaient de Thinis et qu'ils étaient enregistrés par le gouverneur d'Éléphantine. Des sceaux de Khaba ont également été trouvés à Hierakonpolis et à Quesna.
+            </li>
+            <li>
+              <strong>Développement de l'Écriture et de l'Architecture</strong> : L'écriture a continué de se développer à la fin de la IIIe dynastie avec de nouveaux signes, probablement liés à l'augmentation du nombre de scribes. La pierre taillée est devenue le matériau principal en architecture.
+            </li>
+          </ul>
+        </section>
+
+        <section id="constructions-attribuees">
+          <h2>Constructions Attribuées</h2>
+          <p>
+            Khaba est principalement associé à la construction de la **Pyramide à Tranches** et du **Mastaba Z500**.
+          </p>
+          <ul>
+            <li>
+              <strong>La Pyramide à Tranches (Layer Pyramid)</strong>
+              <ul>
+                <li>
+                  <strong>Localisation et Exploration</strong> : Cette pyramide, très ruinée, est située sur la nécropole de **Zaouiet el-Aryan**, à environ 8 km au sud-ouest de Gizeh et 7 km au nord de Saqqarah. Elle a été explorée pour la première fois par John Shae Perring en 1839. Gaston Maspero en a cherché l'entrée en 1886, et Jacques de Morgan l'a découverte en 1896. Alexandre Barsanti a repris les travaux en 1900, et George Andrew Reisner et Clarence Stanley Fisher ont poursuivi l'étude en 1910 et 1911.
+                </li>
+                <li>
+                  <strong>Attribution</strong> : La plupart des spécialistes pensent qu'elle est la tombe du roi Khaba. Cette attribution est basée sur la découverte de **bols et vases en pierre portant le *serekh* de Khaba** dans le **Mastaba Z500** situé juste au nord de la pyramide.
+                </li>
+                <li>
+                  <strong>Architecture et Dimensions</strong> :
+                  <ul>
+                    <li>
+                      C'est la première pyramide à degrés à posséder un plan au sol carré.
+                    </li>
+                    <li>
+                      Son architecture permet de la dater avec certitude de la fin de la IIIe dynastie, après la pyramide de Sekhemkhet et avant celles de Snefrou.
+                    </li>
+                    <li>
+                      Elle présente des développements complexes concernant ses infrastructures et des simplifications dans les méthodes de construction de la superstructure, marquant une étape avancée par rapport à la pyramide de Sekhemkhet.
+                    </li>
+                    <li>
+                      La pyramide a une base carrée d'environ **84 mètres de long**.
+                    </li>
+                    <li>
+                      Elle était initialement prévue pour comporter **cinq degrés** et atteindre une hauteur d'environ **42 à 45 mètres**. Aujourd'hui, seuls **deux degrés** subsistent, atteignant une hauteur d'environ 17 mètres.
+                    </li>
+                    <li>
+                      Sa construction est typique de la maçonnerie de la IIIe dynastie, avec des **briques de terre arrangées en couches autour d'un noyau** fait de blocs bruts provenant du substrat rocheux local. Le noyau est un monticule pyramidal de 11 m² de blocs bruts.
+                    </li>
+                    <li>
+                      Les couches de briques de terre cuite, liées avec du mortier d'argile, sont disposées presque verticalement, avec un angle d'inclinaison vers l'intérieur de 22°.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <strong>État d'Achèvement</strong> : Il est incertain si la pyramide a été achevée ou laissée inachevée. L'absence de revêtement extérieur suggère qu'elle n'était pas terminée, probablement en raison de la mort prématurée du pharaon. Cependant, Rainer Stadelmann pense qu'elle a été achevée.
+                </li>
+                <li>
+                  <strong>Infrastructure</strong> :
+                  <ul>
+                    <li>
+                      L'entrée est située au **nord-est**, une disposition unique jusqu'à Sésostris II, près de 1000 ans plus tard. Cette entrée mène à un escalier raide de 36 mètres de long, puis à un couloir se dirigeant vers l'ouest.
+                    </li>
+                    <li>
+                      Un puits vertical mène au **couloir supérieur** (inachevé) et à un passage transversal en forme de T. De là, un **couloir inférieur** mène à la **chambre funéraire du roi**.
+                    </li>
+                    <li>
+                      La chambre funéraire est située à **26 mètres sous terre** et est de forme presque carrée. Elle ne contenait aucune trace de sarcophage, ce qui, avec l'absence d'artefacts dans les galeries, suggère une mort prématurée du roi.
+                    </li>
+                    <li>
+                      Un système de galeries en forme de U, ressemblant à un peigne, contient **trente-deux chambres** probablement destinées au stockage des biens funéraires. Ces galeries étaient "propres et vides, comme si les ouvriers étaient seulement partis".
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Mastaba Z500</strong>
+              <ul>
+                <li>
+                  <strong>Localisation et Description</strong> : Situé à Zawyet el'Aryan, à environ **200 mètres au nord de la Pyramide à Tranches**. Il est construit en briques de terre, avec un mur extérieur à niches et contient deux grandes chambres sans éléments architecturaux typiques de tombes.
+                </li>
+                <li>
+                  <strong>Fonction</strong> : Certains égyptologues, comme Nabil Swelim, estiment que le Mastaba Z500 était en fait un **temple mortuaire** appartenant au complexe funéraire de la Pyramide à Tranches. D'autres pensent qu'il pourrait être la tombe de Khaba lui-même.
+                </li>
+                <li>
+                  <strong>Attribution</strong> : Sa datation au règne de Khaba est basée sur de nombreux récipients en diorite et dolomite et des fragments de sceaux en boue portant le nom *serekh* de Khaba.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Tombe de Quesna</strong>
+              <ul>
+                <li>
+                  En 2010, un mastaba inconnu en briques de terre a été découvert à Quesna, dans le Delta du Nil. Un petit fragment de sceau en boue portant le nom du roi y a été découvert en 2014, mais le propriétaire réel de la tombe reste inconnu.
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p>
+            En somme, bien que Khaba soit une figure dont le règne exact et la position chronologique sont encore débattus, les découvertes archéologiques de la Pyramide à Tranches et du Mastaba Z500 à Zawyet el'Aryan, ainsi que les objets portant son nom, fournissent des preuves concrètes de son existence et de ses activités de bâtisseur durant la IIIe dynastie.
+          </p>
+        </section>
+        <div class="pagination-nav no-speech">
+          <a href="/pages/sekhemkhet.html" class="nav-prev">Sekhemkhet</a>
+          <a href="/pages/Houni.html" class="nav-next">Houni</a>
+        </div>
+        </div>
+      </div>
+    </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

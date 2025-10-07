@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Khafrê (Khéphren) - Bâtisseur de la Pyramide et du Sphinx de Gizeh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Découvrez le pharaon Khafrê (Khéphren), le bâtisseur de la deuxième plus grande pyramide de Gizeh et du Grand Sphinx." />
+  <meta name="keywords" content="Khafrê, Khéphren, IVe dynastie, pyramide de Gizeh, Grand Sphinx, Ancien Empire, pharaon" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+
+  <audio autoplay loop id="background-music">
+    <source src="../audio/egypt-expedition-the-kingdom-119123.mp3" type="audio/mpeg">
+  </audio>
+
+  <div id="nav-placeholder"></div>
+
+  <section class="accessibility-controls">
+      <div class="speech-rate-control">
+        <label for="speech-rate">Vitesse de lecture :</label>
+        <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+      </div>
+      <div class="voice-gender-control">
+        <label>Voix :</label>
+        <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+        <label for="voice-female">Féminine</label>
+        <input type="radio" id="voice-male" name="voice-gender" value="male">
+        <label for="voice-male">Masculine</label>
+      </div>
+      <div class="speech-pitch-control">
+        <label for="speech-pitch">Hauteur de la voix :</label>
+        <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+      </div>
+      <button id="play-text">Écouter</button>
+      <button id="pause-text">Pause</button>
+      <button id="stop-text">Arrêter</button>
+  </section>
+
+  <div id="text-to-read">
+    <header>
+        <h1>Khafrê (Khéphren), le Bâtisseur du Sphinx</h1>
+        <p>Pharaon de la IVe dynastie</p>
+    </header>
+    <main>
+      <section id="introduction">
+        <h2>Le Pharaon au Visage de Sphinx</h2>
+        <figure class="centered-image">
+            <img src="../images/khafre/pyramides-de-Khéphren.webp" alt="Pyramide de Khéphren" class="page-banner-img"/>
+            <figcaption>La pyramide de Khéphren à Gizeh.</figcaption>
+        </figure>
+        <p>
+          Khéphren (ou Khafrê) est un pharaon de la IVe dynastie, fils de Khéops. Son règne, vers 2520-2494 av. J.-C., est indissociable de deux des plus grands monuments de l'humanité : la deuxième pyramide de Gizeh et le mystérieux Grand Sphinx, dont il est considéré comme le bâtisseur et le modèle.
+        </p>
+      </section>
+
+      <section id="pyramide">
+        <h2>La Pyramide de Khéphren : L'Illusion de la Grandeur</h2>
+        <p>
+          La pyramide de Khéphren est la deuxième plus haute du plateau de Gizeh. Bien qu'elle soit légèrement plus petite que celle de son père (143,5 mètres à l'origine), elle a été astucieusement construite sur un terrain plus élevé, donnant l'illusion d'être la plus grande. Elle est unique car elle conserve à son sommet une partie de son revêtement d'origine en calcaire de Tourah, nous donnant un aperçu de la splendeur passée des pyramides. Son complexe funéraire est l'un des mieux préservés, avec un temple haut, une chaussée et un temple bas où fut découverte la fameuse statue en diorite du roi.
+        </p>
+      </section>
+
+      <section id="sphinx">
+        <h2>Le Gardien de Gizeh : Le Grand Sphinx</h2>
+        <p>
+          Le Grand Sphinx, long de plus de 73 mètres, est une sculpture monumentale taillée dans un unique bloc de calcaire. Représentant un lion à tête humaine, il est le gardien de la nécropole. La majorité des égyptologues s'accordent à dire que le visage du Sphinx est celui de Khéphren lui-même, unissant la force du lion à l'intelligence du souverain pour veiller sur son complexe funéraire pour l'éternité.
+        </p>
+      </section>
+
+      <section id="heritage">
+        <h2>Héritage et Culte</h2>
+        <p>
+          Khéphren a laissé l'image d'un souverain puissant et d'un bâtisseur exceptionnel. Les statues retrouvées dans son temple de la vallée, notamment celle en diorite où le dieu faucon Horus protège sa nuque, sont des chefs-d'œuvre de la statuaire égyptienne. Elles incarnent la conception divine de la royauté, où le pharaon est l'intermédiaire entre les dieux et les hommes.
+        </p>
+      </section>
+      
+      <div class="pagination-nav" style="text-align: right;">
+          <a href="djedefre.html" class="nav-prev">◄ Djédefrê</a>
+          <a href="baka.html" class="nav-next">Baka ►</a>
+      </div>
+    </main>
+  </div>
+
+  <div class="btn-accueil-wrapper">
+    <a href="../index.html" class="btn-accueil">Accueil</a>
+  </div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="../js/jquery-3.6.0.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/speech.js"></script>
+  <script src="../js/active-nav.js"></script>
+  <script>
+    fetch("../nav.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("nav-placeholder").innerHTML = data;
+      });
+    fetch("../footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer-placeholder").innerHTML = data;
+      });
+  </script>
+
+</body>
+</html>

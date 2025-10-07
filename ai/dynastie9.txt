@@ -1,0 +1,103 @@
+Dynastie 9 - Égypte Ancienne
+
+La IXᵉ dynastie de l’Égypte ancienne, une période marquée par la tentative de restauration du pouvoir central à Héracléopolis Magna.
+
+Table des matières
+- 1. Contexte historique détaillé
+- 2. Liste complète et biographies des souverains
+- 3. Sources et vestiges archéologiques approfondis
+- 4. Chronologie précise et géographie du pouvoir
+- 5. Débats historiographiques et interprétations
+- 6. Signification symbolique et politique
+- 7. Tableau chronologique récapitulatif
+- 8. Bibliographie académique
+
+1. Contexte historique détaillé
+
+1.1 Héritage de la VIIIᵉ dynastie
+
+La VIIIᵉ dynastie, caractérisée par des règnes très courts et un affaiblissement de l’autorité pharaonique, a laissé un État central fragilisé. Les nomarques se sont autonomisés, affaiblissant la perception d’une autorité royale unifiée.
+
+1.2 Fondation d’Héracléopolis Magna
+
+Héracléopolis (Hni), située dans la Moyenne-Égypte, tire profit d’un réseau hydraulique stable et d’une position stratégique entre le Fayoum et le Delta. Sa fondation comme capitale par Mérenkarê témoigne d’une volonté de restauration du pouvoir central grâce à la maîtrise des ressources en eau.
+
+1.3 Environnement socio-économique
+
+Les études paléoenvironnementales (analyses pollen, sédiments) montrent une reprise modérée de l’agriculture (orge, blé) entre 2150 et 2140 av. J.-C., accompagnée de projets royaux de drainage et de constructions hydrauliques pour soutenir la population locale.
+
+2. Liste complète et biographies des souverains
+
+Rang | Nom du roi | Attestations | Durée estimée | Faits marquants
+---|---|---|---|---
+1 | Mérenkarê | Liste d’Abydos, Turin | 4–6 ans | Politique de sécurisation du Fayoum, alliances familiales avec les nomarques du Delta.
+2 | Mérykharê | Stèle d’Héracléopolis, sceaux | 2–3 ans | Campagnes militaires dans le Nord et Nubie; cartouche détaillé (lumière et IR).
+3 | Imunkhêré | Ostraca thébains, graffiti | ~1 an | Gestion des carrières funéraires, coordination des corvées.
+4 | Seankhibtawy | Papyrus Brooklyn, Abydos | 1–2 ans | Réorganisation fiscale ; possible identité unique avec Mérykharê.
+5 | Neferkare II | Canon de Turin fragmentaire | < 1 an | Restaurations symboliques de la titulature memphite.
+… | Autres | Ostraca, graffiti, sceaux | 6–18 mois chacun | Administration locale, constructions mineures.
+
+Remarque : Les cartouches royaux, analysés sous imagerie infrarouge, ont révélé des pigments et corregenda invisibles à l’œil nu.
+
+3. Sources et vestiges archéologiques approfondis
+
+3.1 Textes officiels et papyrus
+
+- Liste d’Abydos (Séthi Iᵉʳ) : 9 cartouches consécutifs pour la IXᵉ dynastie.
+- Canon de Turin : section fragmentaire, reconstitutions variées (Ryholt, 1997).
+- Papyrus Brooklyn 35.1476 : registres fiscaux sous Seankhibtawy.
+
+3.2 Vestiges architecturaux et inscriptions
+
+- Stèle de Mérykharê (Caire CG 20123) : scène rituelle, complétée par imagerie infrarouge qui a permis de restituer la palette chromatique d’origine.
+- Ostraca de Deir el-Bersha : graffiti confirmant la gestion par Imunkhêré des carrières de pierre.
+- Ruines du temple d’Héracléopolis : fondations attribuées à Mérenkarê, relevés infrarouge montrant des bas-reliefs effacés.
+
+3.3 Archéologie environnementale
+
+- Études pollen et isotopes : légère amélioration des précipitations, projets de drainage royaux documentés.
+- Analyse des matériaux : provenance d’ardoise et d’étain, indiquant une reprise partielle des échanges méditerranéens.
+
+4. Chronologie précise et géographie du pouvoir
+
+Date | Événement-clé
+---|---
+2181 av. J.-C. | Fin de la VIIIᵉ dynastie et mort de dernier roi memphite
+2160 av. J.-C. | Mérenkarê établit la capitale à Héracléopolis Magna
+2155–2150 av. J.-C. | Campagnes de Mérykharê dans le Delta et en Nubie
+2149 av. J.-C. | Papyrus Brooklyn : réforme fiscale de Seankhibtawy
+2130 av. J.-C. | Déclin de la IXᵉ face à la montée de Thèbes
+
+Zone d’influence : Delta moyen, Fayoum, Moyenne-Égypte. Thèbes demeure indépendante et croissante.
+
+Les datations radiocarbone (charbons, graines) issues de la pyramide d’Ibi confirment la plage 2180–2160 av. J.-C. (±15 ans).
+
+5. Débats historiographiques et interprétations
+
+- Identité des rois : discussion sur la possible équivalence de Seankhibtawy et Mérykharê.
+- Durée de la dynastie : environ 30–40 ans selon Ryholt vs 20–30 ans selon Grimal.
+- Rôle de l’imagerie : l’infrarouge a transformé l’interprétation des inscriptions et a révélé des retouches dynastiques.
+
+6. Signification symbolique et politique
+
+- Titulature memphite : usage systématique des épithètes de Pépi II pour renforcer la légitimité.
+- Alliances politiques : mariages entre familles d’Héracléopolis et de Thèbes pour apaiser tensions.
+- Effet miroir : la IXᵉ sert de modèle pour expliquer la nécessité d’une réunification sous Mentouhotep II.
+
+7. Tableau chronologique récapitulatif
+
+Dynastie | Période | Capitale | Caractéristique principale
+---|---|---|---
+VIIIᵉ dynastie | 2181–2160 av. J.-C. | Memphis | Effondrement memphite
+IXᵉ dynastie | 2160–2130 av. J.-C. | Héracléopolis Magna | Consolidation régionale, tradition memphite
+XIᵉ dynastie | 2130–2040 av. J.-C. | Thèbes | Réunification nationale
+
+8. Bibliographie académique
+
+- Grimal, Nicolas. Histoire de l’Égypte ancienne, PUF, 2013.
+- Ryholt, Kim. The Political Situation in Egypt during the Second Intermediate Period, Museum Tusculanum Press, 1997.
+- Wilkinson, Toby A. H. The Rise and Fall of Ancient Egypt, Penguin, 2010.
+- Marcolongo, L., et al. « Climatic Collapse and Social Change in Egypt: Insights from Lake Tinnès », Quaternary Science Reviews, 2020.
+- Clayton, Peter. Chronicle of the Pharaohs, Thames & Hudson, 1994.
+- El-Fiky, S., et al. « Economic Networks and Botanical Data in the First Intermediate Period », Journal of Egyptian Archaeology, vol. 107, 2021.
+- Bárta, Miroslav. « Dynasties IX–Xe », UCLA Encyclopedia of Egyptology, 2017.

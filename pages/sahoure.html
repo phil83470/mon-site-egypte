@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez le pharaon Sahourê, un bâtisseur pionnier de la Cinquième Dynastie de l'Égypte ancienne, connu pour son règne pacifique, ses expéditions commerciales et son complexe pyramidal innovant à Abousir."
+    />
+    <meta
+      name="keywords"
+      content="Sahourê, Sahure, Cinquième Dynastie, 5e dynastie, Ancien Empire, pyramide d'Abousir, temple solaire, expéditions Pount, Byblos, histoire égyptienne, pharaon"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Sahourê - Bâtisseur de la Ve Dynastie</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../../../audio/egypt-expedition-the-kingdom-119123.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>Sahourê : Un Bâtisseur Pionnier de la Cinquième Dynastie</h1>
+    </header>
+    <main>
+      <h2>Introduction</h2>
+      <div class="container">
+        <p class="intro">
+          Le pharaon Sahourê, dont le nom signifie « Celui qui est proche de Rê », fut le deuxième souverain de la Cinquième Dynastie de l’Égypte ancienne. Il a régné aux alentours de <strong>2480 av. J.-C.</strong> ou plus précisément de <strong>2458 à 2446 av. J.-C.</strong>, selon les sources. Le papyrus royal de Turin lui attribue un règne de <strong>12 ans</strong>.
+        </p>
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li><a href="#identite-succession">Histoire et Règne</a></li>
+            <li><a href="#complexe-pyramidal">Le Complexe Pyramidal de Sahourê</a></li>
+            <li><a href="#pyramide-details">La Pyramide de Sahourê : Détails et Découvertes Récentes</a></li>
+            <li><a href="#innovations-heritage">Innovations et Organisation Introduites par Sahourê</a></li>
+          </ul>
+        </section>
+
+        <section id="identite-succession">
+          <h2>Histoire et Règne</h2>
+          <p>
+            Sahourê était le fils du roi Ouserkaf et de la reine Khentkaous I. Bien que sa source soit incertaine, il n'aurait eu qu'une seule épouse connue, Néferetnebty, qui aurait pu être une princesse phénicienne et la mère de quatre garçons : Netjerirenrê, Ranéfer (ou Neferirkarê Kakaï), Horemsaf et Nebânkhrê.
+          </p>
+          <p>
+            Le règne du pharaon Sahourê fut caractérisé par la <strong>paix et la prospérité</strong>, ainsi que par un <strong>commerce et des relations étrangères florissants</strong>. Ses relations extérieures étaient davantage économiques que belliqueuses. Les sources documentent plusieurs expéditions sous son règne :
+          </p>
+          <ul>
+            <li>Des missions à <strong>Byblos au Liban</strong> pour rapporter d'immenses cèdres.</li>
+            <li>La <strong>première expédition égyptienne documentée au Pays de Pount</strong> dans le but de ramener de la myrrhe, de la malachite et de l'électrum.</li>
+            <li>Une campagne militaire contre les Libyens, dont des scènes de raids montrant le retour de divers animaux.</li>
+            <li>Des expéditions dans le <strong>Sinaï</strong> pour les carrières de turquoise.</li>
+            <li>Des expéditions dans les <strong>carrières de diorite au nord-ouest d'Abou Simbel</strong>, en Nubie.</li>
+          </ul>
+          <p>
+            Les reliefs décoratifs de son complexe pyramidal dépeignent ces diverses scènes, symbolisant le devoir sacré du pharaon de montrer sa maîtrise sur la nature (scènes de pêche et de chasse) et illustrant ses relations étrangères, comme la représentation d'ours probablement importés de Syrie.
+          </p>
+          <p>
+            Sahourê est également crédité d'avoir construit un <strong>temple solaire nommé Sekhet-re</strong> (« le champ de Ré »), dont l'emplacement est inconnu à ce jour. De même, son palais, appelé <strong>Uetjesneferusahure</strong> (« La splendeur de Sahourê monte jusqu'au ciel »), bien que mentionné sur des récipients découverts dans le temple funéraire de Néferefrê, n'a pas été localisé.
+          </p>
+        </section>
+
+        <section id="complexe-pyramidal">
+          <h2>Le Complexe Pyramidal de Sahourê</h2>
+          <p>
+            La pyramide de Sahourê est située dans la <strong>nécropole d’Abousir</strong>, au nord de Saqqarah, près du Caire. Elle marque un développement significatif dans l'architecture égyptienne antique en étant la <strong>première pyramide construite à Abousir</strong>, établissant ainsi un précédent pour les pyramides ultérieures de la Cinquième Dynastie. Ce choix a déplacé le « centre de gravité » du royaume, transformant Abousir en une nécropole dynastique. La proximité du lac Abousir a également rendu le complexe facilement accessible. Son nom antique était « l'âme de Sahourê apparaît dans la clarté ».
+          </p>
+          <p>
+            Malgré son état très délabré et le fait qu'elle ait été utilisée comme carrière pour des matériaux de construction pendant les âges médiévaux, le complexe de Sahourê est remarquablement lisible et constitue un ensemble complet des fondations funéraires royales de l'Ancien Empire.
+          </p>
+          <p>
+            Le complexe funéraire de Sahourê est de <strong>type à faces lisses</strong> et est composé de plusieurs éléments :
+          </p>
+          <ul>
+            <li>Une <strong>pyramide principale</strong> (la pyramide du roi) à l'ouest, avec son entrée sur sa face nord.</li>
+            <li>Un <strong>temple funéraire</strong> (ou temple haut) jouxtant la pyramide à l'est.</li>
+            <li>Un <strong>temple de la vallée</strong> (ou temple d'accueil/temple bas) à la lisière des terres cultivées et du désert d'Abousir.</li>
+            <li>Une <strong>chaussée</strong> d'environ 235 mètres de long, reliant le temple de la vallée au temple funéraire. Ses murs étaient décorés de reliefs représentant des moments clés du règne de Sahourê, tels que ses expéditions et les étapes de la construction de sa pyramide.</li>
+            <li>Une <strong>pyramide-satellite</strong> (ou de culte), située au sud-est de la pyramide royale et encadrée de sa propre enceinte.</li>
+            <li>Une petite <strong>cour ouverte</strong> à l'ouest, juste devant la pyramide, où se dressait la stèle fausse porte du roi.</li>
+            <li>À noter, l'absence d'une pyramide d'une Reine dans ce complexe, bien que cela soit le cas dans d'autres complexes.</li>
+          </ul>
+        </section>
+
+        <section id="pyramide-details">
+          <h2>La Pyramide de Sahourê : Détails et Découvertes Récentes</h2>
+          <p>
+            La pyramide principale mesurait à l'origine entre <strong>78,5 et 78,75 mètres de côté</strong> et s'élevait à une hauteur d'environ <strong>47 à 48 mètres</strong>. Une source mentionne une hauteur originale de près de 79 mètres, tandis qu'une autre indique 45 mètres de haut, la rendant trois fois plus petite que la Grande Pyramide de Khéops. Sa base était légèrement rectangulaire en raison d'une erreur de 1,58 mètre dans le calcul de l'une de ses faces. L'inclinaison de ses faces était d'environ <strong>50°11'40"</strong> ou 50° 30′.
+          </p>
+          <p>
+            Elle était construite avec un <strong>noyau central à six degrés en calcaire</strong>, maintenu par du mortier d'argile. L'extérieur était initialement revêtu de <strong>calcaire blanc lisse de Tourah</strong>, qui a été retiré par des voleurs de pierres au fil du temps. Cette extraction a déstabilisé la structure, provoquant l'effondrement des plafonds des couloirs et chambres souterraines, aggravé par des séismes.
+          </p>
+          <h3>Explorations internes :</h3>
+          <ul>
+            <li><strong>Premières fouilles (Ludwig Borchardt, 1907-1908) :</strong> Borchardt a mené les premières fouilles approfondies, mais s'est principalement intéressé aux temples, laissant la pyramide elle-même peu explorée. Il n'a pas observé certains éléments notés par Perring.</li>
+            <li><strong>Fouilles de John Shae Perring (1837) :</strong> L'ingénieur civil John Shae Perring a réalisé la première exploration documentée de la pyramide. Après 10 jours de travail, son équipe a excavé environ 22 mètres dans le passage d'entrée et a atteint une chambre. Il a trouvé un fragment de herse en granite et des fragments de basalte qu'il a attribués à un sarcophage. Il a également noté un passage bas nommé 'C', rempli de débris. Perring n'a jamais affirmé que la chambre découverte était la chambre funéraire.</li>
+            <li><strong>Découvertes récentes (Dr. Mohamed Ismail Khaled, depuis 2019) :</strong> Une mission archéologique égypto-allemande dirigée par le Dr Mohamed Ismail Khaled a relancé les fouilles en 2019. Leur travail a confirmé toutes les observations de Perring, y compris le grand fragment de herse en granite et les multiples fragments de basalte. Ils ont découvert des <strong>salles de stockage non documentées</strong> auparavant, un jalon important pour comprendre les innovations architecturales de Sahourê.
+              <ul>
+                <li>La première chambre dégagée mesure 4,15 mètres sur 3,6 mètres.</li>
+                <li>La découverte la plus excitante est que le système de chambres <strong>se poursuit sur 7 mètres de plus vers l'ouest</strong>, ce qui signifie que la <strong>véritable chambre funéraire n'a pas encore été excavée</strong>. Mohamed Ismail Khaled pense que la salle identifiée par les premiers archéologues comme la chambre funéraire n'était en réalité qu'une antichambre, et que la vraie chambre funéraire, qu'il rêve de découvrir, pourrait contenir le sarcophage et la momie de Sahourê.</li>
+                <li>Six magasins (chambres de stockage) ont été découverts. Ce qui est unique, c'est que la conception des plafonds plats pour ces magasins commence dès l'antichambre, ce qui est sans précédent dans les pyramides de l'Ancien Empire.</li>
+              </ul>
+            </li>
+            <li><strong>Travaux de préservation :</strong> Le projet de 2019 a pour but de protéger la sous-structure de la pyramide. Des technologies avancées comme le <strong>scan laser 3D avec un scanner LiDAR portable ZEB Horizon</strong> ont été utilisées pour des relevés détaillés des zones externes et internes. Ces travaux ont permis de nettoyer les chambres intérieures, de stabiliser la pyramide et de prévenir de nouveaux effondrements, rendant les chambres funéraires accessibles. La tâche est dangereuse en raison de l'instabilité du plafond, nécessitant la mise en place de murs de soutènement temporaires.</li>
+          </ul>
+          <h3>Spéculation sur la momie de Sahourê :</h3>
+          <p>
+            Certains historiens spéculent que la momie de Sahourê pourrait encore reposer dans sa pyramide. Plusieurs facteurs pourraient soutenir cette idée :
+          </p>
+          <ul>
+            <li>Les pyramides d'Abousir auraient été <strong>minimalement pillées</strong> pendant la Première Période Intermédiaire, car le culte de Niuserre, voisin de Sahourê, a persisté.</li>
+            <li>Le culte de Sahourê, ravivé et associé à la déesse Sekhmet (protectrice des pharaons), a perduré pendant des siècles, même jusqu'à la période ptolémaïque. Cette dévotion prolongée pourrait avoir offert une protection aux monuments de Sahourê contre les destructions.</li>
+            <li>Même si la pyramide a été pillée, si cela a été le fait d'une campagne d'appropriation par l'État ou le culte, la momie aurait pu être préservée plutôt que vandalisée. Un effondrement ultérieur de la chambre funéraire, après le pillage des objets de valeur, aurait pu cacher et protéger le sarcophage et son contenu.</li>
+          </ul>
+        </section>
+
+        <section id="innovations-heritage">
+          <h2>Innovations et Organisation Introduites par Sahourê</h2>
+          <p>
+            Sahourê est reconnu pour avoir introduit plusieurs innovations et standardisations dans l'architecture et l'organisation des complexes funéraires royaux :
+          </p>
+          <ul>
+            <li><strong>Pionnier de la nécropole d'Abousir :</strong> En tant que premier roi à y construire son complexe pyramidal, il a établi un nouveau centre pour les fondations royales, un modèle qui sera suivi par tous ses successeurs des Ve et VIe Dynasties.</li>
+            <li><strong>Innovations architecturales :</strong> Son complexe se caractérisait par l'utilisation de <strong>colonnes palmiformes</strong> et un agencement unique pour le temple mortuaire, qui sont devenus des références dans la construction égyptienne ancienne. Il aurait également été un <strong>pionnier dans la conception des salles de stockage</strong>.</li>
+            <li><strong>Standardisation des complexes funéraires :</strong> La disposition des éléments constitutifs de son monument funéraire royal (pyramide principale, temple mortuaire, temple de la vallée, chaussée, pyramide-satellite) s'est fixée à partir de son règne et est devenue un modèle classique pour les dynasties suivantes.</li>
+            <li><strong>Organisation des chambres internes :</strong> La découverte récente de magazines dont le plafond plat commence dès l'antichambre est <strong>inédite</strong> et défie les paradigmes existants de construction des pyramides, suggérant une flexibilité dans la conception basée peut-être sur la facilité d'excavation du substrat rocheux.</li>
+          </ul>
+          <p>
+            L'héritage de Sahourê réside dans ses contributions architecturales et artistiques durables. Malgré l'état actuel de sa pyramide, elle continue d'offrir des aperçus précieux sur les croyances religieuses, la vie quotidienne et les réalisations artistiques de l'Ancien Empire.
+          </p>
+        </section>
+        <div class="pagination-nav no-speech">
+          <a href="/pages/dynastie5.html" class="nav-prev">Retour à la Ve Dynastie</a>
+          <a href="neferirkare-kakaii.html" class="nav-next">Néferirkarê Kakaï</a>
+        </div>
+        </div>
+      </div>
+    </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/active-nav.js"></script>
+    <script src="../../js/speech.js"></script>
+  </body>
+</html>

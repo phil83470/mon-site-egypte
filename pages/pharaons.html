@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez les pharaons célèbres de l'Égypte ancienne, figures emblématiques du pouvoir et de la civilisation égyptienne."
+    />
+    <meta
+      name="keywords"
+      content="pharaons, Égypte ancienne, histoire égyptienne, dynasties, pyramides, temples"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Pharaons Célèbres – Égypte ancienne</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/egypt-expedition-phrygdom-119040.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+
+    <div id="text-to-read">
+    <header>
+      <div>
+      <h1>Les Pharaons d'Égypte</h1>
+      <p>Figures emblématiques du pouvoir et de la civilisation égyptienne</p>
+      <img
+        src="/images/generales/pharaons1erdynastie.png" width="500" height="300"
+        alt="Représentation de pharaons de la Première Dynastie égyptienne"
+        class="page-banner-pharaons"/>
+    </header>
+    <main>
+      <h2>Portraits des grands souverains</h2>
+      <p>
+        Le pharaon, roi-dieu sur terre, était le garant de l'ordre cosmique (la
+        Maât). Son pouvoir s'étendait à tous les aspects de la société, de la
+        religion à la guerre, en passant par l'administration et la justice.
+        Découvrez ici quelques-uns des pharaons qui ont marqué l'histoire.
+      </p>
+      <article>
+        <h3>Narmer (v. 3150 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Considéré comme l'unificateur de la Haute et de la Basse-Égypte, il
+          est le premier pharaon à régner sur un royaume unifié. Sa célèbre
+          palette, découverte à Hiérakonpolis, dépeint cet acte fondateur.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/dynastie1.html">Explorer la 1ère dynastie →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Hor-Aha (v. 3100 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Successeur de Narmer, Hor-Aha a consolidé l'unification de l'Égypte et
+          établi les fondations de l'État pharaonique. Son règne est marqué par
+          des réformes administratives et des campagnes militaires.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/hor-aha.html">En savoir plus sur Hor-Aha →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Djer (v. 3050 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Troisième roi de la Première Dynastie, Djer a poursuivi la
+          consolidation de l'Égypte unifiée. Son règne est notable pour ses
+          campagnes militaires, ses constructions et l'évolution des pratiques
+          funéraires.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/djer.html">En savoir plus sur Djer →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Djet (v. 3040 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Quatrième pharaon de la Première Dynastie, Djet est connu pour son
+          règne court mais significatif, marqué par des avancées artistiques et
+          des découvertes archéologiques importantes.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/djet.html">En savoir plus sur Djet →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Merneith (v. 2950 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Régente et potentielle souveraine, Merneith fut une figure influente
+          de la Première Dynastie, assurant la stabilité du royaume et préparant
+          le règne de son fils Den.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/merneith.html">En savoir plus sur Merneith →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Den (v. 2970 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          L'un des pharaons les plus importants de la Première Dynastie, Den est
+          connu pour son long règne, sa prospérité et ses innovations
+          administratives et architecturales.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/den.html">En savoir plus sur Den →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Adjib (v. 2925 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Pharaon de la Première Dynastie, le règne d'Adjib fut relativement
+          court et potentiellement marqué par des troubles, mais il a laissé des
+          traces archéologiques importantes.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/adjib.html">En savoir plus sur Adjib →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Sémerkhet (v. 2915 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Souverain énigmatique de la Première Dynastie, Sémerkhet est connu
+          pour son règne court et les controverses autour de sa légitimité, bien
+          qu'il ait introduit des innovations importantes.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/semerkhet.html">En savoir plus sur Sémerkhet →</a>
+          </strong>
+        </p>
+      </article>
+      <article>
+        <h3>Qâ (v. 2900 av. J.-C.) – 1<sup>re</sup> dynastie</h3>
+        <p>
+          Dernier pharaon de la Première Dynastie, Qâ a régné sur une période de
+          stabilité et de prospérité, assurant une transition en douceur vers la
+          Deuxième Dynastie.
+        </p>
+        <p>
+          <strong>
+            <a href="/pages/qa.html">En savoir plus sur Qâ →</a>
+          </strong>
+        </p>
+      </article>
+      
+    </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

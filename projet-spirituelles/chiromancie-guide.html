@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez la chiromancie, l'art millénaire de lire les lignes de la main pour révéler les secrets de la personnalité, du caractère et du destin." />
+    <meta name="keywords" content="chiromancie, lignes de la main, lecture des mains, art divinatoire, spiritualité, développement personnel, paume, monts, signes, mains" />
+    <title>La Chiromancie : Ce que vos Mains Révèlent sur Vous</title>
+    <link rel="icon" type="image/jpeg" href="images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #d68c1e; /* Light orange background color */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* White veil, 70% opacity */
+            z-index: -1;
+        }
+        #text-to-read {
+            position: relative; /* Ensure content is above the veil */
+            z-index: 0;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 25px;
+            background-color: transparent; /* Ensure content background is transparent */
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            font-weight: 400;
+        }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 1em; }
+        h2 { font-size: 2em; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; margin-top: 1.5em;}
+        h3 { font-size: 1.5em; color: #34495e; margin-top: 1.2em;}
+        p, li { font-size: 1.1em; }
+        hr { border: none; border-top: 1px solid #ecf0f1; margin: 2em 0; }
+        ul { list-style-type: disc; padding-left: 25px; }
+        li { margin-bottom: 12px; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { font-weight: 600; }
+        .table-of-contents {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .table-of-contents h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .table-of-contents ul ul {
+            padding-left: 20px;
+        }
+        .table-of-contents a {
+            color: #2980b9;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        .pagination-nav {
+            display: flex;
+            justify-content: space-between; /* Align to the right */
+            margin-top: 30px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+        }
+        .pagination-nav a {
+            font-family: 'policemeta', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #d68c1e; /* Orange color */
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .pagination-nav a:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+            color: white !important;
+            text-decoration: none;
+        }
+        .pagination-nav .prev-page::before {
+            content: "◄ ";
+            margin-right: 5px;
+        }
+        .pagination-nav .next-page::after {
+            content: " ►";
+            margin-left: 5px;
+        }
+        #toggle-toc {
+            background-color: #d68c1e; /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 15px;
+            display: block; /* Make it a block element */
+            width: fit-content; /* Adjust width to content */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #toggle-toc:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+        }
+        #toc-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/cinematic-duduk-192901.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Barre de navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Contrôles d'accessibilité -->
+    <section class="accessibility-controls">
+          <div class="speech-rate-control">
+            <label for="speech-rate">Vitesse de lecture :</label>
+            <input type="range" id="speech-rate" min="0.7" max="1.3" value="0.9" step="0.1">
+          </div>
+
+          <div class="voice-gender-control">
+            <label>Voix :</label>
+            <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+            <label for="voice-female">Féminine</label>
+            <input type="radio" id="voice-male" name="voice-gender" value="male">
+            <label for="voice-male">Masculine</label>
+          </div>
+
+          <div class="speech-pitch-control">
+            <label for="speech-pitch">Hauteur de la voix :</label>
+            <input type="range" id="speech-pitch" min="0.8" max="1.4" value="1.1" step="0.1">
+          </div>
+
+          <button id="play-text">Écouter</button>
+          <button id="pause-text">Pause</button>
+          <button id="stop-text">Arrêter</button>
+        </section>
+    <div id="text-to-read">
+        <header>
+            <h1>La Chiromancie : Ce que vos Mains Révèlent sur Vous - Guide Complet</h1>
+        </header>
+        <main>
+            <button id="toggle-toc">Afficher la Table des Matières</button>
+            <div id="toc-container" style="display: none;">
+                <nav class="table-of-contents">
+                    <h2>Table des Matières</h2>
+                    <ul>
+                        <li><a href="#origines-histoire">Origines et Histoire de la Chiromancie</a>
+                            <ul>
+                                <li><a href="#racines-antiques">Les Racines Antiques de l'Art Divinatoire</a></li>
+                                <li><a href="#expansion-civilisations">L'Expansion à travers les Civilisations</a></li>
+                                <li><a href="#developpement-europe">Le Développement en Europe Médiévale</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#methodologie-principes">Méthodologie et Principes de Base</a>
+                            <ul>
+                                <li><a href="#choisir-main">Choisir la Main Appropriée</a></li>
+                                <li><a href="#evolution-lignes">L'Évolution des Lignes dans le Temps</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#lignes-principales">Les Lignes Principales de la Paume</a></li>
+                        <li><a href="#monts-formations">Les Monts et Formations de la Main</a>
+                            <ul>
+                                <li><a href="#comprendre-monts">Comprendre les Monts Palmaires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#signes-marques">Signes et Marques Spéciales</a></li>
+                        <li><a href="#perspective-scientifique">Perspective Scientifique et Critique</a></li>
+                        <li><a href="#applications-contemporaines">Applications Contemporaines et Développement Personnel</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                        <li><a href="#sources">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>La chiromancie, l'art millénaire de lire les lignes de la main, continue de fasciner et d'interroger. Ce guide complet explore cette pratique ancestrale qui prétend révéler les secrets de la personnalité, du caractère et même du destin à travers l'examen minutieux des paumes, des lignes et des formations de nos mains. Bien que la science moderne ne valide pas les prédictions spécifiques de la chiromancie, cette pratique demeure un outil précieux d'introspection et de développement personnel, offrant un miroir symbolique pour mieux se comprendre et explorer les différentes facettes de sa personnalité.</p>
+
+            <h2 id="origines-histoire">Origines et Histoire de la Chiromancie</h2>
+            <h3 id="racines-antiques">Les Racines Antiques de l'Art Divinatoire</h3>
+            <p>La chiromancie possède des origines extrêmement anciennes, remontant à plus de 5 000 ans selon les sources les plus crédibles. Les premières traces documentées de cette pratique se trouvent dans la littérature védique de l'Inde ancienne, notamment dans le Vasishta Règle 21 et l'ancien code de Manu, deux textes d'origine védique datant d'environ 2000 ans avant J.-C.. Ces textes fondateurs témoignent de l'importance accordée à la lecture des mains dans les traditions spirituelles indiennes, où elle était étroitement liée à l'astrologie védique et à la philosophie spirituelle. La pratique s'inscrivait alors dans le cadre plus large du Samudrika Shastra, une science védique qui étudiait les marques corporelles pour révéler les traits de personnalité et le destin.</p>
+            <p>De nombreux sages hindous ont contribué à propager cet art, notamment Garga, Gautama, Bharadwaja, Agastya, Atri, et Kashyapa. La tradition rapporte que le Maharshi Valmiki aurait écrit "The teaching of Valmiki Maharshi on male palmistry" comprenant 567 stances environ 2000 ans avant Jésus-Christ.</p>
+            <p>La chiromancie possède des origines extrêmement anciennes, remontant à plus de 5 000 ans selon les sources les plus crédibles. Les premières traces documentées de cette pratique se trouvent dans la littérature védique de l'Inde ancienne, notamment dans le Vasishta Règle 21 et l'ancien code de Manu, deux textes d'origine védique datant d'environ 2000 ans avant J.-C.. Ces textes fondateurs témoignent de l'importance accordée à la lecture des mains dans les traditions spirituelles indiennes, où elle était étroitement liée à l'astrologie védique et à la philosophie spirituelle. La pratique s'inscrivait alors dans le cadre plus large du Samudrika Shastra, une science védique qui étudiait les marques corporelles pour révéler les traits de personnalité et le destin.</p>
+            <p>De nombreux sages hindous ont contribué à propager cet art, notamment Garga, Gautama, Bharadwaja, Agastya, Atri, et Kashyapa. La tradition rapporte que le Maharshi Valmiki aurait écrit "The teaching of Valmiki Maharshi on male palmistry" comprenant 567 stances environ 2000 ans avant Jésus-Christ.</p>
+
+            <h3 id="expansion-civilisations">L'Expansion à travers les Civilisations</h3>
+            <p>De l'Inde, l'art de lire la main s'est progressivement répandu vers d'autres civilisations anciennes. La Chine a développé sa propre tradition chiromantique dès la dynastie des Zhou (vers 1000 av. J.-C.), intégrant les principes du Yin et du Yang et la cosmologie chinoise, avec un accent particulier sur les cinq éléments. La pratique s'est ensuite diffusée au Tibet, en Égypte, en Perse, et finalement en Europe. Des traces de l'art chiromantique ont été retrouvées dans l'Égypte ancienne vers le IVe siècle avant J.-C., où elle était pratiquée par les prêtres dans les temples. Il est vraisemblable qu'Aristote ou Alexandre le Grand, au cours de leurs voyages en Asie, aient rapporté la tradition chiromantique en Grèce. La légende raconte qu'Aristote aurait découvert un traité sur la chiromancie sur un autel d'Hermès et l'aurait présenté à Alexandre le Grand, qui prenait grand intérêt à examiner le caractère de ses officiers en analysant les lignes de leurs mains.</p>
+            <p>De l'Inde, l'art de lire la main s'est progressivement répandu vers d'autres civilisations anciennes. La Chine a développé sa propre tradition chiromantique dès la dynastie des Zhou (vers 1000 av. J.-C.), intégrant les principes du Yin et du Yang et la cosmologie chinoise, avec un accent particulier sur les cinq éléments. La pratique s'est ensuite diffusée au Tibet, en Égypte, en Perse, et finalement en Europe. Des traces de l'art chiromantique ont été retrouvées dans l'Égypte ancienne vers le IVe siècle avant J.-C., où elle était pratiquée par les prêtres dans les temples. Il est vraisemblable qu'Aristote ou Alexandre le Grand, au cours de leurs voyages en Asie, aient rapporté la tradition chiromantique en Grèce. La légende raconte qu'Aristote aurait découvert un traité sur la chiromancie sur un autel d'Hermès et l'aurait présenté à Alexandre le Grand, qui prenait grand intérêt à examiner le caractère de ses officiers en analysant les lignes de leurs mains.</p>
+
+            <h3 id="developpement-europe">Le Développement en Europe Médiévale</h3>
+            <p>La chiromancie arrive en Europe vers le IIIe siècle avant J.-C., mais c'est au XIIe siècle qu'elle connaît sa plus grande diffusion. Jean de Salisbury la mentionne comme un "art nouveau" dans son Policraticus en 1159. Durant cette période, des traités attribués à Aristote et à Albert le Grand établissent les bases de la chiromancie européenne, admettant trois ou quatre lignes principales de la main et les monts. La pratique était alors enseignée dans les universités au Moyen Âge, témoignant de sa reconnaissance intellectuelle. Cependant, comme toutes les formes de divination, la chiromancie a été interdite par l'Église catholique durant une grande partie du Moyen Âge. Les papes Paul IV et Sixte V ont publié des édits papaux contre diverses formes de divination, y compris la chiromancie. Au XVIe siècle, la chiromancie était classée parmi les sept "arts interdits" de la magie de la Renaissance, aux côtés de la nécromancie, la géomancie, l'aéromancie, la pyromancie, l'hydromancie et la spatulomancie.</p>
+            <p>La chiromancie arrive en Europe vers le IIIe siècle avant J.-C., mais c'est au XIIe siècle qu'elle connaît sa plus grande diffusion. Jean de Salisbury la mentionne comme un "art nouveau" dans son Policraticus en 1159. Durant cette période, des traités attribués à Aristote et à Albert le Grand établissent les bases de la chiromancie européenne, admettant trois ou quatre lignes principales de la main et les monts. La pratique était alors enseignée dans les universités au Moyen Âge, témoignant de sa reconnaissance intellectuelle. Cependant, comme toutes les formes de divination, la chiromancie a été interdite par l'Église catholique durant une grande partie du Moyen Âge. Les papes Paul IV et Sixte V ont publié des édits papaux contre diverses formes de divination, y compris la chiromancie. Au XVIe siècle, la chiromancie était classée parmi les sept "arts interdits" de la magie de la Renaissance, aux côtés de la nécromancie, la géomancie, l'aéromancie, la pyromancie, l'hydromancie et la spatulomancie.</p>
+
+            <h2 id="methodologie-principes">Méthodologie et Principes de Base</h2>
+            <h3 id="choisir-main">Choisir la Main Appropriée</h3>
+            <p>La première étape cruciale de la chiromancie consiste à déterminer quelle main analyser. La main dominante (généralement la droite pour les droitiers) est considérée comme le reflet du présent et du futur, ainsi que de la personne que vous êtes devenue grâce à vos expériences et vos choix de vie. La main non-dominante (passive) révèle quant à elle votre potentiel inné, vos prédispositions naturelles et votre essence profonde.</p>
+            <p>La première étape cruciale de la chiromancie consiste à déterminer quelle main analyser. La main dominante (généralement la droite pour les droitiers) est considérée comme le reflet du présent et du futur, ainsi que de la personne que vous êtes devenue grâce à vos expériences et vos choix de vie. La main non-dominante (passive) révèle quant à elle votre potentiel inné, vos prédispositions naturelles et votre essence profonde.</p>
+
+            <h3 id="evolution-lignes">L'Évolution des Lignes dans le Temps</h3>
+            <p>Un aspect fondamental de la chiromancie moderne est la reconnaissance que les lignes de la main changent avec le temps. Vos choix de vie, vos expériences et votre état d'esprit influencent la formation et la transformation de ces lignes. Cette perspective dynamique souligne que vous êtes le maître de votre destin.</p>
+            <p>Un aspect fondamental de la chiromancie moderne est la reconnaissance que les lignes de la main changent avec le temps. Vos choix de vie, vos expériences et votre état d'esprit influencent la formation et la transformation de ces lignes. Cette perspective dynamique souligne que vous êtes le maître de votre destin.</p>
+
+            <h2 id="lignes-principales">Les Lignes Principales de la Paume</h2>
+            <p><strong>La Ligne de Vie :</strong> Vitalité et Énergie. Elle prend naissance entre le pouce et l'index et se dirige en arc de cercle vers le bas du poignet. Contrairement aux idées reçues, cette ligne n'indique PAS votre espérance de vie. Elle est plutôt associée à votre vitalité, énergie, santé et bien-être général.</p>
+            <p><strong>La Ligne de Tête :</strong> Intelligence et Créativité. Elle part du bord de la paume sous l'index et s'étend horizontalement. Elle est associée à vos capacités cérébrales, votre intelligence, logique, et créativité.</p>
+            <p><strong>La Ligne de Cœur :</strong> Vie Sentimentale et Émotions. Elle se situe sur la partie supérieure de la paume, sous les doigts. Elle représente votre vie sentimentale, vos émotions, vos relations amoureuses et votre capacité à aimer.</p>
+            <p><strong>La Ligne du Destin :</strong> Carrière et Réalisations. Parfois absente, elle démarre généralement près de la base de la paume et monte verticalement. Aussi appelée ligne de chance ou ligne d'argent, elle donne des indications sur votre carrière et votre succès.</p>
+            <p><strong>La Ligne du Soleil :</strong> Réputation et Créativité. Elle part du bord de la paume, sous l'annulaire. Elle est liée à la réputation, à l'héritage, la célébrité, ainsi qu'à l'art et la créativité.</p>
+            <p><strong>La Ligne de Vie :</strong> Vitalité et Énergie. Elle prend naissance entre le pouce et l'index et se dirige en arc de cercle vers le bas du poignet. Contrairement aux idées reçues, cette ligne n'indique PAS votre espérance de vie. Elle est plutôt associée à votre vitalité, énergie, santé et bien-être général.</p>
+            <p><strong>La Ligne de Tête :</strong> Intelligence et Créativité. Elle part du bord de la paume sous l'index et s'étend horizontalement. Elle est associée à vos capacités cérébrales, votre intelligence, logique, et créativité.</p>
+            <p><strong>La Ligne de Cœur :</strong> Vie Sentimentale et Émotions. Elle se situe sur la partie supérieure de la paume, sous les doigts. Elle représente votre vie sentimentale, vos émotions, vos relations amoureuses et votre capacité à aimer.</p>
+            <p><strong>La Ligne du Destin :</strong> Carrière et Réalisations. Parfois absente, elle démarre généralement près de la base de la paume et monte verticalement. Aussi appelée ligne de chance ou ligne d'argent, elle donne des indications sur votre carrière et votre succès.</p>
+            <p><strong>La Ligne du Soleil :</strong> Réputation et Créativité. Elle part du bord de la paume, sous l'annulaire. Elle est liée à la réputation, à l'héritage, la célébrité, ainsi qu'à l'art et la créativité.</p>
+
+            <h2 id="monts-formations">Les Monts et Formations de la Main</h2>
+            <h3 id="comprendre-monts">Comprendre les Monts Palmaires</h3>
+            <p>Les monts sont les petits reliefs, bosses et creux situés à la base des doigts et au creux de la paume. Chaque mont est associé à une planète et révèle des aspects spécifiques du caractère.</p>
+            <ul>
+                <li><strong>Le Mont de Vénus:</strong> (base du pouce) Amour, sensualité, passion.</li>
+                <li><strong>Le Mont de Jupiter:</strong> (sous l'index) Ambition, leadership, réussite sociale.</li>
+                <li><strong>Le Mont de Saturne:</strong> (sous le majeur) Sagesse, responsabilité, prudence.</li>
+                <li><strong>Le Mont d'Apollon (du Soleil):</strong> (sous l'annulaire) Art, créativité, succès.</li>
+                <li><strong>Le Mont de Mercure:</strong> (sous l'auriculaire) Communication, commerce, agilité intellectuelle.</li>
+                <li><strong>Le Mont de la Lune (de Neptune):</strong> (face au mont de Vénus) Intuition, imagination, sensibilité.</li>
+            </ul>
+            <p>Les monts sont les petits reliefs, bosses et creux situés à la base des doigts et au creux de la paume. Chaque mont est associé à une planète et révèle des aspects spécifiques du caractère.</p>
+            <ul>
+                <li><strong>Le Mont de Vénus:</strong> (base du pouce) Amour, sensualité, passion.</li>
+                <li><strong>Le Mont de Jupiter:</strong> (sous l'index) Ambition, leadership, réussite sociale.</li>
+                <li><strong>Le Mont de Saturne:</strong> (sous le majeur) Sagesse, responsabilité, prudence.</li>
+                <li><strong>Le Mont d'Apollon (du Soleil):</strong> (sous l'annulaire) Art, créativité, succès.</li>
+                <li><strong>Le Mont de Mercure:</strong> (sous l'auriculaire) Communication, commerce, agilité intellectuelle.</li>
+                <li><strong>Le Mont de la Lune (de Neptune):</strong> (face au mont de Vénus) Intuition, imagination, sensibilité.</li>
+            </ul>
+
+            <h2 id="signes-marques">Signes et Marques Spéciales</h2>
+            <p>Des formations particulières comme la ligne simienne, le "M" sur la paume, les petites croix, la croix mystique, l'anneau de Salomon, les îlots, les étoiles ou les lignes doubles portent des significations spéciales dans la tradition chiromantique.</p>
+            <p>Des formations particulières comme la ligne simienne, le "M" sur la paume, les petites croix, la croix mystique, l'anneau de Salomon, les îlots, les étoiles ou les lignes doubles portent des significations spéciales dans la tradition chiromantique.</p>
+
+            <h2 id="perspective-scientifique">Perspective Scientifique et Critique</h2>
+            <p>La communauté scientifique maintient une position claire : aucune étude scientifique n'a jamais corroboré les postulats de la chiromancie. L'apparente précision s'explique par des phénomènes psychologiques comme l'effet Barnum et le biais de confirmation. Les praticiens habiles utilisent aussi des techniques de "lecture à froid".</p>
+            <p>La communauté scientifique maintient une position claire : aucune étude scientifique n'a jamais corroboré les postulats de la chiromancie. L'apparente précision s'explique par des phénomènes psychologiques comme l'effet Barnum et le biais de confirmation. Les praticiens habiles utilisent aussi des techniques de "lecture à froid".</p>
+
+            <h2 id="applications-contemporaines">Applications Contemporaines et Développement Personnel</h2>
+            <p>En 2025, la chiromancie est perçue comme un outil d'introspection et de développement personnel. Elle s'intègre dans des pratiques de bien-être, le coaching professionnel et même des événements de loisirs. L'univers digital, avec ses applications et formations en ligne, a transformé son apprentissage. Elle se combine souvent avec l'astrologie, la numérologie ou la méditation pour une approche holistique.</p>
+            <p>En 2025, la chiromancie est perçue comme un outil d'introspection et de développement personnel. Elle s'intègre dans des pratiques de bien-être, le coaching professionnel et même des événements de loisirs. L'univers digital, avec ses applications et formations en ligne, a transformé son apprentissage. Elle se combine souvent avec l'astrologie, la numérologie ou la méditation pour une approche holistique.</p>
+
+            <hr>
+            <h2 id="conclusion">Conclusion</h2>
+            <p>La chiromancie demeure une pratique fascinante. Bien que la science moderne ne valide pas ses prétentions prédictives, elle conserve une valeur indéniable comme outil d'introspection. Elle offre un miroir symbolique pour explorer les différentes facettes de sa personnalité. N'oubliez jamais que vous êtes la seule personne à pouvoir influencer réellement votre futur. Les informations issues de la chiromancie sont là pour vous guider, mais les décisions finales vous appartiennent.</p>
+            <p>La chiromancie demeure une pratique fascinante. Bien que la science moderne ne valide pas ses prétentions prédictives, elle conserve une valeur indéniable comme outil d'introspection. Elle offre un miroir symbolique pour explorer les différentes facettes de sa personnalité. N'oubliez jamais que vous êtes la seule personne à pouvoir influencer réellement votre futur. Les informations issues de la chiromancie sont là pour vous guider, mais les décisions finales vous appartiennent.</p>
+
+            <hr>
+            <h2 id="sources">Sources</h2>
+            <ul>
+                <li><a href="https://www.insightfultake.com/details/palmistry-is-storytelling-based-on-psychological-analysis" target="_blank">https://www.insightfultake.com/details/palmistry-is-storytelling-based-on-psychological-analysis</a></li>
+                <li><a href="https://www.boutique-esoterique-soeurs.fr/blogs/boutique-esoterique-blog-esoterique/chiromancie-debuter-guide-complet" target="_blank">https://www.boutique-esoterique-soeurs.fr/blogs/boutique-esoterique-blog-esoterique/chiromancie-debuter-guide-complet</a></li>
+                <li><a href="http://www.rouillier.com/chiro/histoire/origine.html" target="_blank">http://www.rouillier.com/chiro/histoire/origine.html</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Palmistry" target="_blank">https://en.wikipedia.org/wiki/Palmistry</a></li>
+                <li><a href="https://www.vinzmagicien.com/actualites/chiromancie/" target="_blank">https://www.vinzmagicien.com/actualites/chiromancie/</a></li>
+                <li><a href="https://www.effortlessarabic.com/blog/education-center-3/the-secrets-in-your-hands-14" target="_blank">https://www.effortlessarabic.com/blog/education-center-3/the-secrets-in-your-hands-14</a></li>
+                <li><a href="https://www.astrologiesiderale.com/chiromancie-ceciliastrologue/" target="_blank">https://www.astrologiesiderale.com/chiromancie-ceciliastrologue/</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Chiromancie" target="_blank">https://fr.wikipedia.org/wiki/Chiromancie</a></li>
+                <li><a href="https://www.phillyvoice.com/palm-readings-how-pseudo-science/" target="_blank">https://www.phillyvoice.com/palm-readings-how-pseudo-science/</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.insightfultake.com/details/palmistry-is-storytelling-based-on-psychological-analysis" target="_blank">https://www.insightfultake.com/details/palmistry-is-storytelling-based-on-psychological-analysis</a></li>
+                <li><a href="https://www.boutique-esoterique-soeurs.fr/blogs/boutique-esoterique-blog-esoterique/chiromancie-debuter-guide-complet" target="_blank">https://www.boutique-esoterique-soeurs.fr/blogs/boutique-esoterique-blog-esoterique/chiromancie-debuter-guide-complet</a></li>
+                <li><a href="http://www.rouillier.com/chiro/histoire/origine.html" target="_blank">http://www.rouillier.com/chiro/histoire/origine.html</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Palmistry" target="_blank">https://en.wikipedia.org/wiki/Palmistry</a></li>
+                <li><a href="https://www.vinzmagicien.com/actualites/chiromancie/" target="_blank">https://www.vinzmagicien.com/actualites/chiromancie/</a></li>
+                <li><a href="https://www.effortlessarabic.com/blog/education-center-3/the-secrets-in-your-hands-14" target="_blank">https://www.effortlessarabic.com/blog/education-center-3/the-secrets-in-your-hands-14</a></li>
+                <li><a href="https://www.astrologiesiderale.com/chiromancie-ceciliastrologue/" target="_blank">https://www.astrologiesiderale.com/chiromancie-ceciliastrologue/</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Chiromancie" target="_blank">https://fr.wikipedia.org/wiki/Chiromancie</a></li>
+                <li><a href="https://www.phillyvoice.com/palm-readings-how-pseudo-science/" target="_blank">https://www.phillyvoice.com/palm-readings-how-pseudo-science/</a></li>
+            </ul>
+        </main>
+    <div class="pagination-nav">
+        <a href="astrologie-exploration.html" class="prev-page">Page Précédente : Astrologie : Exploration et Perspectives</a>
+        <a href="guide-tirages-cartes.html" class="next-page">Page Suivante : Guide Complet des Tirages de Cartes et d'Oracle</a>
+    </div>
+    </div>
+    <!-- Pied de page -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script>
+        document.getElementById('toggle-toc').addEventListener('click', function() {
+            var tocContainer = document.getElementById('toc-container');
+            if (tocContainer.style.display === 'none') {
+                tocContainer.style.display = 'block';
+                this.textContent = 'Masquer la Table des Matières';
+            } else {
+                tocContainer.style.display = 'none';
+                this.textContent = 'Afficher la Table des Matières';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('toggle-toc').addEventListener('click', function() {
+            var tocContainer = document.getElementById('toc-container');
+            if (tocContainer.style.display === 'none') {
+                tocContainer.style.display = 'block';
+                this.textContent = 'Masquer la Table des Matières';
+            } else {
+                tocContainer.style.display = 'none';
+                this.textContent = 'Afficher la Table des Matières';
+            }
+        });
+    </script>
+      <div class="btn-accueil-wrapper">
+        <a href="/index.html" class="btn-accueil">Accueil</a>
+      </div>
+</body>
+</html>

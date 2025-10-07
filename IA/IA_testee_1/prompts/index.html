@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech & Mythes | Galerie & Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root { --primary: #23617f; --accent: #ffab3c; --light: #f7f9fa; --shadow: #dbe4ea; }
+    body { margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--light);color:#222;}
+    header { background: var(--primary); color:#fff; padding:28px 0 18px 0; text-align:center; }
+    nav { text-align:center; margin-bottom:0;}
+    nav a { color:#fff; text-decoration:none; margin:0 15px; font-size:1.07em;transition:color .2s;}
+    nav a:hover { color:var(--accent);}
+    .burger { display:none;flex-direction:column;position:absolute;right:25px;top:28px;cursor:pointer;}
+    .burger span { height:4px;width:34px;margin:6px 0;background:#fff;border-radius:2px;}
+    main { max-width:980px; margin:30px auto 0; background:#fff; border-radius:14px;
+      box-shadow:0 4px 25px var(--shadow);padding:30px 22px 18px 22px; }
+    section { margin-bottom:38px;}
+    h2 { color:var(--primary); border-bottom:2px solid #23617f22; padding-bottom:6px; margin-top:0;}
+    /* Galerie */
+    .gallery-grid { display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:18px;margin:25px 0;}
+    .gallery-item { position:relative;overflow:hidden; border-radius:8px;}
+    .gallery-item img { width:100%;display:block; border-radius:7px;box-shadow:0 2px 10px #a8bfd6;}
+    .del-btn { display:none;position:absolute;top:8px;right:10px;color:#fff;font-weight:bold;background:#c33;
+      border:none;width:25px;height:25px;cursor:pointer;font-size:1.09em;border-radius:15px;}
+    .gallery-item:hover .del-btn { display:inline;}
+    .gallery-item-title {text-align:center;font-size:0.97em;color:#444;margin-top:4px;}
+    /* Blog */
+    .blog-articles { display:grid; gap:20px;}
+    .blog-article { background:#f6fbf9; border-radius:8px; padding:15px 11px; box-shadow:0 2px 7px #b8d0df44;}
+    .blog-article h3 {margin:0;}
+    .blog-article .meta {color:#23617faa;font-size:.97em;}
+    .form-section {background:#f3faff;padding:18px 15px;border-radius:8px;}
+    .form-section h3 {margin-top:0;}
+    .admin-info{font-size:0.97em;color:#777;margin-top:7px;}
+    /* Formulaires */
+    form { display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+    input[type="text"], input[type="url"], input[type="email"] {
+      font-size:1em; padding:8px;border:1px solid #a3bccc;border-radius:5px;}
+    textarea {font-size:1em;padding:8px;border-radius:5px;border:1px solid #a3bccc;min-width:210px;min-height:50px;}
+    button {background:var(--primary);color:#fff;border:none;padding:8px 18px;border-radius:6px;
+      font-size:1.09em;cursor:pointer;transition:background .2s;margin-top:6px;}
+    button:hover {background:var(--accent);}
+    .msg-alert,.msg-success { color:green;margin-left:18px;}
+    /* Lightbox */
+    #lightbox { display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+      background:rgba(41,51,59,0.85);z-index:99;justify-content:center;align-items:center;}
+    #lightbox img { max-width:92vw; max-height:88vh; border-radius:16px; box-shadow:0 0 23px #222a;}
+    #lightbox span { position:absolute;top:18px;right:44px; font-size:2.2em;color:#fff;cursor:pointer;font-weight:bold;}
+    /* Responsive */
+    @media (max-width:900px){main{padding:11px 2vw;} }
+    @media (max-width:700px){
+      .gallery-grid{grid-template-columns:repeat(auto-fit,minmax(130px,1fr));}
+      main{padding:4px 1vw;}
+      nav {display: none;}
+      nav.open {display: block; background: var(--primary);}
+      .burger { display:flex;}
+      header{padding-bottom:36px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="burger" id="burger" aria-label="Menu mobile" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+    <h1>Tech & Mythes à Hyères</h1>
+    <nav id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+      <a href="#admin">Back-office</a>
+    </nav>
+    <p style="margin-bottom:0;">Un site interactif tech et mythologie, créé pour apprendre & partager !</p>
+  </header>
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue</h2>
+      <p>Ce site est un exemple <strong>tout-en-un</strong> : blog, galerie d’images interactive, panneau admin.<br>
+        <em>Technologies utilisées : HTML – CSS – JavaScript pur (aucun serveur, tout local et sans base de données).</em>
+      </p>
+    </section>
+    <section id="galerie">
+      <h2>Galerie d’images</h2>
+      <div class="gallery-grid" id="gallery"></div>
+      <div id="lightbox"><span id="closeLightbox">&times;</span><img src="" alt="Img agrandie"></div>
+    </section>
+    <section id="blog">
+      <h2>Blog : Créations & Inspirations</h2>
+      <div class="blog-articles" id="blogArticles"></div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message..." required></textarea>
+        <button type="submit">Envoyer</button>
+        <div class="msg-alert" id="formAlert"></div>
+      </form>
+    </section>
+    <section id="admin" class="form-section">
+      <h2>🛠️ Back-office rapide</h2>
+      <h3>Ajouter une image à la galerie</h3>
+      <form id="formAddImg">
+        <input type="text" id="imgTitle" placeholder="Titre de l’image" required>
+        <input type="url" id="imgURL" placeholder="URL de l’image https://..." required>
+        <button type="submit">Ajouter</button>
+        <span class="msg-success" id="imgMsg"></span>
+      </form>
+      <h3 style="margin-top:18px;">Ajouter un article de blog</h3>
+      <form id="formAddBlog">
+        <input type="text" id="blogTitle" placeholder="Titre de l’article" required>
+        <input type="text" id="blogCat" placeholder="Catégorie (tech, mythe, local…)" required>
+        <textarea id="blogContent" placeholder="Résumé ou contenu court…" required></textarea>
+        <button type="submit">Ajouter</button>
+        <span class="msg-success" id="blogMsg"></span>
+      </form>
+      <p class="admin-info">
+        ⚠️ Aucune donnée n’est stockée : tout s’efface si vous rechargez la page.<br>
+        (Pour un vrai back-office en ligne, il faudrait PHP/MySQL ou Node.js)
+      </p>
+    </section>
+  </main>
+  <footer style="text-align:center; margin:30px 0 10px; color:#23617faa;">
+    © 2025 Philippe Jireau — Tech, Mythes, Galerie & Blog
+  </footer>
+  <script>
+    // === BURGER MENU ===
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav');
+    burger.addEventListener('click', () => { nav.classList.toggle('open'); });
+    burger.addEventListener('keypress', e => { if(e.key==='Enter') nav.classList.toggle('open'); });
+
+    // === DATA (Mémoire temporaire JS) ===
+    let images = [
+      {title:"Circuit électronique",url:"https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=400&q=80"},
+      {title:"Coucher de soleil",url:"https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400&q=80"},
+      {title:"Montagnes mythiques",url:"https://images.unsplash.com/photo-1464983953574-0892a716854b?w=400&q=80"},
+      {title:"Mer de Hyères",url:"https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400&q=80"},
+    ];
+    let articles = [
+      {title:"Prométhée et l’IA : Un feu pour l’humanité",cat:"mythe",content:"Comment le mythe de Prométhée inspire les innovations en IA. Découvrez le parallèle avec les technologies web."},
+      {title:"Framework JavaScript - L’essentiel pour débuter",cat:"tech",content:"React, Vue, Angular... Quel framework choisir pour créer vos sites ?"},
+      {title:"Hyères antique : Sur les traces des légendes",cat:"local",content:"Mythes et secrets de Hyères, sources d’inspiration pour les créateurs d’ici !"},
+    ];
+
+    // === GALERIE ===
+    const galleryDiv = document.getElementById('gallery');
+    function renderGallery() {
+      galleryDiv.innerHTML = '';
+      if(!images.length) galleryDiv.innerHTML = "<i>Aucune image actuellement.</i>";
+      images.forEach((img, idx) => {
+        galleryDiv.innerHTML += `
+          <div class="gallery-item">
+            <img src="${img.url}" alt="${img.title}" onclick="showLightbox('${img.url.replace(/w=400/,'w=900')}','${img.title}')">
+            <button class="del-btn" title="Supprimer" onclick="deleteImg(${idx})">&times;</button>
+            <div class="gallery-item-title">${img.title}</div>
+          </div>`;
+      });
+    }
+    window.deleteImg = function(idx) {
+      if(confirm("Supprimer cette image ?")) {
+        images.splice(idx,1); renderGallery();
+      }
+    }
+    renderGallery();
+
+    // === LIGHTBOX ===
+    const lightbox = document.getElementById('lightbox');
+    const lightImg = lightbox.querySelector('img');
+    const closeBtn = document.getElementById('closeLightbox');
+    window.showLightbox = function(url,alt){
+      lightImg.src = url; lightImg.alt = alt; lightbox.style.display="flex";
+    };
+    closeBtn.onclick = ()=>{ lightbox.style.display = "none";};
+    lightbox.onclick = e=>{ if(e.target===lightbox) lightbox.style.display="none";};
+
+    // === BLOG ===
+    function renderBlog(){
+      const div = document.getElementById('blogArticles');
+      div.innerHTML = '';
+      if(!articles.length) div.innerHTML = "<i>Aucun article publié.</i>";
+      articles.forEach(a=>{
+        div.innerHTML += `<div class="blog-article">
+          <h3>${a.title}</h3>
+          <div class="meta">${a.cat}</div>
+          <p>${a.content}</p>
+        </div>`;
+      });
+    }
+    renderBlog();
+
+    // === BACKOFFICE: AJOUT IMAGE ===
+    document.getElementById('formAddImg').addEventListener('submit',function(e){
+      e.preventDefault();
+      const url = document.getElementById('imgURL').value.trim();
+      const title = document.getElementById('imgTitle').value.trim();
+      if(images.some(img=>img.url===url)){
+        document.getElementById('imgMsg').textContent="Image déjà présente !";
+        return;
+      }
+      images.push({title,url});
+      renderGallery();
+      document.getElementById('imgMsg').textContent="Image ajoutée !";
+      this.reset();
+      setTimeout(()=>{document.getElementById('imgMsg').textContent="";},1500);
+    });
+
+    // === BACKOFFICE: AJOUT ARTICLE ===
+    document.getElementById('formAddBlog').addEventListener('submit',function(e){
+      e.preventDefault();
+      const title = document.getElementById('blogTitle').value.trim();
+      const cat = document.getElementById('blogCat').value.trim();
+      const content = document.getElementById('blogContent').value.trim();
+      if(articles.some(a=>a.title===title)){
+        document.getElementById('blogMsg').textContent="Article déjà publié !";
+        return;
+      }
+      articles.unshift({title,cat,content});
+      renderBlog();
+      document.getElementById('blogMsg').textContent="Article ajouté !";
+      this.reset();
+      setTimeout(()=>{document.getElementById('blogMsg').textContent="";},1500);
+    });
+
+    // === CONTACT DEMO ===
+    document.getElementById('contactForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      document.getElementById('formAlert').textContent="Merci, message reçu ! (formulaire de démonstration)";
+      this.reset();
+      setTimeout(()=>{document.getElementById('formAlert').textContent="";},2000);
+    });
+  </script>
+</body>
+</html>

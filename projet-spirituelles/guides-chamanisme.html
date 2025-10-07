@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez les guides spirituels et le chamanisme, un chemin ancestral vers la connaissance de soi, l'exploration des mondes invisibles et la connexion avec la nature." />
+    <meta name="keywords" content="guides spirituels, chamanisme, connaissance de soi, spiritualité, psychologie jungienne, mondes chamaniques, animaux de pouvoir, voyages chamaniques, méditation" />
+    <title>Les Guides Spirituels et le Chamanisme : Un Chemin vers la Connaissance de Soi</title>
+    <link rel="icon" type="image/jpeg" href="images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #d68c1e; /* Light orange background color */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* White veil, 70% opacity */
+            z-index: -1;
+        }
+        #text-to-read {
+            position: relative; /* Ensure content is above the veil */
+            z-index: 0;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 25px;
+            background-color: transparent; /* Ensure content background is transparent */
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            font-weight: 400;
+        }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 1em; }
+        h2 { font-size: 2em; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; margin-top: 1.5em;}
+        h3 { font-size: 1.5em; color: #34495e; margin-top: 1.2em;}
+        p, li { font-size: 1.1em; }
+        hr { border: none; border-top: 1px solid #ecf0f1; margin: 2em 0; }
+        ul { list-style-type: disc; padding-left: 25px; }
+        li { margin-bottom: 12px; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { font-weight: 600; }
+        .table-of-contents {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .table-of-contents h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .table-of-contents ul ul {
+            padding-left: 20px;
+        }
+        .table-of-contents a {
+            color: #2980b9;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        .pagination-nav {
+            display: flex;
+            justify-content: space-between; /* Align to the right */
+            margin-top: 30px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+        }
+        .pagination-nav a {
+            font-family: 'policemeta', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #d68c1e; /* Orange color */
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .pagination-nav a:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+            color: white !important;
+            text-decoration: none;
+        }
+        .pagination-nav .prev-page::before {
+            content: "◄ ";
+            margin-right: 5px;
+        }
+        .pagination-nav .next-page::after {
+            content: " ►";
+            margin-left: 5px;
+        }
+        #toggle-toc {
+            background-color: #d68c1e; /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 15px;
+            display: block; /* Make it a block element */
+            width: fit-content; /* Adjust width to content */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #toggle-toc:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+        }
+        #toc-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/cinematic-duduk-192901.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Barre de navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Contrôles d'accessibilité -->
+    <section class="accessibility-controls">
+          <div class="speech-rate-control">
+            <label for="speech-rate">Vitesse de lecture :</label>
+            <input type="range" id="speech-rate" min="0.7" max="1.3" value="0.9" step="0.1">
+          </div>
+
+          <div class="voice-gender-control">
+            <label>Voix :</label>
+            <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+            <label for="voice-female">Féminine</label>
+            <input type="radio" id="voice-male" name="voice-gender" value="male">
+            <label for="voice-male">Masculine</label>
+          </div>
+
+          <div class="speech-pitch-control">
+            <label for="speech-pitch">Hauteur de la voix :</label>
+            <input type="range" id="speech-pitch" min="0.8" max="1.4" value="1.1" step="0.1">
+          </div>
+
+          <button id="play-text">Écouter</button>
+          <button id="pause-text">Pause</button>
+          <button id="stop-text">Arrêter</button>
+        </section>
+    <div id="text-to-read">
+        <header>
+            <h1>Les Guides Spirituels et le Chamanisme : Un Chemin vers la Connaissance de Soi</h1>
+        </header>
+        <main>
+            <button id="toggle-toc">Afficher la Table des Matières</button>
+            <div id="toc-container" style="display: none;">
+                <nav class="table-of-contents">
+                    <h2>Table des Matières</h2>
+                    <ul>
+                        <li><a href="#nature-role-guides">La Nature et le Rôle des Guides Spirituels</a>
+                            <ul>
+                                <li><a href="#definition-typologie">Définition et Typologie des Guides</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#voies-connexion">Les Voies de la Connexion Spirituelle</a></li>
+                        <li><a href="#chamanisme-renaissance">Le Chamanisme : Renaissance d'une Pratique Ancestrale</a>
+                            <ul>
+                                <li><a href="#chamanisme-definition">Définition et Origines</a></li>
+                                <li><a href="#voyages-chamaniques">Les Voyages Chamaniques et les États Modifiés de Conscience</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#trois-mondes">Les Trois Mondes de la Cosmologie Chamanique</a></li>
+                        <li><a href="#animaux-pouvoir">Les Animaux de Pouvoir</a></li>
+                        <li><a href="#perspective-jungienne">Perspective Jungienne et Individuation</a></li>
+                        <li><a href="#conclusion">Conclusion : Un Chemin d'Intégration et d'Évolution</a></li>
+                        <li><a href="#sources">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>Ce document synthétise des connaissances issues du chamanisme, de la spiritualité moderne et de la psychologie jungienne pour proposer un chemin d'évolution personnelle et de découverte de soi.</p>
+
+            <h2 id="nature-role-guides">La Nature et le Rôle des Guides Spirituels</h2>
+            <h3>Définition et Typologie des Guides</h3>
+            <p>Les guides spirituels (êtres de lumière, anges) constituent une présence constante et bienveillante, respectant notre libre arbitre tout en offrant leur soutien. Leur rôle principal est de nous accompagner, protéger et assister. La communication avec eux se manifeste par des sensations, intuitions, ou symboles. Les Archanges ont des fonctions spécifiques (St Michel pour la protection, St Raphaël pour la guérison, etc.). Une distinction est faite avec les proches défunts, qui sont sur un autre plan de conscience.</p>
+
+            <h2>Les Voies de la Connexion Spirituelle</h2>
+            <p>La <strong>prière</strong> est une "véritable arme" spirituelle qui élève l'âme, pratiquée avec le cœur. La <strong>méditation</strong> et une <strong>intention claire</strong> sont également des moyens efficaces pour calmer l'esprit et se rendre disponible aux messages. L'<strong>écoute intuitive</strong> et l'attention aux <strong>signes</strong> (ressentis, synchronicités, chiffres répétés) sont des canaux privilégiés. Les <strong>rêves</strong> sont aussi un puissant canal de communication.</p>
+
+            <h2>Le Chamanisme : Renaissance d'une Pratique Ancestrale</h2>
+            <h3>Définition et Origines</h3>
+            <p>Le chamanisme est l'une des pratiques spirituelles les plus anciennes, caractérisée par une connexion profonde avec la nature et le monde invisible. Le "chaman" est un intermédiaire entre le monde des humains et celui des esprits. On observe aujourd'hui un regain d'intérêt pour cette pratique en Occident, répondant à un besoin de reconnexion à la nature. Le néo-chamanisme, fondé par Michael Harner, se concentre sur l'aspect pragmatique et thérapeutique du "core shamanism".</p>
+
+            <h3>Les Voyages Chamaniques et les États Modifiés de Conscience</h3>
+            <p>Les voyages chamaniques, souvent accompagnés par le rythme du tambour ("le cheval du chaman"), permettent d'explorer des états de conscience modifiés. Le battement régulier (180-220 bpm) synchronise les ondes cérébrales en état alpha ou thêta, produisant des modifications EEG spécifiques.</p>
+
+            <h2>Les Trois Mondes de la Cosmologie Chamanique</h2>
+            <p>La cosmologie chamanique s'organise autour de trois mondes principaux :</p>
+            <ul>
+                <li><strong>Le Monde Inférieur :</strong> Domaine tellurique, lié aux énergies de la Terre et aux esprits animaux.</li>
+                <li><strong>Le Monde Moyen :</strong> Notre monde physique avec sa face invisible, habité par les esprits des plantes, arbres, objets, etc.</li>
+                <li><strong>Le Monde Supérieur :</strong> Domaine des énergies pures, des enseignants et des guides spirituels.</li>
+            </ul>
+
+            <h2>Les Animaux de Pouvoir</h2>
+            <p>Aussi appelés animaux totems, ils sont des esprits protecteurs essentiels dans la tradition chamanique. La rencontre se fait souvent lors de voyages dans le Monde Inférieur. Chaque animal symbolise des qualités spécifiques (l'ours pour la force, le cerf pour la douceur, le serpent pour la transformation).</p>
+
+            <h2>Perspective Jungienne et Individuation</h2>
+            <p>La vision jungienne présente l'individuation comme le processus pour devenir un être unique, visant la réalisation du Soi. Ce document aborde aussi les archétypes jungiens comme l'Anima/Animus (la part féminine/masculine en chacun) et l'Ombre (les contenus refoulés à intégrer).</p>
+
+            <hr>
+            <h2>Conclusion : Un Chemin d'Intégration et d'Évolution</h2>
+            <p>Ce document présente une synthèse des traditions spirituelles ancestrales et des compréhensions contemporaines. L'intégration des pratiques chamaniques, de la guidance spirituelle et des principes jungiens propose une approche holistique du développement spirituel. Le chemin spirituel est une aventure unique, jalonnée d'enseignements et de défis, dont l'objectif ultime demeure la cultivation de l'amour, de la paix et de la joie.</p>
+
+            <hr>
+            <h2>Sources</h2>
+            <ul>
+                <li><a href="https://vivreencomminges.org/doc/Anthroposophie/Steiner_Rudolf_-_Chemin_Connaisance_Soi_EP_1925.pdf" target="_blank">https://vivreencomminges.org/doc/Anthroposophie/Steiner_Rudolf_-_Chemin_Connaisance_Soi_EP_1925.pdf</a></li>
+                <li><a href="https://morgan-austin.com/guide-lumiere-trouver-chemin-spirituel/" target="_blank">https://morgan-austin.com/guide-lumiere-trouver-chemin-spirituel/</a></li>
+                <li><a href="https://lesradieuses.com/les-guides-spirituels-vos-allies/" target="_blank">https://lesradieuses.com/les-guides-spirituels-vos-allies/</a></li>
+                <li><a href="https://vawanda.com/le-chamanisme-une-pratique-spirituelle-ancestrale/" target="_blank">https://vawanda.com/le-chamanisme-une-pratique-spirituelle-ancestrale/</a></li>
+                <li><a href="https://obsidian-dragons.com/blogs/esoterisme/chamanisme-dans-le-monde-origines-et-pratiques-ancestrales" target="_blank">https://obsidian-dragons.com/blogs/esoterisme/chamanisme-dans-le-monde-origines-et-pratiques-ancestrales</a></li>
+                <li><a href="https://fr.wikipedia.org/wiki/Chamanisme" target="_blank">https://fr.wikipedia.org/wiki/Chamanisme</a></li>
+                <li><a href="https://cic-info.ch/les-chamanismes-contemporains-entre-le-local-et-le-global/" target="_blank">https://cic-info.ch/les-chamanismes-contemporains-entre-le-local-et-le-global/</a></li>
+            </ul>
+        </main>
+    <div class="pagination-nav">
+        <a href="guide-tirages-cartes.html" class="prev-page">Page Précédente : Guide Complet des Tirages de Cartes et d'Oracle</a>
+        <a href="guides-spirituels-intuition.html" class="next-page">Page Suivante : Explorer le Monde des Guides Spirituels et de l'Intuition</a>
+    </div>
+    </div>
+    <!-- Pied de page -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script>
+        document.getElementById('toggle-toc').addEventListener('click', function() {
+            var tocContainer = document.getElementById('toc-container');
+            if (tocContainer.style.display === 'none') {
+                tocContainer.style.display = 'block';
+                this.textContent = 'Masquer la Table des Matières';
+            } else {
+                tocContainer.style.display = 'none';
+                this.textContent = 'Afficher la Table des Matières';
+            }
+        });
+    </script>
+      <div class="btn-accueil-wrapper">
+        <a href="/index.html" class="btn-accueil">Accueil</a>
+      </div>
+</body>
+</html>

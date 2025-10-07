@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez une introduction à la mythologie égyptienne, son panthéon de dieux, ses mythes fondateurs et ses rituels funéraires, essentiels à la compréhension de l'Égypte ancienne." />
+    <meta name="keywords" content="mythologie égyptienne, dieux égyptiens, panthéon égyptien, rituels funéraires, Osiris, Isis, Horus, Râ, Égypte ancienne" />
+    <title>Mythologie Égyptienne : Introduction</title>
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <audio id="background-music">
+        <source src="../audio/egypt-expedition-threatful-shadows-119129.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+    </section>
+      
+    <div id="text-to-read">
+        <header>
+            <h1>La Mythologie Égyptienne</h1>
+        </header>
+        <main>
+            <div class="table-of-contents">
+                <h3>Table des matières</h3>
+                <ul>
+                    <li><a href="#introduction">Introduction : Un Monde de Dieux et de Mythes</a></li>
+                    <li><a href="#pantheon">Le Panthéon des Dieux Égyptiens</a></li>
+                    <li><a href="#rituels-funeraires">Les Rituels Funéraires : Le Voyage vers l'Éternité</a></li>
+                    <li><a href="#bibliographie">Bibliographie</a></li>
+                </ul>
+            </div>
+            <p>La mythologie égyptienne est un système complexe de croyances, de mythes et de rituels qui a façonné la civilisation de l'Égypte ancienne pendant des millénaires. Loin d'être une simple collection d'histoires, elle était le fondement de la vie quotidienne, expliquant la création du monde, les phénomènes naturels, le cycle de la vie et de la mort, et la légitimité du pouvoir pharaonique.</p>
+            
+            <h2 id="introduction">Introduction : Un Monde de Dieux et de Mythes</h2>
+            <p>Les anciens Égyptiens vivaient dans un monde où le divin était omniprésent. Chaque aspect de leur existence, de la crue annuelle du Nil à la succession des pharaons, était interprété à travers le prisme de leurs dieux et de leurs mythes. Cette mythologie, riche et foisonnante, a évolué au fil des dynasties, intégrant de nouvelles divinités et adaptant ses récits pour refléter les changements politiques et sociaux.</p>
+
+            <h2 id="pantheon">Le Panthéon des Dieux Égyptiens</h2>
+            <p>Le panthéon égyptien est peuplé de centaines de divinités, souvent représentées sous des formes hybrides (humaines et animales), chacune ayant des fonctions et des attributs spécifiques. De Rê, le dieu soleil créateur, à Osiris, le souverain des morts, en passant par Isis, la déesse mère magicienne, et Horus, le protecteur de la royauté, ces dieux incarnaient les forces de la nature et les principes fondamentaux de l'ordre cosmique (Maât).</p>
+            <p>Pour découvrir les principales divinités et leurs rôles, visitez notre page dédiée : <a href="./pantheon-dieux.html">Le Panthéon des Dieux Égyptiens</a>.</p>
+
+            <h2 id="rituels-funeraires">Les Rituels Funéraires : Le Voyage vers l'Éternité</h2>
+            <p>La croyance en une vie après la mort était centrale dans la pensée égyptienne. Les rituels funéraires, dont la momification et le jugement de l'âme, étaient des étapes cruciales pour assurer le passage du défunt vers l'au-delà. Le mythe d'Osiris, avec sa mort et sa résurrection, servait de modèle pour ce voyage éternel, offrant à chaque Égyptien l'espoir de vaincre la mort et de renaître dans les Champs d'Ialou.</p>
+            <p>Pour en savoir plus sur les pratiques et croyances liées à la mort et à l'au-delà, consultez notre page : <a href="./religion-funeraire.html">Les Rituels Funéraires : Le Voyage vers l'Éternité</a>.</p>
+
+            <h2 id="bibliographie">Bibliographie</h2>
+            <p>Pour approfondir vos connaissances sur la mythologie égyptienne, consultez les ouvrages de référence sur notre page de <a href="./bibliographie.html">bibliographie</a>.</p>
+        </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+</body>
+</html>

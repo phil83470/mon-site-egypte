@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La VIe dynastie égyptienne, marquée par le long règne de Pépi II, l'affaiblissement du pouvoir royal et la fin de l'Ancien Empire."
+    />
+    <meta
+      name="keywords"
+      content="Égypte ancienne, VIe dynastie, Téti, Pépi Ier, Pépi II, Ancien Empire, nomarques, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>La VIe dynastie - Le Crépuscule de l'Ancien Empire</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+       <div id="text-to-read">
+      <header>
+        <h1>La VIe dynastie : Le Crépuscule de l'Ancien Empire</h1>
+        <p>Environ 2345 à 2181 av. J.-C.</p>
+        <p>Une période de transition marquée par l'affaiblissement du pouvoir royal et la montée des nomarques.</p>
+    </header>
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+      <figure class="centered-image">
+  <img src="/images/generales/StoneReliefWithNameOfPepiI_RosicrucianEgyptianMuseum.JPG" 
+       alt="Relief en pierre avec le nom de Pépi Ier, pharaon de la VIe dynastie" 
+       class="page-banner-img"/>
+  <figcaption>
+    Cartouche de la VIe dynastie 
+    (<a href="https://fr.wikipedia.org/wiki/VIe_dynastie_%C3%A9gyptienne" target="_blank" rel="noopener">wikipedia.org</a>)</figcaption>
+</figure>
+
+        <p>
+          La VIe dynastie est la dernière de l'Ancien Empire. Cette période est caractérisée par un lent déclin de l'autorité royale et la montée en puissance des gouverneurs de provinces (les nomarques). Le règne extraordinairement long de Pépi II est souvent considéré comme un facteur clé de cette transition vers la Première Période Intermédiaire.
+        </p>
+      </section>
+      <section id="toc">
+        <h2>Table des matières</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#affaiblissement">L'Affaiblissement du Pouvoir Central</a></li>
+          <li><a href="#pepi-ii">Le Règne de Pépi II</a></li>
+          <li><a href="#fin-empire">La Fin de l'Ancien Empire</a></li>
+          <li><a href="#souverains">Souverains Notables</a></li>
+        </ul>
+      </section>
+
+      <section id="affaiblissement">
+        <h2>L'Affaiblissement du Pouvoir Central</h2>
+        <p>
+          Alors que les rois de la IVe dynastie exerçaient un pouvoir absolu, ceux de la VIe dynastie voient leur influence diminuer. Les nomarques, dont les charges deviennent héréditaires, accumulent richesses et pouvoir. Ils se font construire des tombes somptueuses dans leurs propres provinces, loin de la nécropole royale, et commencent à agir comme des souverains locaux, défiant l'autorité de Memphis.
+        </p>
+      </section>
+
+      <section id="pepi-ii">
+        <h2>Le Règne de Pépi II</h2>
+        <p>
+          Monté sur le trône dans son enfance, Pépi II aurait régné plus de 90 ans, l'un des plus longs règnes de toute l'histoire. Si le début de son règne est stable, sa longévité exceptionnelle a probablement créé une crise de succession et une paralysie politique à la fin de sa vie. À sa mort, le pays est affaibli et divisé, prêt à sombrer dans le chaos.
+        </p>
+      </section>
+
+      <section id="fin-empire">
+        <h2>La Fin de l'Ancien Empire</h2>
+        <p>
+          La fin de la VIe dynastie est marquée par des troubles politiques et возможно, des changements climatiques entraînant de mauvaises récoltes et des famines. L'État centralisé, qui avait fait la gloire de l'Ancien Empire, s'effondre. L'Égypte entre alors dans la Première Période Intermédiaire, une ère de fragmentation politique et d'instabilité.
+        </p>
+      </section>
+
+      <section id="souverains">
+        <h2>Souverains Notables</h2>
+        <ul>
+          <li><strong><a href="teti.html">Téti</a> :</strong> Fondateur de la dynastie, assassiné selon certaines sources.</li>
+          <li><strong><a href="pepi-i.html">Pépi Ier</a> :</strong> Un règne long et actif, marqué par des campagnes militaires en Nubie et au Levant.</li>
+          <li><strong><a href="merenre-i.html">Mérenrê Ier</a> :</strong> Continue la politique d'expansion de son père.</li>
+          <li><strong><a href="pepi-ii.html">Pépi II</a> :</strong> Le roi au règne le plus long, dont la fin de règne coïncide avec le déclin de l'Ancien Empire.</li>
+        </ul>
+      </section>
+      </div>
+    </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

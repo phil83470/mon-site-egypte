@@ -1,0 +1,64 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description de la page" />
+    <title>Nom de la page</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <!-- Contenu principal -->
+    <main>
+      <div id="text-to-read">
+      <h1>Les grandes figures de l'Égypte ancienne</h1>
+      <p>
+        Découvrez les personnages emblématiques qui ont marqué l'histoire de
+        l'Égypte : bâtisseurs de pyramides, réformateurs religieux, reines
+        puissantes ou guerriers intrépides.
+      </p>
+
+      <section class="figure">
+        <h2>Nom du Pharaon</h2>
+        <p>
+          Brève description de son règne, ses actions marquantes, ses monuments
+          ou ses combats. Vous pouvez aussi insérer une image si besoin.
+        </p>
+        <a href="nomdynastie.html">Explorer sa dynastie →</a>
+      </section>
+
+      <section class="figure">
+        <h2>Autre Pharaon ou personnage</h2>
+        <p>
+          Un autre extrait avec un lien, une anecdote ou une période historique.
+        </p>
+        <a href="../RamsesII.html">Voir le portrait de Ramsès II →</a>
+      </section>
+
+      <!-- Ajoute autant de sections que nécessaire -->
+      </div>
+    </main>
+
+    <!-- Pied de page -->
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

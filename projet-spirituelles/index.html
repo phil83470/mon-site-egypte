@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portail vers des guides et explorations sur la spiritualité : astrologie, chamanisme, intuition, et plus encore."
+    />
+    <meta
+      name="keywords"
+      content="spiritualité, guide, astrologie, chamanisme, intuition, kabbale, chiromancie, cartes"
+    />
+    <meta name="author" content="Explorations Spirituelles" />
+    <link rel="icon" type="image/jpeg" href="images/oeil-horus.jpg" />
+    <title>Accueil - Explorations Spirituelles</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+    <style>
+          body {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+              line-height: 1.7;
+              color: #333;
+              background-image: url('images/yoga-8676568_1920.jpg');
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              margin: 0; /* Remove default body margin */
+              padding: 0; /* Remove default body padding */
+          }
+          #text-to-read {
+              position: relative; /* Ensure content is above the veil */
+              z-index: 0;
+              max-width: 900px;
+              margin: 20px auto;
+              padding: 0 25px;
+              background-color: transparent; /* Ensure content background is transparent */
+          }
+          #text-to-read::before {
+              content: '';
+              position: absolute; /* Absolute to #text-to-read */
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(255, 255, 255, 0.7); /* White veil, 70% opacity */
+              z-index: -1;
+          }
+          h1, h2, h3, h4 {
+              color: #2c3e50;
+              font-weight: 400;
+          }
+          h1 { font-size: 2.5em; text-align: center; margin-bottom: 1em; }
+          h2 { font-size: 2em; border-bottom: 2px solid #19add2; padding-bottom: 10px; margin-top: 1.5em;}
+          h3 { font-size: 1.5em; color: #34495e; margin-top: 1.2em;}
+          p, li { font-size: 1.1em; }
+          hr { border: none; border-top: 1px solid #20b2d7; margin: 2em 0; }
+          ul { list-style-type: disc; padding-left: 25px; }
+          li { margin-bottom: 12px; }
+          a { color: #2980b9; text-decoration: none; }
+          a:hover { text-decoration: underline; }
+          strong { font-weight: 600; }
+
+          }
+      .hero-section {
+          position: relative;
+          min-height: 500px; /* Adjust as needed */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          text-align: center;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          padding: 50px 20px;
+      }
+
+      .hero-overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+      }
+
+      .hero-content {
+          position: relative;
+          z-index: 2;
+          max-width: 800px;
+      }
+
+      .hero-content h1 {
+          font-size: 3.5em;
+          margin-bottom: 20px;
+          color: rgb(255, 255, 255); /* Ensure text is white */
+          text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+      }
+
+      .hero-content p {
+          font-size: 1.5em;
+          margin-bottom: 30px;
+          color: #063f65; /* Ensure text is white */
+          text-align: center;
+      }
+
+      .btn-hero {
+          display: inline-block;
+          background-color: #e9b053; /* Accent color */
+          color: white !important;
+          padding: 15px 30px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 1.2em;
+          transition: background-color 0.3s ease;
+      }
+
+      .btn-hero:hover {
+          background-color: #d29a42; /* Darker accent on hover */
+          text-decoration: none;
+      }
+      .guide-carousel-container {
+          margin-top: 40px;
+          padding: 20px;
+          background-color: #fdf6e3;
+          border-radius: 10px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      .guide-carousel-container h2 {
+          text-align: center;
+          font-size: 2.5em;
+          color: #5c4522;
+          margin-bottom: 30px;
+          border-bottom: none;
+          padding-bottom: 0;
+      }
+
+      .guide-carousel .carousel-slide-item {
+          text-align: center;
+          padding: 20px;
+          outline: none; /* Remove focus outline */
+      }
+
+      .guide-carousel .carousel-slide-image {
+          max-width: 100%;
+          height: 200px; /* Fixed height for images */
+          object-fit: cover; /* Ensure images cover the area */
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          margin-bottom: 15px;
+      }
+
+      .guide-carousel .carousel-slide-content h3 {
+          font-size: 1.5em;
+          color: #34495e;
+          margin-bottom: 10px;
+          border-bottom: none;
+          padding-bottom: 0;
+      }
+
+      .guide-carousel .carousel-slide-content p {
+          font-size: 1em;
+          color: #555;
+          margin-bottom: 20px;
+      }
+
+      .guide-carousel .btn-carousel-slide {
+          display: inline-block;
+          background-color: #a17c43;
+          color: white !important;
+          padding: 10px 20px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          font-size: 1em;
+          transition: background-color 0.3s ease;
+      }
+
+      .guide-carousel .btn-carousel-slide:hover {
+          background-color: #8b6a3a;
+          text-decoration: none;
+      }
+
+      /* Slick dots and arrows custom styling */
+      .slick-prev:before, .slick-next:before {
+          color: #a17c43 !important;
+          font-size: 30px !important;
+      }
+
+      .slick-dots li button:before {
+          color: #a17c43 !important;
+          font-size: 10px !important;
+      }
+
+      .slick-dots li.slick-active button:before {
+          color: #5c4522 !important;
+      }
+    </style>
+  </head>
+  <body class="projet-spirituel">
+    <audio loop id="background-music">
+      <source src="../audio/cinematic-duduk-192901.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- Barre de navigation -->
+    <div id="nav-placeholder"></div>
+<div class="bouton-container">
+  <button class="bouton-video" onclick="ouvrirVideo('https://www.youtube.com/embed/xay0BMLnru0?si=-U0LI_Cc1oMPhSY-?autoplay=1')">
+    🎵 Lancer la musique spirituelle
+  </button>
+</div>
+
+<style>
+.bouton-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.bouton-video {
+  background: linear-gradient(45deg, #cd99e4 0%, #1472b1 100%);
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.bouton-video:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  background: linear-gradient(45deg, #764ba2 0%, #667eea 100%);
+}
+
+.bouton-video:active {
+  transform: translateY(0);
+}
+</style>
+
+
+
+    <!-- Contrôles d'accessibilité -->
+    <section class="accessibility-controls">
+      <div class="speech-rate-control">
+        <label for="speech-rate">Vitesse de lecture :</label>
+        <input
+          type="range"
+          id="speech-rate"
+          min="0.7"
+          max="1.3"
+          value="0.9"
+          step="0.1"
+        />
+      </div>
+
+      <div class="voice-gender-control">
+        <label>Voix :</label>
+        <input
+          type="radio"
+          id="voice-female"
+          name="voice-gender"
+          value="female"
+          checked
+        />
+        <label for="voice-female">Féminine</label>
+        <input type="radio" id="voice-male" name="voice-gender" value="male" />
+        <label for="voice-male">Masculine</label>
+      </div>
+
+      <div class="speech-pitch-control">
+        <label for="speech-pitch">Hauteur de la voix :</label>
+        <input
+          type="range"
+          id="speech-pitch"
+          min="0.8"
+          max="1.4"
+          value="1.1"
+          step="0.1"
+        />
+      </div>
+
+      <button id="play-text">Écouter</button>
+      <button id="pause-text">Pause</button>
+      <button id="stop-text">Arrêter</button>
+    </section>
+
+    <div id="text-to-read">
+      <header>
+        <h1>Portail des Explorations Spirituelles</h1>
+      </header>
+
+      <main>
+        <section class="hero-section intro">
+          <div class="hero-overlay"></div>
+          <div class="hero-content">
+            <p>
+              Chaque porte ouvre sur un chemin de connaissance et de découverte de soi.
+            </p>
+          </div>
+        </section>
+
+        <section class="categories">
+          <h2>Nos Guides</h2>
+          <div class="cards-container">
+            <!-- Carte 1 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Guide des Anges & de la Kabbale</h3>
+                <p>
+                  Découvrez les enseignements anciens et la sagesse des anges.
+                </p>
+                <a href="anges-kabbale-guide.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 2 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Exploration de l'Astrologie</h3>
+                <p>
+                  Plongez dans l'univers des astres et leur influence sur nos
+                  vies.
+                </p>
+                <a href="astrologie-exploration.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 3 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Guide de la Chiromancie</h3>
+                <p>
+                  Lisez les lignes de la main pour dévoiler des secrets sur la
+                  personnalité.
+                </p>
+                <a href="chiromancie-guide.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 4 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Guide des Tirages de Cartes</h3>
+                <p>
+                  Apprenez à interpréter les cartes pour obtenir des guidances
+                  et des réponses.
+                </p>
+                <a href="guide-tirages-cartes.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 5 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Les Guides du Chamanisme</h3>
+                <p>
+                  Connectez-vous avec la nature et les pratiques chamaniques.
+                </p>
+                <a href="guides-chamanisme.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 6 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Guides Spirituels & Intuition</h3>
+                <p>
+                  Développez votre intuition et apprenez à communiquer avec vos
+                  guides.
+                </p>
+                <a href="guides-spirituels-intuition.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 7 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Nature, Mécanismes de l'Intuition</h3>
+                <p>
+                  Comprenez le fonctionnement de votre sixième sens et comment
+                  le renforcer.
+                </p>
+                <a href="intuition-nature-mecanismes.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 8 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Synchronicité : Hasard ou Sens ?</h3>
+                <p>
+                  Explorez les coïncidences significatives qui jalonnent votre
+                  parcours de vie.
+                </p>
+                <a href="synchronicite-hasard-sens.html">Explorer</a>
+              </div>
+            </div>
+            <!-- Carte 9 -->
+            <div class="card">
+              <div class="card-content">
+                <h3>Thèse et Planches pour Pendule</h3>
+                <p>
+                  Initiez-vous à l'art du pendule pour la radiesthésie et la
+                  divination.
+                </p>
+                <a href="these-planches-pendule.html">Explorer</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <!-- Pied de page -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/slick.min.js"></script>
+        <div class="btn-accueil-wrapper">
+        <a href="/index.html" class="btn-accueil">Accueil</a>
+      </div>
+</body>
+</html>

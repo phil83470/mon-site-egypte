@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Découvrez Shepseskaf, le dernier pharaon de la IVe dynastie, son règne, et son monument unique, le Mastabat al-Fir'aun, à Saqqarah-Sud."
+    />
+    <meta
+      name="keywords"
+      content="Shepseskaf, pharaon, IVe dynastie, Mastabat al-Fir'aun, Saqqarah-Sud, Égypte antique, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Shepseskaf - Le Dernier Pharaon Bâtisseur de la IVe Dynastie</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/pharaohx27s-ode-293516.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>Shepseskaf : Le Dernier Pharaon Bâtisseur de la IVe Dynastie et son Monument Unique</h1>
+      <!-- Vous pouvez ajouter une image ici si vous en avez une pour Shepseskaf -->
+      <!-- <img src="/images/shepseskaf-mastaba.jpg" alt="Mastabat al-Fir'aun" class="page-banner-img" /> -->
+    </header>
+    <main>
+      <div class="container">
+        
+        <p class="intro">
+          Shepseskaf est généralement reconnu comme le **dernier souverain de la IVe dynastie** de l'Ancien Empire égyptien. Son règne, estimé à **environ quatre à sept ans**, a marqué une période de transition significative dans l'histoire égyptienne.
+        </p>
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li><a href="#vie-lignee">1. Vie et Lignée de Shepseskaf</a></li>
+            <li><a href="#regne-changements">2. Le Règne et les Changements Historiques</a></li>
+            <li><a href="#mastabat-al-firaun">3. Le Mastabat al-Fir'aun : Une Conception Tombale Révolutionnaire</a></li>
+            <li><a href="#appartements-souterrains">4. Les Appartements Funéraires Souterrains</a></li>
+            <li><a href="#fouilles">5. Histoire des Fouilles</a></li>
+            <li><a href="#heritage-importance">6. Héritage et Importance</a></li>
+          </ul>
+        </section>
+
+        <section id="vie-lignee">
+          <h2>1. Vie et Lignée de Shepseskaf</h2>
+          <ul>
+            <li>
+              <strong>Filiation</strong> : La théorie la plus répandue suggère que Shepseskaf était le **fils du pharaon Menkaure** (Mykérinos), le propriétaire de la pyramide de Menkaure à Gizeh. Cette théorie est étayée par un décret indiquant son implication dans l'achèvement du temple mortuaire de Menkaure. Cependant, certains spécialistes avancent d'autres hypothèses, comme celle qu'il aurait pu être le frère de Menkaure, ou même d'origine non royale, légitimant son règne par mariage avec la reine Khentkaus I.
+            </li>
+            <li>
+              <strong>Mère et Descendance</strong> : L'identité de sa mère est incertaine, mais Khamerernebty II, Rekhetre, ou même la reine Khentkaus I sont des candidates possibles. Il est également suggéré qu'il fut le père de Khamaat, épouse de l'officiel Ptahshepses.
+            </li>
+            <li>
+              <strong>Succession</strong> : Shepseskaf est généralement considéré comme le successeur immédiat de Menkaure, sans preuve archéologique d'un souverain intermédiaire comme Thampthis mentionné par Manéthon. Après Shepseskaf, c'est Userkaf qui monte sur le trône, fondant la Ve dynastie. Une théorie propose que la reine Khentkaus I ait pu régner brièvement entre Shepseskaf et Userkaf, agissant comme un pont entre les deux dynasties.
+            </li>
+          </ul>
+        </section>
+
+        <section id="regne-changements">
+          <h2>2. Le Règne et les Changements Historiques</h2>
+          <p>
+            Le règne de Shepseskaf, survenu probablement à la fin du XXVIe ou au milieu du XXVe siècle avant J.-C., représente une **période charnière**.
+          </p>
+          <ul>
+            <li>
+              <strong>Achèvement du Complexe de Menkaure</strong> : Une de ses réalisations administratives notables fut l'**achèvement du temple mortuaire de Menkaure**. À la mort de Menkaure, son complexe pyramidal était inachevé, et Shepseskaf ordonna son achèvement en utilisant de la **brique crue** plutôt que le granit initialement prévu. Cette décision pragmatique reflétait probablement les réalités économiques ou les ressources limitées de son court règne.
+            </li>
+            <li>
+              <strong>Décentralisation du Pouvoir et Évolution Religieuse</strong> : Son règne a également marqué le **début d'une décentralisation progressive du pouvoir** en Égypte, avec des postes administratifs élevés commençant à être occupés par des nobles d'origine non royale. Le règne de Shepseskaf s'inscrit dans une période où le **culte solaire de Rê gagnait en importance**. Les rois de la Ve dynastie, à commencer par Userkaf, mettront un accent plus marqué sur les temples solaires et le culte de Rê.
+            </li>
+          </ul>
+        </section>
+
+        <section id="mastabat-al-firaun">
+          <h2>3. Le Mastabat al-Fir'aun : Une Conception Tombale Révolutionnaire</h2>
+          <p>
+            Le monument funéraire de Shepseskaf, connu sous le nom de **Mastabat al-Fir'aun** (en arabe, "Le Banc du Pharaon"), représente une **rupture significative avec la tradition pyramidale** de ses prédécesseurs de la IVe dynastie.
+          </p>
+          <ul>
+            <li>
+              <strong>Localisation</strong> : Le Mastabat al-Fir'aun est situé à **Saqqarah-Sud**, à mi-chemin entre la pyramide à degrés de Djoser et les pyramides rouges et rhomboïdales de Snéfrou à Dahchour. Ce choix de lieu, éloigné de la nécropole dynastique de Gizeh, a intrigué les chercheurs. Certains suggèrent un **alignement délibéré avec des paysages sacrés** existants, symbolisant la continuité et l'ordre, et se rattachant au fondateur de la IVe dynastie. D'autres y voient une **décision pragmatique**, due à la proximité de carrières de calcaire et de celles de Snéfrou.
+            </li>
+            <li>
+              <strong>Nom</strong> : Le monument est connu sous le nom arabe de "Mastabat al-Fir'aun" (Le Banc du Pharaon). Son nom égyptien ancien était *Qbḥ Špss-kȝ=f*, signifiant "Shepseskaf est rafraîchi" ou "le lieu frais de Shepseskaf". Il est intéressant de noter que les inscriptions officielles désignant son complexe funéraire utilisaient souvent le **déterminatif *mer*, désignant une pyramide**, malgré sa forme non pyramidale, ce qui renforce son association aux pratiques royales funéraires.
+            </li>
+            <li>
+              <strong>Pourquoi pas une Pyramide ?</strong> : Plusieurs théories tentent d'expliquer la décision de Shepseskaf de construire un mastaba plutôt qu'une pyramide :
+              <ul>
+                <li>
+                  **Règne court et contraintes pratiques/économiques** : Sa courte durée de règne (4 à 7 ans) aurait pu rendre difficile la construction d'une pyramide colossale, nécessitant moins de ressources et de temps. L'aspect inachevé de certaines parties internes de la tombe semble appuyer cette idée.
+                </li>
+                <li>
+                  **Raisons religieuses ou politiques** : Certains égyptologues, notamment Jaquier, y voient un **rejet du culte solaire de Rê**, de plus en plus prépondérant à cette époque, et un retour aux traditions architecturales plus anciennes, antérieures à la dominance du culte solaire. Le monument, de forme rectangulaire, est **comparé à un gigantesque sarcophage** ou à la **chapelle primitive du sanctuaire de Bouto** (Basse-Égypte), des symboles religieux anciens et significatifs.
+                </li>
+                <li>
+                  **Projet inachevé** : Une autre hypothèse suggère que Shepseskaf aurait pu initialement prévoir une pyramide mais serait décédé avant son achèvement, le monument étant alors complété à la hâte. Cependant, des études montrent que le plan d'un mastaba rectangulaire était prévu dès le départ.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Dimensions et Extérieur</strong> :
+              <ul>
+                <li>
+                  Le mastaba mesure environ **99,6 mètres de long sur 74,4 mètres de large** à sa base.
+                </li>
+                <li>
+                  Sa hauteur est d'environ **18 mètres**.
+                </li>
+                <li>
+                  Le noyau est constitué d'une **structure à deux degrés** de blocs de calcaire locaux, le degré inférieur ayant cinq assises et le supérieur étant légèrement plus court.
+                </li>
+                <li>
+                  Le revêtement extérieur était à l'origine en **calcaire de Tourah**, reposant sur une **base de granit rose d'Assouan**. L'inclinaison des parois était d'environ 61 à 69°.
+                </li>
+                <li>
+                  Le sommet du monument était **bombé ou incurvé**, avec des parapets aux extrémités nord et sud.
+                </li>
+                <li>
+                  L'utilisation de **matériaux de haute qualité** (notamment le granit d'Assouan, transporté sur des centaines de kilomètres) et de techniques de construction avancées souligne l'importance du monument, contredisant parfois l'idée d'une construction précipitée uniquement pour des raisons pratiques. Certains suggèrent que ce granit pourrait provenir des stocks non utilisés du complexe de Menkaure.
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>Le Complexe Funéraire Annexe</strong> :
+              <ul>
+                <li>
+                  Le mastaba était entouré de **deux enceintes en briques crues**.
+                </li>
+                <li>
+                  Un **temple mortuaire (haut)**, aujourd'hui largement détruit, était accolé à la face est du mastaba. Ses vestiges révèlent des éléments cohérents avec l'architecture dynastique antérieure, comme des chambres d'offrandes et des cours pavées de calcaire. Ce temple présentait des innovations, comme un double accès, ce qui n'était pas le cas dans les temples funéraires précédents.
+                </li>
+                <li>
+                  Une **chaussée en brique crue** s'étendait vers l'est depuis le temple, reliant le complexe à la nécropole environnante.
+                </li>
+                <li>
+                  De plus petites pyramides et structures auxiliaires, probablement destinées aux membres de la famille royale ou à de hauts dignitaires, entouraient le site.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section id="appartements-souterrains">
+          <h2>4. Les Appartements Funéraires Souterrains</h2>
+          <p>
+            L'agencement interne du Mastabat al-Fir'aun est remarquable par son utilisation extensive du granit et par ses similitudes avec d'autres structures royales de l'Ancien Empire.
+          </p>
+          <ul>
+            <li>
+              <strong>Entrée et Passage Descendant</strong> : L'entrée est située sur la **face nord** du monument, une tradition courante dans les tombes royales égyptiennes. Un passage descendant en granit, incliné à environ 23,5°, mène à un vestibule.
+            </li>
+            <li>
+              <strong>Couloir Horizontal et Portes à Herse</strong> : Le passage se poursuit horizontalement et est doté de **trois portes à herse (portcullises)** en granit, destinées à bloquer l'accès aux chambres funéraires. Leur épaisseur varie (16 cm pour la première, 25 cm pour les suivantes), et elles ont été trouvées partiellement abaissées.
+            </li>
+            <li>
+              <strong>Antichambre</strong> : Le couloir mène à une antichambre mesurant environ 8,31 x 3,05 mètres avec une hauteur de 5,55 mètres. Elle est construite à partir d'**énormes blocs de granit**, mais les **surfaces des murs sont en grande partie non finies**, ce qui suggère une construction précipitée ou inachevée au moment du décès de Shepseskaf. Des marques de construction ("lignes de construction") sont encore visibles sur les murs, indiquant le niveau prévu du sol.
+            </li>
+            <li>
+              <strong>Chambre Funéraire</strong> : De l'antichambre, un court passage incliné mène à la chambre funéraire. Elle mesure 7,79 mètres de long sur 3,85 mètres de large et 4,9 mètres de haut. Son **plafond voûté en granit incurvé** rappelle fortement celui de la chambre funéraire de la pyramide de Menkaure, montrant une **continuité architecturale**. Les murs, également en granit, sont majoritairement non finis.
+            </li>
+            <li>
+              <strong>Sarcophage</strong> : Des fragments d'un sarcophage, probablement en basalte ou en grauwacke et apparemment non décoré, ont été retrouvés dans l'antichambre. Son emplacement d'origine est incertain, mais il est probable qu'il ait toujours été dans la première chambre funéraire.
+            </li>
+            <li>
+              <strong>Niches et Magazines</strong> : Un long passage en cul-de-sac s'étend depuis l'angle sud-est de l'antichambre, comportant plusieurs niches le long de ses murs. Ces niches étaient probablement destinées à abriter le mobilier funéraire du roi ou ses organes internes.
+            </li>
+            <li>
+              <strong>Techniques de Construction</strong> : La structure interne du mastaba témoigne de l'application impressionnante de techniques de construction avancées, utilisant les mêmes matériaux et méthodes que le Temple de Granit près du Sphinx à Gizeh et l'Osireion à Abydos.
+            </li>
+          </ul>
+        </section>
+
+        <section id="fouilles">
+          <h2>5. Histoire des Fouilles</h2>
+          <ul>
+            <li>
+              <strong>Premières Descriptions</strong> : Le Mastabat al-Fir'aun a été décrit pour la première fois par John Perring au milieu du XIXe siècle. Karl Richard Lepsius a également visité le tombeau.
+            </li>
+            <li>
+              <strong>Premières Investigations</strong> : Les premières investigations des parties souterraines ont été menées par Auguste Mariette en 1858. Cependant, ses notes n'ont été publiées que quarante ans plus tard.
+            </li>
+            <li>
+              <strong>Fouilles Majeures</strong> : Les fouilles les plus significatives ont commencé en 1924 sous la direction de **Gustave Jéquier**, dont les découvertes détaillées furent publiées en 1928. C'est Jéquier qui a attribué le monument à Shepseskaf grâce à la découverte d'un fragment de stèle.
+            </li>
+            <li>
+              <strong>Recherches Ultérieures</strong> : Des recherches ultérieures par des universitaires tels que Maragioglio et Rinaldi au milieu du XXe siècle ont approfondi le travail de Jéquier, offrant de nouvelles interprétations des techniques de construction. Des études archéologiques récentes utilisent des technologies avancées comme le scan 3D et les études géophysiques pour explorer le site.
+            </li>
+          </ul>
+        </section>
+
+        <section id="heritage-importance">
+          <h2>6. Héritage et Importance</h2>
+          <p>
+            Bien que le règne de Shepseskaf soit souvent éclipsé par les réalisations grandioses de ses prédécesseurs, il a joué un **rôle essentiel dans la transition de la IVe à la Ve dynastie**.
+          </p>
+          <ul>
+            <li>
+              <strong>Influence Architecturale</strong> : Le design unique du mastaba de Shepseskaf, malgré sa divergence des formes pyramidales, a eu une **influence notable sur les pyramides des Ve et VIe dynasties**, notamment dans l'utilisation des portiques et des aménagements internes.
+            </li>
+            <li>
+              <strong>Continuité du Culte</strong> : Le culte de Shepseskaf a **persisté jusqu'à la fin de la VIe dynastie** et a même été réactivé pendant le Moyen Empire. Des stèles et inscriptions de cette période indiquent que des offrandes étaient faites à son culte, non pas dans le cadre d'une vénération étatique, mais comme moyen d'intercession divine pour les défunts enterrés à proximité.
+            </li>
+            <li>
+              <strong>Monument Unique</strong> : Le Mastabat al-Fir'aun demeure un **monument singulier** dans l'histoire architecturale de l'Égypte. Il **jette un pont entre la grandeur de la construction pyramidale de la IVe dynastie et les pratiques mortuaires évolutives des périodes ultérieures**, offrant des informations précieuses sur la complexité de l'architecture et de l'idéologie royale égyptiennes. En choisissant une forme non pyramidale, Shepseskaf pourrait avoir établi un précédent pour des pratiques funéraires alternatives, influençant les développements ultérieurs de l'Ancien Empire.
+            </li>
+          </ul>
+        </section>
+      <div class="pagination-nav no-speech">
+          <a href="/pages/menkaoure.html" class="nav-prev">Menkaourê</a>
+          <a href="/pages/djedefptah.html" class="nav-next">Djédefptah</a>
+        </div>
+      </div>
+      
+    </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

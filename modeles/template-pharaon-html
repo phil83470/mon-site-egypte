@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nom du Pharaon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="speech-controls.js" defer></script>
+</head>
+<body>
+
+  <!-- 🎶 Musique de fond -->
+  <audio autoplay loop style="display: none;">
+    <source src="audio/egypt-expedition-the-kingdom-119123.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- 🔊 Contrôles vocaux -->
+  <section class="accessibility-controls">
+    <div>
+      <label for="speech-rate">Vitesse :</label>
+      <input type="range" id="speech-rate" min="0.7" max="1.3" value="0.9" step="0.1">
+    </div>
+    <div>
+      <label for="speech-pitch">Hauteur :</label>
+      <input type="range" id="speech-pitch" min="0.8" max="1.4" value="1.1" step="0.1">
+    </div>
+    <div>
+      <label>Voix :</label>
+      <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+      <label for="voice-female">Féminine</label>
+      <input type="radio" id="voice-male" name="voice-gender" value="male">
+      <label for="voice-male">Masculine</label>
+    </div>
+    <button id="play-text">Écouter</button>
+    <button id="pause-text">Pause</button>
+    <button id="stop-text">Arrêter</button>
+  </section>
+
+  <!-- 🏺 Contenu vocalisable -->
+  <div class="container">
+    <section id="text-to-read">
+      <h2>Nom du Pharaon</h2>
+      <p>Introduction sur ce souverain emblématique…</p>
+      <p>Son règne, ses exploits, ses temples monumentaux…</p>
+      <p>Héritage et influence historique…</p>
+    </section>
+  </div>
+</body>
+</html>

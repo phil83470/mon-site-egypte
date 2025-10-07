@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explorez les rituels funéraires de l'Égypte ancienne, de la momification à la pesée du cœur, et découvrez le voyage vers l'éternité selon les croyances égyptiennes." />
+    <meta name="keywords" content="rituels funéraires, Égypte ancienne, momification, pesée du cœur, Osiris, Anubis, Livre des Morts, au-delà, religion égyptienne, Maât" />
+    <title>Les Rituels Funéraires : Le Voyage vers l'Éternité</title>
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <audio id="background-music">
+        <source src="../audio/looming-tomb-246364.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+    </section>
+      
+    <div id="text-to-read">
+        <header>
+            <h1>Les Rituels Funéraires : Le Voyage vers l'Éternité</h1>
+            <figure class="centered-image">
+                <img src="../images/la-pesee-du-coeur.jpg" alt="Scène de la pesée du cœur, rituel funéraire égyptien" class="page-banner-pesee-du-coeur"/>
+                <figcaption>La pesée du cœur, un rituel central de la religion funéraire égyptienne.</figcaption>
+            </figure>
+        </header>
+        <main>
+            <div class="table-of-contents">
+                <h3>Table des matières</h3>
+                <ul>
+                    <li><a href="#mythe-osiris">1. Le Mythe d'Osiris : Le Modèle de la Résurrection</a></li>
+                    <li><a href="#momification">2. La Momification : Préserver le Corps pour l'Éternité</a></li>
+                    <li><a href="#jugement-ame">3. Le Jugement de l'Âme : La Pesée du Cœur</a>
+                        <ul>
+                            <li><a href="#scene-jugement">La Scène du Jugement</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                    
+                </ul>
+            </div>
+            <p>Pour les anciens Égyptiens, la mort n'était pas une fin, mais le début d'un périlleux voyage vers une nouvelle existence. La survie dans l'au-delà n'était cependant pas garantie. Elle nécessitait une préparation méticuleuse du corps et de l'esprit, encadrée par une série de rituels complexes et profondément symboliques.</p>
+            
+            <h2 id="mythe-osiris">1. Le Mythe d'Osiris : Le Modèle de la Résurrection</h2>
+            <p>Le fondement de toutes les croyances funéraires égyptiennes repose sur le <strong>mythe d'Osiris</strong>. Roi bienveillant assassiné par son frère jaloux Seth, Osiris fut démembré et dispersé à travers l'Égypte. Sa fidèle épouse Isis, avec l'aide d'Anubis, rassembla son corps, le reconstitua et, par sa magie, le ramena à la vie. Devenu la première momie, Osiris ne régna plus sur la terre mais devint le souverain du royaume des morts. Sa victoire sur la mort offrit à chaque Égyptien l'espoir de sa propre résurrection. Le but de chaque défunt était de "devenir un Osiris", d'être justifié et de renaître à la vie éternelle.</p>
+
+            <h2 id="momification">2. La Momification : Préserver le Corps pour l'Éternité</h2>
+            <p>La conservation du corps était une condition indispensable à la survie de l'âme. Ce processus sacré, qui pouvait durer jusqu'à 70 jours, était supervisé par des prêtres spécialisés sous la protection du dieu <strong>Anubis</strong>, l'embaumeur divin.</p>
+            <ul>
+                <li><strong>L'Éviscération :</strong> Le cerveau et les principaux organes (poumons, foie, estomac, intestins) étaient retirés pour stopper la décomposition. Le cœur, siège de la conscience, était laissé en place. Les organes extraits étaient conservés dans des vases sacrés, les <strong>vases canopes</strong>.</li>
+                <li><strong>La Déshydratation :</strong> Le corps était ensuite entièrement recouvert de <strong>natron</strong>, un sel naturel qui absorbait toute l'humidité des tissus pendant plusieurs semaines.</li>
+                <li><strong>Le Bandelettage :</strong> Une fois le corps parfaitement desséché, il était enveloppé dans des centaines de mètres de bandelettes de lin, entre lesquelles des amulettes protectrices étaient insérées pour le protéger des dangers de l'au-delà.</li>
+            </ul>
+            <p>Le rituel s'achevait par la cérémonie de <strong>l'Ouverture de la Bouche</strong>, qui rendait magiquement au défunt l'usage de ses sens pour sa nouvelle vie.</p>
+
+            <h2 id="jugement-ame">3. Le Jugement de l'Âme : La Pesée du Cœur</h2>
+            <p>Une fois le corps préparé, l'âme du défunt devait affronter l'épreuve ultime : le jugement divin, décrit en détail dans le chapitre 125 du <strong>Livre des Morts</strong>. Cette scène se déroulait dans la "Salle des Deux Maât" devant un tribunal présidé par Osiris.</p>
+            <h3 id="scene-jugement">La Scène du Jugement</h3>
+            <p>Guidé par Anubis, le défunt se présentait devant la grande balance. Sur un plateau, on plaçait son <strong>cœur</strong> (<em>ib</em>) ; sur l'autre, la <strong>plume de Maât</strong>, symbole de la vérité et de la justice. Pendant la pesée, le défunt récitait la "Confession Négative", niant avoir commis 42 péchés.</p>
+            <ul>
+                <li><strong>Le rôle de Thot :</strong> Le dieu à tête d'ibis, <strong>Thot</strong>, scribe des dieux, notait le résultat avec une impartialité absolue.</li>
+                <li><strong>Le Verdict :</strong> Si le cœur était aussi léger que la plume, le défunt était déclaré <em>Maa-kheru</em> ("Juste de Voix") et accédait aux Champs d'Ialou, le paradis égyptien. Si le cœur, alourdi par les fautes, pesait plus lourd, il était jeté à la déesse <strong>Ammout</strong>, "la Dévoreuse", condamnant le défunt à l'anéantissement définitif.</li>
+            </ul>
+
+            <h2 id="conclusion">Conclusion</h2>
+            <p>Les rituels funéraires égyptiens formaient un système cohérent où le mythe, la science (l'embaumement) et la morale (le jugement) s'unissaient pour offrir une réponse à l'angoisse de la mort. Chaque étape était conçue pour transformer le mortel en un être divin, un Osiris justifié, prêt à naviguer sur les eaux de l'éternité.</p>
+
+            <h2 id="bibliographie">Bibliographie</h2>
+            <p>Pour approfondir ce sujet fascinant, n'hésitez pas à consulter les ouvrages de référence sur notre page de <a href="./bibliographie.html">bibliographie</a>.</p>
+        </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biographie détaillée du pharaon Pepi Ier, successeur de Téti, et son rôle dans la VIe dynastie de l'Égypte ancienne.">
+    <meta name="keywords" content="Pepi I, Meryre, VIe dynastie, Ancien Empire, pharaon, Égypte ancienne, pyramide, Saqqarah, Ouni, histoire égyptienne">
+    <meta name="author" content="Site Egypte Ancienne">
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg">
+    <title>Pepi Ier - Le Pharaon Bâtisseur</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/egypt-expedition-the-kingdom-119123.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+            <label for="speech-rate">Vitesse de lecture :</label>
+            <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+        <div class="voice-gender-control">
+            <label>Voix :</label>
+            <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+            <label for="voice-female">Féminine</label>
+            <input type="radio" id="voice-male" name="voice-gender" value="male">
+            <label for="voice-male">Masculine</label>
+        </div>
+        <div class="speech-pitch-control">
+            <label for="speech-pitch">Hauteur de la voix :</label>
+            <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+    </section>
+
+    <div id="text-to-read">
+        <header>
+            <h1>Pepi Ier Meryrê : Le Pharaon Bâtisseur de la VIe Dynastie</h1>
+            <p>Un règne long et puissant, marqué par l'expansion et un programme de construction sans précédent.</p>
+        </header>
+        <main>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <figure class="centered-image">
+                    <img src="/images/generales/StoneReliefWithNameOfPepiI_RosicrucianEgyptianMuseum.JPG" alt="Relief en pierre avec le nom de Pepi Ier" class="page-banner-img">
+                    <figcaption>Relief en pierre avec le nom de Pepi Ier. (<a href="https://egyptianmuseum.org/" target="_blank" rel="noopener">Rosicrucian Egyptian Museum</a>)</figcaption>
+                </figure>
+                <p>Pepi Ier, dont le nom de trône était Meryrê ("Aimé de Rê"), fut le troisième pharaon de la VIe dynastie de l'Ancien Empire. Son règne, d'une durée d'environ 50 ans, est l'un des plus dynamiques de cette période. Il a hérité d'un royaume en proie à des tensions internes et à la montée en puissance des gouverneurs locaux, mais a su imposer son autorité par une politique habile, des campagnes militaires audacieuses et, surtout, un programme de construction monumental qui a laissé son empreinte sur toute l'Égypte.</p>
+            </section>
+            <section id="toc">
+                <h2>Table des matières</h2>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#contexte">Contexte et Accession au Trône</a></li>
+                    <li><a href="#batisseur">Un Règne de Bâtisseur</a></li>
+                    <li><a href="#politique-interieure">Politique Intérieure et Administration</a></li>
+                    <li><a href="#expeditions">Expéditions Militaires et Commerciales</a></li>
+                    <li><a href="#famille">Famille et Succession</a></li>
+                    <li><a href="#heritage">Héritage</a></li>
+                </ul>
+            </section>
+
+            <section id="contexte">
+                <h2>Contexte et Accession au Trône</h2>
+                <p>Fils du pharaon Téti, fondateur de la dynastie, et de la reine Ipout Ire, Pepi Ier accède au pouvoir après une période d'incertitude. Le règne éphémère et mystérieux d'Ouserkarê, qui a peut-être usurpé le trône après l'assassinat de Téti, a laissé le pouvoir central affaibli. Pepi Ier a dû consolider sa légitimité, notamment en s'appuyant sur des alliances provinciales stratégiques, comme en témoigne son mariage avec les deux filles du nomarque d'Abydos, Ankhesenpépi I et Ankhesenpépi II.</p>
+            </section>
+
+            <section id="batisseur">
+                <h2>Un Règne de Bâtisseur</h2>
+                <p>Pepi Ier est sans conteste l'un des plus grands bâtisseurs de l'Ancien Empire. Son projet le plus célèbre est son complexe funéraire à Saqqarah-Sud. Le nom de sa pyramide, "Men-nefer-Pepi" ("La perfection de Pepi est établie"), a donné son nom à la capitale voisine, Memphis. Bien que sa pyramide soit plus modeste que celles de la IVe dynastie, elle contenait la plus vaste collection de "Textes des Pyramides" connue, des formules magiques destinées à assurer sa survie dans l'au-delà. Fait nouveau, il a également fait construire des pyramides pour ses reines, une pratique qui deviendra courante.</p>
+                <p>Au-delà de Saqqarah, Pepi Ier a lancé des projets de construction dans toute l'Égypte, de Dendérah à Éléphantine, affirmant ainsi la présence et la puissance du pouvoir royal dans les provinces.</p>
+            </section>
+
+            <section id="politique-interieure">
+                <h2>Politique Intérieure et Administration</h2>
+                <p>Conscient de la montée en puissance des nomarques, Pepi Ier a mené une politique de centralisation administrative. Il a nommé des fonctionnaires loyaux, souvent issus de familles non nobles, pour contrer l'influence des dynasties locales. Son long règne a permis de stabiliser le pays et de maintenir une période de prospérité économique, financée en partie par les butins de ses campagnes militaires et les revenus du commerce.</p>
+            </section>
+
+            <section id="expeditions">
+                <h2>Expéditions Militaires et Commerciales</h2>
+                <p>Le règne de Pepi Ier fut marqué par une politique étrangère agressive. Sous la conduite de son général Ouni, l'armée égyptienne a mené des campagnes victorieuses contre les "Habitants des sables" (Bédouins) dans le Sinaï et en Canaan. Au sud, des expéditions en Nubie ont permis de sécuriser les routes commerciales et l'accès aux précieuses ressources de la région (or, ivoire, ébène). Le commerce avec le pays de Pount et les cités de la côte levantine, comme Byblos, a également connu un essor considérable.</p>
+            </section>
+
+            <section id="famille">
+                <h2>Famille et Succession</h2>
+                <p>Pepi Ier a eu plusieurs épouses, mais ses deux reines principales, Ankhesenpépi I et II, ont joué un rôle crucial. Elles lui ont donné ses deux successeurs : Merenrê Nemtyemsaf Ier, fils de l'aînée, et Pepi II, né de la cadette alors que le roi était déjà âgé. Le règne a cependant été secoué par une conspiration de harem, menée par une épouse secondaire, démontrant les tensions qui pouvaient exister au sein de la cour royale.</p>
+            </section>
+
+            <section id="heritage">
+                <h2>Héritage</h2>
+                <p>Pepi Ier a laissé une Égypte puissante et prospère. Cependant, la décentralisation du pouvoir au profit des élites provinciales, un processus qu'il a tenté de contenir, s'est poursuivie après lui. Son règne est souvent considéré comme l'apogée de la VIe dynastie, un dernier grand sursaut de l'Ancien Empire avant le lent déclin qui mènera à la Première Période Intermédiaire. Son héritage architectural et les textes de sa pyramide restent des témoignages inestimables de la richesse culturelle et spirituelle de son temps.</p>
+            </section>
+            <div class="pagination-nav no-speech">
+            <a href="teti.html" class="prev-page">Téti</a>
+            <a href="merenre-i.html" class="next-page">Merenrê Ier</a>
+        </div>
+        </main>
+
+        
+
+        <div class="btn-accueil-wrapper">
+            <a href="/index.html" class="btn-accueil">Accueil</a>
+        </div>
+        <div id="footer-placeholder"></div>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/speech.js"></script>
+        <script src="../js/active-nav.js"></script>
+    </div>
+</body>
+</html>

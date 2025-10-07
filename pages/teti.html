@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biographie du pharaon Téti, fondateur de la VIe dynastie égyptienne, son règne, son assassinat présumé et son héritage.">
+    <meta name="keywords" content="Téti, VIe dynastie, Ancien Empire, pharaon, Égypte ancienne, Saqqarah, Iput, assassinat, histoire égyptienne">
+    <meta name="author" content="Site Egypte Ancienne">
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg">
+    <title>Téti - Le Fondateur de la VIe Dynastie</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/egypt-expedition-threatful-shadows-119129.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+        fetch("/nav.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+            <label for="speech-rate">Vitesse de lecture :</label>
+            <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+        <div class="voice-gender-control">
+            <label>Voix :</label>
+            <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+            <label for="voice-female">Féminine</label>
+            <input type="radio" id="voice-male" name="voice-gender" value="male">
+            <label for="voice-male">Masculine</label>
+        </div>
+        <div class="speech-pitch-control">
+            <label for="speech-pitch">Hauteur de la voix :</label>
+            <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+    </section>
+
+    <div id="text-to-read">
+        <header>
+            <h1>Téti : Le Fondateur de la VIe Dynastie</h1>
+            <p>Un règne de transition, marqué par la pacification et une fin tragique.</p>
+        </header>
+        <main>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Téti est le premier pharaon de la VIe dynastie de l'Ancien Empire. Son règne marque une transition importante après la fin de la Ve dynastie. Bien que son temps sur le trône ait été relativement court (environ 12 ans), il a réussi à pacifier le royaume et à assurer la continuité du pouvoir, avant de connaître une fin violente qui a plongé brièvement l'Égypte dans l'incertitude.</p>
+            </section>
+            <section id="toc">
+                <h2>Table des matières</h2>
+                <ul>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#accession">L'Accession au Trône</a></li>
+                    <li><a href="#stabilite">Un Règne de Stabilité</a></li>
+                    <li><a href="#noblesse">La Montée de la Noblesse</a></li>
+                    <li><a href="#assassinat">Un Assassinat et une Succession Chaotique</a></li>
+                    <li><a href="#heritage">Héritage</a></li>
+                </ul>
+            </section>
+
+            <section id="accession">
+                <h2>L'Accession au Trône</h2>
+                <p>L'arrivée au pouvoir de Téti est un cas d'école de stratégie politique. N'étant pas le fils de son prédécesseur, Ounas, il légitime sa prétention au trône en épousant la fille de ce dernier, la princesse Ipout. Cet acte lui assure la légitimité dynastique, la royauté se transmettant par les femmes. Son nom d'Horus, "Seheteptawy" ("Celui qui pacifie les Deux Terres"), suggère qu'il a dû apaiser des tensions politiques pour consolider son pouvoir, un rôle dans lequel sa mère, la reine Sesheshet, semble avoir joué un rôle déterminant.</p>
+            </section>
+
+            <section id="stabilite">
+                <h2>Un Règne de Stabilité</h2>
+                <p>Le règne de Téti est caractérisé par la stabilité. Il maintient en place une grande partie de l'administration de son prédécesseur, assurant une transition en douceur. Il continue les grands projets de construction, érigeant son propre complexe pyramidal à Saqqarah, où les "Textes des Pyramides" continuent d'être inscrits, une pratique initiée par Ounas. Il accorde également des faveurs aux temples, notamment celui d'Abydos, qu'il exempte d'impôts, s'assurant ainsi le soutien du clergé.</p>
+            </section>
+
+            <section id="noblesse">
+                <h2>La Montée de la Noblesse</h2>
+                <p>Malgré ses efforts de centralisation, le règne de Téti voit le pouvoir des hauts fonctionnaires et des nomarques continuer de croître. Leurs tombes, ou mastabas, deviennent de plus en plus grandes et luxueuses, rivalisant presque avec celles du roi. Le mastaba de son vizir, Mererouka, est un exemple frappant de cette nouvelle richesse de l'élite, un signe avant-coureur de l'affaiblissement du pouvoir royal qui marquera la fin de l'Ancien Empire.</p>
+            </section>
+
+            <section id="assassinat">
+                <h2>Un Assassinat et une Succession Chaotique</h2>
+                <p>Selon l'historien Manéthon, le règne de Téti s'est terminé brutalement : il aurait été assassiné par ses propres gardes du corps. Cette fin tragique expliquerait la période de troubles qui a suivi sa mort. Un roi du nom d'Ouserkarê s'empare brièvement du pouvoir avant que le fils légitime de Téti, Pepi Ier, ne parvienne à monter sur le trône et à venger son père, restaurant ainsi l'ordre dynastique.</p>
+            </section>
+
+            <section id="heritage">
+                <h2>Héritage</h2>
+                <p>Téti a fondé une dynastie qui régnera sur l'Égypte pendant plus d'un siècle et demi. Bien que son règne ait été court et sa fin tragique, il a réussi à maintenir la stabilité et la prospérité de l'Égypte, tout en jetant les bases des changements politiques et sociaux qui allaient définir la VIe dynastie. Sa pyramide à Saqqarah, bien que pillée et en ruines, reste un témoignage important de son règne.</p>
+            </section>
+            <div class="pagination-nav no-speech">
+            <a href="ounas.html" class="prev-page">Ounas</a>
+            <a href="pepi-i.html" class="next-page">Pepi Ier</a>
+        </div>
+        </main>
+
+        
+
+        <div class="btn-accueil-wrapper">
+            <a href="/index.html" class="btn-accueil">Accueil</a>
+        </div>
+        <div id="footer-placeholder"></div>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/main.js"></script>
+        <script src="../js/speech.js"></script>
+        <script src="../js/active-nav.js"></script>
+    </div>
+</body>
+</html>

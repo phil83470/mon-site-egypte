@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Description de la page" />
+    <title>Nouvelle page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <main>
+      <div id="text-to-read">
+      <h1>Titre de la nouvelle page</h1>
+      <p>Ton contenu ici…</p>
+      </div>
+    </main>
+  </body>
+</html>

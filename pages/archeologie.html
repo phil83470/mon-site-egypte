@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explorez l'archéologie de l'Égypte ancienne, ses découvertes majeures et les méthodes de fouille utilisées pour révéler les secrets du passé."
+    />
+    <meta
+      name="keywords"
+      content="archéologie, Égypte ancienne, découvertes archéologiques, fouilles, pyramides, temples, vallée des Rois"
+    />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Archéologie Égyptienne</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/egypt-expedition-a-mysterious-discovery-119128.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>Archéologie de l'Égypte Ancienne</h1>
+      <p>Découvrez les trésors enfouis et les méthodes de fouille</p>
+      <img
+        src="/images/generales/archeologie.jpg"
+        alt="Site archéologique égyptien"
+        class="page-banner-img"
+      />
+    </header>
+    <main>
+      
+      <h2>Les Grandes Découvertes Archéologiques</h2>
+      <section>
+        <article>
+          <h3>La Vallée des Rois</h3>
+          <p>
+            Située sur la rive ouest du Nil, en face de Thèbes (aujourd'hui
+            Louxor), la Vallée des Rois est le lieu de sépulture de nombreux
+            pharaons et nobles du Nouvel Empire. La découverte la plus célèbre
+            est sans doute celle du tombeau de Toutânkhamon par Howard Carter en
+            1922.
+          </p>
+        </article>
+
+        <article>
+          <h3>Les Pyramides de Gizeh</h3>
+          <p>
+            Ces structures monumentales, construites pour les pharaons Khéops,
+            Khéphren et Mykérinos, sont les symboles les plus emblématiques de
+            l'Égypte ancienne. Leur construction témoigne d'une ingénierie et
+            d'une organisation sociale remarquables.
+          </p>
+        </article>
+
+        <article>
+          <h3>Abou Simbel</h3>
+          <p>
+            Deux temples massifs taillés dans la roche, construits par Ramsès
+            II. Ils ont été déplacés dans les années 1960 pour les sauver de la
+            montée des eaux du lac Nasser, un exploit d'ingénierie moderne.
+          </p>
+        </article>
+
+        <article>
+          <h3>Les Temples de Karnak et Louxor</h3>
+          <p>
+            Ces vastes complexes religieux, dédiés principalement au dieu Amon,
+            ont été construits et agrandis sur des millénaires. Ils offrent un
+            aperçu de la grandeur de l'architecture égyptienne et de la dévotion
+            religieuse.
+          </p>
+        </article>
+      </section>
+
+      <h2>Méthodes et Outils de l'Archéologie</h2>
+      <section>
+        <article>
+          <h3>Fouilles et Stratigraphie</h3>
+          <p>
+            Les archéologues utilisent des techniques de fouille méticuleuses
+            pour exhumer les vestiges, en enregistrant précisément la position
+            de chaque objet. La stratigraphie, l'étude des couches de sédiments,
+            permet de dater les découvertes.
+          </p>
+        </article>
+
+        <article>
+          <h3>Techniques Modernes</h3>
+          <p>
+            L'archéologie moderne intègre des technologies de pointe comme le
+            géoradar, la télédétection par satellite, la photogrammétrie 3D et
+            l'analyse ADN pour obtenir des informations plus précises sur les
+            sites et les artefacts.
+          </p>
+        </article>
+      </section>
+      
+    </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

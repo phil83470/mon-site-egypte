@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="La IIIe dynastie de l'Égypte ancienne, marquée par Djoser et la pyramide à degrés, symbolise l'essor architectural et politique de l'Ancien Empire." />
+    <meta name="keywords" content="IIIe dynastie, Égypte ancienne, Djoser, Djéser, pyramide à degrés, Saqqarah, Imhotep, Ancien Empire, pharaons, histoire égyptienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>3e dynastie - L'Ère des Premières Pyramides</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+      <div id="text-to-read">
+      <header>
+        <h1>Pharaons de la III<sup>e</sup> Dynastie</h1>
+        <p class="subtitle">L'Ère des Premières Pyramides</p>
+    </header>
+      <main>
+      <section id="toc">
+        <h2>Table des matières</h2>
+        <ul>
+          <li><a href="#aube">L'Aube de l'Ancien Empire</a></li>
+          <li><a href="#tableau">Tableau chronologique synthétique</a></li>
+        </ul>
+      </section>
+      
+      <section id="aube">
+        <h2>L'Aube de l'Ancien Empire</h2>
+        <p>
+          La IIIe dynastie marque une transition cruciale vers l'Ancien Empire.
+          C'est une période d'innovations majeures, notamment en architecture
+          avec la construction de la toute première pyramide, et une
+          centralisation croissante du pouvoir royal.
+        </p>
+      </section>
+      
+        <div class="tabs-content">
+          <!-- Onglet 1: Djéser -->
+          <div class="tab-pane active">
+            <h3><a href="Djeser.html">Djéser (Netjerikhet)</a></h3>
+            <p><strong>Le Bâtisseur de la Première Pyramide</strong></p>
+            <ul>
+              <li>
+                <strong>Dates de règne :</strong> Env. 2691 – 2625 av. J.-C.
+              </li>
+              <li>
+                <strong>Réalisations majeures :</strong> Il est le commanditaire
+                du complexe funéraire de Saqqarah, célèbre pour sa pyramide à
+                degrés, une révolution architecturale conçue par son vizir et
+                architecte de génie, Imhotep.
+              </li>
+              <li>
+                <strong>Importance :</strong> Son règne symbolise la puissance
+                et la stabilité d'un État capable de mobiliser des ressources
+                considérables pour des projets monumentaux. Il a mené des
+                expéditions vers le Sinaï (pour les minerais) et la Nubie.
+              </li>
+            </ul>
+          </div>
+          <!-- Oglet 2: Sekhemkhet -->
+          <div class="tab-pane">
+            <h3><a href="sekhemkhet.html">Sekhemkhet (Djoser-Téti)</a></h3>
+            <p><strong>Le Successeur Méconnu</strong></p>
+            <ul>
+              <li>
+                <strong>Dates de règne :</strong> Env. 2611 – 2603 av. J.-C.
+              </li>
+              <li>
+                <strong>Projet inachevé :</strong> Il a commencé la construction
+                d'une pyramide à degrés à Saqqarah, non loin de celle de Djoser.
+                Découverte en 1951, elle était inachevée et son sarcophage a été
+                retrouvé scellé mais vide.
+              </li>
+              <li>
+                <strong>Héritage :</strong> Bien que son règne fût court, il
+                montre la continuité des ambitions architecturales de la
+                dynastie, poursuivant l'œuvre de son prédécesseur.
+              </li>
+            </ul>
+          </div>
+          <!-- Onglet 3: Autres Souverains -->
+          <div class="tab-pane">
+            <h3><a href="Khaba.html">Khaba</a> et <a href="Houni.html">Houni</a></h3>
+            <p><strong>La Fin de la Dynastie</strong></p>
+            <ul>
+              <li>
+                <strong>Khaba (env. 2603 – 2599 av. J.-C.) :</strong> On lui
+                attribue une autre pyramide inachevée, la "Layer Pyramid" à
+                Zawiyet el-Aryan. Son règne reste très obscur.
+              </li>
+              <li>
+                <strong>Houni (env. 2599 – 2575 av. J.-C.) :</strong> Considéré
+                comme le dernier roi de la dynastie, il a probablement initié
+                des constructions importantes, mais les attributions restent
+                débattues par les égyptologues. Il est souvent vu comme le père
+                de Snéfrou, le fondateur de la IVe dynastie.
+              </li>
+            </ul>
+          </div>
+        </div>
+      
+      <section id="tableau">
+        <h2>Tableau chronologique synthétique</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nom du pharaon</th>
+              <th>Dates de règne (approximatives)</th>
+
+              <th>Réalisations notables</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Djeser</strong></td>
+              <td>Env. 2691 – 2625 av. J.-C.</td>
+              <td>Première pyramide à degrés (Saqqarah), vizirat d'Imhotep.</td>
+            </tr>
+            <tr>
+              <td><strong>Sekhemkhet</strong></td>
+              <td>Env. 2611 – 2603 av. J.-C.</td>
+              <td>Pyramide inachevée à Saqqarah.</td>
+            </tr>
+            <tr>
+              <td><strong>Khaba</strong></td>
+              <td>Env. 2603 – 2599 av. J.-C.</td>
+              <td>Pyramide à degrés inachevée de Zawiyet el-Aryan.</td>
+            </tr>
+            <tr>
+              <td><strong>Houni</strong></td>
+              <td>Env. 2599 – 2575 av. J.-C.</td>
+              <td>Transition vers la IVe dynastie.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="source">
+          Sources : J. Malek, P. Vernus, J. Yoyotte, Papyrus de Turin, Pierre de
+          Palerme, Manéthon.
+        </p>
+      </section>
+      </div>
+    </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

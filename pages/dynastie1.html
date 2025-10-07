@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="La Première Dynastie Égyptienne, marquant l'unification de la Haute et de la Basse-Égypte, est le début de l'État pharaonique."
+    />
+    <meta
+      name="keywords"
+      content="Égypte ancienne, Première Dynastie, Narmer, Hor-Aha, Djer, Den, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>La 1ère dynastie - Egypte ancienne</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>La 1ère dynastie Égyptienne</h1>
+      <p>Environ 3100 à 2890 av. J.-C.</p>
+      <p>Les Débuts de l'Ancien Empire</p>
+    </header>
+    <main>
+      <section id="toc">
+        <h2>Table des matières</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#chronologie">Chronologie</a></li>
+          <li><a href="#souverains">Souverains</a></li>
+          <li><a href="#organisation">Organisation de l'État</a></li>
+          <li><a href="#economie">Économie et Commerce</a></li>
+          <li><a href="#culture">Culture et Architecture</a></li>
+          <li><a href="#societe">Évolution de la société</a></li>
+        </ul>
+      </section>
+
+      <section id="introduction">
+        <h2>Introduction</h2>
+        <p>
+          La Première Dynastie marque le début de l’Époque Thinite, une phase
+          fondatrice qui voit l’unification de la Haute et de la Basse-Égypte.
+          C’est l’amorce de la monarchie pharaonique et de l’État centralisé
+          égyptien, dont les structures politiques, économiques et culturelles
+          jetteront les bases de plus de trois millénaires d’histoire.
+        </p>
+      </section>
+
+      <section id="chronologie">
+        <h2>Chronologie</h2>
+        <p>
+          La dynastie est généralement située entre 3100 et 2890 av. J.-C.,
+          selon les sources. Cette époque correspond à la Période Dynastique
+          Archaïque, aussi appelée Époque Thinite.
+        </p>
+      </section>
+
+      <section id="souverains">
+        <h2>Souverains</h2>
+
+        <ul class="pharaoh-list no-pyramid-icon">
+          <li>
+            <strong><a href="/pages/narmer.html">Narmer</a> :</strong> Premier roi unificateur. Identifié parfois
+            à Ménès.
+          </li>
+          <li>
+            <strong><a href="/pages/hor-aha.html">Hor-Aha</a> :</strong> Successeur, fondateur de Memphis,
+            campagnes militaires.
+          </li>
+          <li>
+            <strong><a href="/pages/djer.html">Djer</a> :</strong> Long règne, conquêtes et constructions
+            royales.
+          </li>
+          <li>
+            <strong><a href="/pages/djet.html">Djet</a> :</strong> Règne court, tombe décorée.
+          </li>          <li>
+            <strong><a href="/pages/merneith.html">Merneith</a> :</strong> Régente ou reine, première femme
+            souveraine.
+          </li>
+          <li>
+            <strong><a href="/pages/den.html">Den</a> :</strong> Grand roi, conquêtes, prospérité.
+          </li>
+          <li>
+            <strong><a href="/pages/adjib.html">Adjib</a> :</strong> Règne troublé.
+          </li>
+          <li>
+            <strong><a href="/pages/semrkhet.html">Sémerkhet</a> :</strong> Crises dynastiques.
+          </li>
+          <li>
+            <strong><a href="/pages/qa.html">Qâ</a> :</strong> Dernier roi, règne prospère.
+          </li>
+        </ul>
+      </section>
+
+      <section id="organisation">
+        <h2>Organisation de l'État</h2>
+        <p>
+          Le roi, incarnant Horus, dirige un État centralisé, organisé en nomes.
+          L’écriture hiéroglyphique évolue pour gérer une administration de plus
+          en plus complexe.
+        </p>
+      </section>
+
+      <section id="economie">
+        <h2>Économie et Commerce</h2>
+        <p>
+          Le commerce se développe grâce aux routes vers la Nubie, le Sinaï et
+          Canaan. L’agriculture prospère, soutenue par l’irrigation. L’impôt est
+          prélevé via le recensement du bétail.
+        </p>
+        <h4>Irrigation et fiscalité</h4>
+        <p>
+          Mise en place de canaux secondaires et de digues rudimentaires pour réguler les crues du Nil.
+
+          Collecte de dîmes : céréales, lin et élevage ; stockage dans des greniers royaux avant redistribution.
+        </p>
+        <h4>Spécialisation artisanale</h4>
+        <p>
+          Ateliers de poterie, bronze et cuivre (objets rituels, vaisselle).
+
+          Verriers et faïenciers pour parures et amulettes.
+        </p>
+        <h4>Réseaux d’échanges extérieurs</h4>
+        <p>
+          Nubie : or, ivoire, ébène, tributs en bestiaux.
+
+          Levant (site d’En-Besor) : cèdre, vin, huile.
+
+          Sinaï : turquoise, cuivre ; échange diplomatique plus que commercial.
+        </p>
+        <h4>Instruments d’échange</h4>
+        <p>
+          Troc organisé via poids standards (pierre et faïence).
+
+          Ébauche de registre comptable : jetons en argile et premiers hiéroglyphes comptables.
+        </p>
+      </section>
+
+      <section id="culture">
+        <h2>Culture et Architecture</h2>
+        <p>
+          Progrès en mathématiques, astronomie, médecine. Construction de
+          mastabas à Abydos. Apparition du culte de Ptah et du taureau Apis.
+          Usage du papyrus, calendrier, hiéroglyphes.
+        </p>
+        <h4>Naissance de l’écriture hiéroglyphique</h4>
+        <p>
+          Tablette de pierre gravée ; signes déjà phonétiques et logographiques.
+
+          Usage rituel et administratif.
+        </p>
+        <h4>Funéraires et religion</h4>
+        <p>
+          Mastabas à parois peintes ; chapelles pour offrandes et chapelles funéraires.
+
+          Culte divin du roi : Horus personnifié, ancêtres royaux.
+        </p>
+        <h4>Techniques de construction</h4>
+        <p>
+          Briques crues séchées au soleil, charpente en bois pour toitures.
+
+          Pierres d’importation pour seuils et socles.
+        </p>
+        <h4>Objets d’art et symboles</h4>
+        <p>
+          Palette de Narmer : scène d’unification gravée, proto-hiéroglyphes.
+
+          Amulettes en forme d’animaux et de divinités, symboles de protection.
+        </p>
+      </section>
+
+      <section id="societe">
+        <h2>Évolution de la société</h2>
+        <p>
+          Naissance des premières villes, organisation des ressources,
+          développement d’une société plus urbanisée que la Mésopotamie
+          contemporaine.
+        </p>
+        <h4>Administration naissante</h4>
+        <p>
+          Division du royaume en nomes (districts), dirigés par un nomarque.
+
+          Début de la carrière de scribe comme fonction essentielle au sein de la cour.
+        </p>
+        <h4>Hiérarchie et mobilité</h4>
+        <p>
+          Pharaon (divinisé) → grands prêtres et nobles → scribes/artisans → paysans/ouvriers.
+
+          Exemples d’élévation sociale : officiers militaires récompensés par des terres.
+        </p>
+        <h4>Rôle des femmes</h4>
+        <p>
+          Merneith et Neith-Hotep : titulature et sépultures royales attestant d’un pouvoir politique réel.
+
+          Prêtresses et gestionnaires de domaines funéraires.
+        </p>
+        <h4>Urbanisation et paysage humain</h4>
+        <p>
+          Memphis se densifie : quartiers artisanaux, bureaux de l’État, temples rudimentaires.
+
+          Migration saisonnière des paysans vers les centres de stockage et marchés funéraires.
+        </p>
+      </section>
+      </div>
+    </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

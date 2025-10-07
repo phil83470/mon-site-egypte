@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La Ve dynastie de l'Égypte ancienne, l'ère du culte solaire, des temples solaires et des Textes des Pyramides."
+    />
+    <meta
+      name="keywords"
+      content="Égypte ancienne, Ve dynastie, Ouserkaf, Sahourê, Néferirkarê, Niouserrê, Ounas, Textes des Pyramides, temple solaire, Abousir, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>La Ve dynastie - L'ère du Soleil</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+      <div id="text-to-read">
+      <header>
+        <h1>La Ve dynastie : L'Âge d'Or du Culte Solaire</h1>
+        <p>Environ 2500 à 2350 av. J.-C.</p>
+        <p>Une période de transformation religieuse et architecturale marquée par l'ascension du culte du dieu soleil Rê.</p>
+    </header>
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+       <figure class="centered-image">
+          <img
+            src="/images/generales/5th-dynastie.webp"
+            alt="La Ve dynastie de l'Égypte ancienne"
+            class="page-banner-img"/>
+          <figcaption>Image de le 5e dynastie (<a href="https://hurghadalovers.com/fifth-dynasty-of-ancient-egypt/" target="_blank" rel="noopener">hurghadalovers.com</a>)</figcaption>
+        </figure>
+        <p>
+          La Ve dynastie est une période de l'Ancien Empire marquée par une profonde transformation religieuse : l'ascension du culte du dieu soleil Rê. Les rois de cette dynastie, tout en continuant à construire des pyramides (bien que plus modestes que celles de la IVe dynastie), érigent des temples solaires spectaculaires, témoignant de la nouvelle importance de Rê dans l'idéologie royale.
+        </p>
+      </section>
+      <section id="toc">
+        <h2>Table des matières</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#temples">Les Temples Solaires et les Pyramides</a></li>
+          <li><a href="#textes">Les Textes des Pyramides</a></li>
+          <li><a href="#administration">Administration et Commerce</a></li>
+          <li><a href="#souverains">Souverains Notables</a></li>
+        </ul>
+      </section>
+
+      <section id="temples">
+        <h2>Les Temples Solaires et les Pyramides</h2>
+        <p>
+          Le changement le plus visible de cette dynastie est la construction de temples dédiés à Rê. Le plus célèbre est celui de Niouserrê à Abou Ghorab, avec son grand obélisque central. Les pyramides royales, quant à elles, sont construites à Abousir. Si leur taille est réduite, elles sont richement décorées de bas-reliefs.
+        </p>
+      </section>
+
+      <section id="textes">
+        <h2>Les Textes des Pyramides</h2>
+        <p>
+          Une innovation spirituelle et littéraire majeure apparaît à la fin de la dynastie, sous le règne d'Ounas. Pour la première fois, les parois de la chambre funéraire de la pyramide sont couvertes d'inscriptions : les Textes des Pyramides. Ces formules magiques et hymnes religieux sont destinés à garantir la renaissance et la vie éternelle du pharaon dans l'au-delà. Ils constituent le plus ancien corpus de littérature religieuse connu de l'humanité.
+        </p>
+      </section>
+
+      <section id="administration">
+        <h2>Administration et Commerce</h2>
+        <p>
+          L'administration se centralise et se complexifie. Le pouvoir des hauts fonctionnaires s'accroît, comme en témoignent leurs magnifiques mastabas. La dynastie est également marquée par des expéditions commerciales lointaines, notamment vers le pays de Pount (probablement en Somalie actuelle) pour y chercher de l'encens, de la myrrhe et de l'ivoire.
+        </p>
+      </section>
+
+      <section id="souverains">
+        <h2>Souverains Notables</h2>
+        <ul>
+          <li><a href="ouserkaf.html">Ouserkaf</a> : Fondateur de la dynastie.</li>
+          <li><a href="sahoure.html">Sahourê</a> : Connu pour ses expéditions militaires et commerciales.</li>
+          <li><a href="neferirkare-kakaii.html">Néferirkarê Kakaï</a> : Son complexe funéraire à Abousir est célèbre pour ses archives sur papyrus.</li>
+          <li><a href="niouserre.html">Niouserrê</a> : Constructeur du temple solaire d'Abou Ghorab.</li>
+          <li><a href="ounas.html">Ounas</a> : Dernier roi de la dynastie, initiateur des Textes des Pyramides.</li>
+        </ul>
+      </section>
+      <div class="pagination-nav" style="text-align: right;">
+          <a href="dynastie4.html" class="nav-prev">◄ 4e Dynastie</a>
+          <a href="dynastie6.html" class="nav-next">6e Dynastie ►</a>
+      </div>
+    </main>
+    </div>
+    
+    
+    <div class="btn-accueil-wrapper">
+      <a href="../index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez une thèse exhaustive sur les planches de pendule, un guide complet des supports de radiesthésie pour affiner vos réponses et explorer divers domaines." />
+    <meta name="keywords" content="planche de pendule, radiesthésie, guide, supports, abaque, cadran, Alfred Bovis, mesure vibratoire, chakras, géobiologie, relations, spiritualité" />
+    <title>Thèse sur les Planches de Pendule : Guide Complet des Supports de Radiesthésie</title>
+    <link rel="icon" type="image/jpeg" href="images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+                    body {
+                        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+                        line-height: 1.7;
+                        color: #333;
+                        background-color: #d68c1e; /* Light orange background color */
+                        margin: 0; /* Remove default body margin */
+                        padding: 0; /* Remove default body padding */
+                    }        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* White veil, 70% opacity */
+            z-index: -1;
+        }
+        #text-to-read {
+            position: relative; /* Ensure content is above the veil */
+            z-index: 0;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 25px;
+            background-color: transparent; /* Ensure content background is transparent */
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            font-weight: 400;
+        }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 1em; }
+        h2 { font-size: 2em; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; margin-top: 1.5em;}
+        h3 { font-size: 1.5em; color: #34495e; margin-top: 1.2em;}
+        h4 { font-size: 1.2em; color: #7f8c8d; }
+        p, li { font-size: 1.1em; }
+        hr { border: none; border-top: 1px solid #ecf0f1; margin: 2em 0; }
+        ul { list-style-type: disc; padding-left: 25px; }
+        li { margin-bottom: 12px; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { font-weight: 600; }
+        .table-of-contents {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .table-of-contents h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .table-of-contents ul ul {
+            padding-left: 20px;
+        }
+        .table-of-contents a {
+            color: #2980b9;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        .pagination-nav {
+            display: flex;
+            justify-content: flex-start; /* Align to the left for single button */
+            margin-top: 30px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+        }
+        .pagination-nav a {
+            font-family: 'policemeta', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #d68c1e; /* Orange color */
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .pagination-nav a:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+            color: white !important;
+            text-decoration: none;
+        }
+        .pagination-nav .prev-page::before {
+            content: "◄ ";
+            margin-right: 5px;
+        }
+        .pagination-nav .next-page::after {
+            content: " ►";
+            margin-left: 5px;
+        }
+        #toggle-toc {
+            background-color: #d68c1e; /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 15px;
+            display: block; /* Make it a block element */
+            width: fit-content; /* Adjust width to content */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #toggle-toc:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+        }
+        #toc-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/cinematic-duduk-192901.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Barre de navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Contrôles d'accessibilité -->
+    <section class="accessibility-controls">
+          <div class="speech-rate-control">
+            <label for="speech-rate">Vitesse de lecture :</label>
+            <input type="range" id="speech-rate" min="0.7" max="1.3" value="0.9" step="0.1">
+          </div>
+
+          <div class="voice-gender-control">
+            <label>Voix :</label>
+            <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+            <label for="voice-female">Féminine</label>
+            <input type="radio" id="voice-male" name="voice-gender" value="male">
+            <label for="voice-male">Masculine</label>
+          </div>
+
+          <div class="speech-pitch-control">
+            <label for="speech-pitch">Hauteur de la voix :</label>
+            <input type="range" id="speech-pitch" min="0.8" max="1.4" value="1.1" step="0.1">
+          </div>
+
+          <button id="play-text">Écouter</button>
+          <button id="pause-text">Pause</button>
+          <button id="stop-text">Arrêter</button>
+        </section>
+    <div id="text-to-read">
+        <header>
+            <h1>Thèse sur les Planches de Pendule : Guide Complet des Supports de Radiesthésie</h1>
+        </header>
+        <main>
+            <button id="toggle-toc">Afficher la Table des Matières</button>
+            <div id="toc-container" style="display: none;">
+                <nav class="table-of-contents">
+                    <h2>Table des Matières</h2>
+                    <ul>
+                        <li><a href="#fondements-theoriques">Les Fondements Théoriques des Planches de Pendule</a>
+                            <ul>
+                                <li><a href="#definition-principe">Définition et Principe de Fonctionnement</a></li>
+                                <li><a href="#evolution-historique">Évolution Historique et Développement</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#classification-complete">Classification Complète des Types de Planches</a>
+                            <ul>
+                                <li><a href="#planches-base">Planches de Base et Fondamentales</a>
+                                    <ul>
+                                        <li><a href="#planches-oui-non">Planches Oui/Non/Peut-être</a></li>
+                                        <li><a href="#planches-alphabetiques">Planches Alphabétiques</a></li>
+                                        <li><a href="#planches-numeriques">Planches Numériques</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#planches-mesure-vibratoire">Planches Spécialisées en Mesure Vibratoire</a>
+                            <ul>
+                                <li><a href="#cadran-bovis-classique">Le Cadran de Bovis Classique</a></li>
+                                <li><a href="#cadrans-bovis-etendus">Cadrans de Bovis Étendus</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#planches-medicales-sante">Planches Médicales et de Santé</a>
+                            <ul>
+                                <li><a href="#planches-anatomiques">Planches Anatomiques</a></li>
+                                <li><a href="#planches-chakras">Planches des Chakras et Centres Énergétiques</a></li>
+                                <li><a href="#planches-therapeutiques">Planches Thérapeutiques Naturelles</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#planches-geobiologie-recherche">Planches de Géobiologie et Recherche</a>
+                            <ul>
+                                <li><a href="#planches-detection">Planches de Détection Géobiologique</a></li>
+                                <li><a href="#planches-datation">Planches de Datation et Localisation</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#planches-relationnelles-amoureuses">Planches Relationnelles et Amoureuses</a>
+                            <ul>
+                                <li><a href="#planches-type-relation">Planches de Type de Relation</a></li>
+                                <li><a href="#planches-liens-ame">Planches des Liens d'Âme et Spirituels</a></li>
+                                <li><a href="#planches-emotionnelles">Planches Émotionnelles</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#protocoles-utilisation">Protocoles d'Utilisation et Techniques Avancées</a>
+                            <ul>
+                                <li><a href="#preparation-prealables">Préparation et Conditions Préalables</a></li>
+                                <li><a href="#calibration-convention">Calibration et Convention Mentale</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                        <li><a href="#sources">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>Cette thèse présente une analyse exhaustive de tous les types de planches existantes pour l'utilisation du pendule en radiesthésie, détaillant leurs applications spécifiques et les questions appropriées pour chaque support. L'art de la radiesthésie s'enrichit considérablement grâce à l'utilisation de planches spécialisées qui permettent de dépasser les simples réponses par oui ou non pour obtenir des informations précises et détaillées dans de nombreux domaines.</p>
+
+            <h2 id="fondements-theoriques">Les Fondements Théoriques des Planches de Pendule</h2>
+            <h3 id="definition-principe">Définition et Principe de Fonctionnement</h3>
+            <p>Une planche de pendule, également appelée abaque ou cadran de radiesthésie, constitue un support structuré qui permet d'orienter et d'affiner les réponses du pendule. Contrairement à l'usage libre du pendule qui se limite aux mouvements oscillatoires basiques, les planches offrent un cadre organisé avec des repères précis sous forme d'inscriptions, de symboles ou de gradations. Ces supports peuvent adopter diverses formes : cercles complets, demi-cercles, règles graduées ou tableaux multidimensionnels.</p>
+            <p>Le principe fondamental repose sur la capacité du pendule à capter les vibrations subtiles et à les amplifier à travers des mouvements dirigés vers des zones spécifiques de la planche. Cette méthode transforme les micro-vibrations inconscientes en réponses lisibles et interprétables. Les planches agissent comme des interfaces entre le subconscient du praticien et l'information recherchée, permettant d'obtenir des données précises qui auraient nécessité de nombreuses questions fermées avec un pendule seul.</p>
+            <h3 id="evolution-historique">Évolution Historique et Développement</h3>
+            <p>L'utilisation des planches de radiesthésie a connu un essor significatif au début du XXe siècle avec les travaux d'Alfred Bovis. Ce pionnier a développé la première échelle de mesure vibratoire, révolutionnant ainsi l'approche radiesthésique en introduisant la notion de quantification énergétique. Cette innovation a ouvert la voie à la création d'une multitude de cadrans spécialisés couvrant tous les domaines d'application de la radiesthésie.</p>
+            <p>L'évolution des planches reflète l'expansion progressive des domaines d'application de la radiesthésie. Des premiers cadrans simples oui/non, la discipline s'est enrichie de supports complexes intégrant l'alphabet, les chiffres, puis des thématiques spécialisées comme la médecine, la géobiologie ou la spiritualité. Cette diversification répond aux besoins croissants des praticiens qui cherchent des réponses de plus en plus précises et détaillées.</p>
+            <h2 id="classification-complete">Classification Complète des Types de Planches</h2>
+            <h3 id="planches-base">Planches de Base et Fondamentales</h3>
+            <h4 id="planches-oui-non">Planches Oui/Non/Peut-être</h4>
+            <p>Les planches oui/non constituent le premier niveau d'utilisation des supports radiesthésiques. Elles présentent généralement trois zones distinctes : une pour l'affirmation, une pour la négation, et une troisième pour l'incertitude ou la reformulation. Ces planches conviennent parfaitement aux débutants et aux situations nécessitant des réponses directes et sans ambiguïté.</p>
+            <p>Les questions types pour ces planches incluent : "Cette décision est-elle bonne pour moi ?", "Dois-je accepter cette proposition ?", ou "Cette personne est-elle fiable ?". La formulation doit être précise, positive et porter sur un seul élément à la fois pour éviter toute confusion dans la réponse. Il est essentiel d'éviter les questions formulées avec des négations qui pourraient induire le pendule en erreur.</p>
+            <h4 id="planches-alphabetiques">Planches Alphabétiques</h4>
+            <p>Les planches alphabétiques représentent un niveau supérieur de complexité en permettant la formation de mots et de phrases complètes. Elles se présentent généralement sous forme de demi-cercle ou de cercle complet avec les 26 lettres de l'alphabet disposées de manière équidistante. Certaines planches incluent des niveaux multiples indiquant le nombre de lettres, facilitant ainsi la composition des réponses.</p>
+            <p>Les applications de ces planches couvrent l'identification de noms de personnes, de lieux géographiques, ou la réception de messages spirituels. Les questions appropriées comprennent : "Quel est le prénom de cette personne ?", "Dans quelle ville dois-je déménager ?", ou "Quel message dois-je recevoir aujourd'hui ?". La technique consiste d'abord à déterminer le nombre de lettres du mot recherché, puis à identifier chaque lettre successivement.</p>
+            <h4 id="planches-numeriques">Planches Numériques</h4>
+            <p>Les planches numériques complètent le système alphabétique en permettant d'obtenir des informations chiffrées précises. Elles peuvent présenter les chiffres de 0 à 9 en disposition circulaire, ou inclure des nombres plus complexes selon les besoins spécifiques. Ces planches s'avèrent particulièrement utiles pour les questions temporelles, les quantifications ou les estimations.</p>
+            <p>Les questions types incluent : "Combien d'années va durer cette situation ?", "À quel âge cela va-t-il arriver ?", ou "Quelle est la date la plus favorable ?". L'utilisation de ces planches nécessite une préparation minutieuse de la question pour définir précisément l'unité de mesure recherchée (années, mois, jours, pourcentages, etc.).</p>
+            <h2 id="planches-mesure-vibratoire">Planches Spécialisées en Mesure Vibratoire</h2>
+            <h3 id="cadran-bovis-classique">Le Cadran de Bovis Classique</h3>
+            <p>Le cadran de Bovis demeure l'outil de référence pour mesurer la fréquence vibratoire des êtres vivants, des aliments et des lieux. L'échelle classique s'étend de 0 à 18 000 UB (Unités de Bovis) et se divise en trois paliers distincts : le monde physique (0-10 000 UB), le monde énergétique (10 000-14 000 UB) et le monde spirituel (au-delà de 14 000 UB).</p>
+            <p>Les questions fondamentales pour ce cadran comprennent : "Quel est le taux vibratoire de cet aliment ?", "Quel est mon taux vibratoire actuel ?", ou "Quel est le taux vibratoire de ce lieu ?". L'utilisation requiert une calibration préalable avec des références connues pour assurer la fiabilité des mesures.</p>
+            <h3 id="cadrans-bovis-etendus">Cadrans de Bovis Étendus</h3>
+            <p>L'évolution des besoins a conduit au développement de cadrans étendus pouvant mesurer jusqu'à 120 000 UB, voire plusieurs millions d'UB pour les lieux sacrés. Ces échelles élargies répondent à l'augmentation générale de la fréquence vibratoire terrestre observée depuis le début du XXIe siècle. Les nouveaux cadrans recalibrent les paliers : plan physique (0-20 000 UB), plan énergétique (20 000-40 000 UB) et plan spirituel (40 000 UB et plus).</p>
+            <p>Les applications spécifiques incluent la mesure des taux vibratoires des cristaux, des huiles essentielles, des lieux de pouvoir ou des présences spirituelles. Les questions adaptées sont : "Quel est le taux vibratoire de cette huile essentielle ?", "Quelle est la vibration de ce lieu sacré ?", ou "Quel est le niveau énergétique de cette présence ?".</p>
+            <h2 id="planches-medicales-sante">Planches Médicales et de Santé</h2>
+            <h3 id="planches-anatomiques">Planches Anatomiques</h3>
+            <p>Les planches anatomiques constituent des outils diagnostiques précieux en radiesthésie médicale. Elles présentent des représentations détaillées du corps humain permettant d'identifier les zones de déséquilibre ou les organes nécessitant une attention particulière. Ces planches peuvent être générales (corps entier) ou spécialisées (systèmes cardiovasculaire, digestif, nerveux, etc.).</p>
+            <p>Les questions diagnostiques types comprennent : "Quel organe a besoin d'attention ?", "Où se situe le déséquilibre dans mon corps ?", ou "Quelle partie du corps traiter en priorité ?". L'utilisation de ces planches nécessite une formation appropriée et ne saurait remplacer un diagnostic médical professionnel, mais peut constituer une aide complémentaire dans l'approche holistique de la santé.</p>
+            <h3 id="planches-chakras">Planches des Chakras et Centres Énergétiques</h3>
+            <p>Les planches dédiées aux chakras permettent d'identifier les déséquilibres énergétiques dans les sept centres principaux ou les chakras secondaires. Elles incluent généralement des représentations colorées des chakras avec leurs attributs spécifiques et leurs correspondances. Ces planches s'inscrivent dans une approche énergétique de la santé inspirée des traditions orientales.</p>
+            <p>Les questions appropriées incluent : "Quel chakra est déséquilibré ?", "Sur quel chakra dois-je travailler ?", ou "Quel est le taux de vitalité du chakra racine ?". L'interprétation nécessite une connaissance approfondie du système des chakras et de leurs interactions avec les aspects physique, émotionnel et spirituel de l'être.</p>
+            <h3 id="planches-therapeutiques">Planches Thérapeutiques Naturelles</h3>
+            <p>Cette catégorie englobe une vaste gamme de planches dédiées aux médecines alternatives : homéopathie, phytothérapie, aromathérapie, gemmothérapie, lithothérapie, fleurs de Bach, oligothérapie et chromothérapie. Chaque planche présente les remèdes spécifiques à son domaine avec leurs indications principales.</p>
+            <p>Les questions types varient selon la thérapie : "Quel remède homéopathique convient à cette situation ?", "Quelle huile essentielle utiliser pour ce trouble ?", "Quelle pierre recommander pour cet équilibrage ?", ou "Quelle fleur de Bach correspond à cet état émotionnel ?". L'utilisation de ces planches requiert une formation dans les thérapies concernées pour une interprétation correcte des indications.</p>
+            <h2 id="planches-geobiologie-recherche">Planches de Géobiologie et Recherche</h2>
+            <h3 id="planches-detection">Planches de Détection Géobiologique</h3>
+            <p>Les planches géobiologiques permettent d'identifier les différents types d'influences telluriques et cosmiques affectant un lieu. Elles incluent la détection des cours d'eau souterrains, des failles géologiques, des réseaux telluriques (Hartmann, Curry), des cheminées cosmo-telluriques et des mémoires des lieux. Ces planches constituent des outils essentiels pour l'analyse énergétique de l'habitat.</p>
+            <h3 id="planches-datation">Planches de Datation et Localisation</h3>
+            <p>Ces planches spécialisées permettent de situer des événements dans le temps ou l'espace. Les planches temporelles incluent des graduations par époques, siècles, années, mois, ou périodes spécifiques. Les planches de localisation géographique présentent des cartes, des points cardinaux ou des zones géographiques définies.</p>
+            <h2 id="planches-relationnelles-amoureuses">Planches Relationnelles et Amoureuses</h2>
+            <h3 id="planches-type-relation">Planches de Type de Relation</h3>
+            <p>Les planches relationnelles permettent d'analyser la nature et la qualité des liens entre personnes. Elles présentent différentes catégories relationnelles : familiale, amicale, professionnelle, amoureuse, karmique, ou spirituelle. Ces planches incluent souvent des nuances comme l'intensité du lien, sa durabilité ou son potentiel d'évolution.</p>
+            <h3 id="planches-liens-ame">Planches des Liens d'Âme et Spirituels</h3>
+            <p>Ces planches explorent les connexions spirituelles profondes entre les êtres : âmes sœurs, flammes jumelles, liens karmiques, guides spirituels ou familles d'âmes. Elles permettent de comprendre les enjeux spirituels d'une relation et les leçons à en tirer. Ces planches s'inscrivent dans une approche transpersonnelle de la radiesthésie.</p>
+            <h3 id="planches-emotionnelles">Planches Émotionnelles</h3>
+            <p>Les planches émotionnelles cartographient la complexité des sentiments humains. Elles présentent une gamme étendue d'émotions organisées par familles : joie, peur, colère, tristesse, avec leurs nuances spécifiques. Ces planches aident à identifier les blocages émotionnels et les schémas récurrents.</p>
+            <h2 id="protocoles-utilisation">Protocoles d'Utilisation et Techniques Avancées</h2>
+            <h3 id="preparation-prealables">Préparation et Conditions Préalables</h3>
+            <p>L'utilisation efficace des planches de pendule nécessite une préparation rigoureuse du praticien. L'état mental doit être calme, centré et détaché du résultat. Il convient de choisir un environnement paisible, exempt de perturbations électromagnétiques et de distractions. La posture physique doit être confortable et stable pour maintenir la concentration pendant toute la durée de la séance.</p>
+            <p>La purification de l'espace et du matériel constitue une étape importante. Cette purification peut s'effectuer par fumigation de sauge, intention mentale ou exposition à la lumière naturelle. Le pendule doit être nettoyé énergétiquement et rechargé selon les méthodes appropriées à sa composition. Cette phase préparatoire établit un cadre énergétique propice à la réception d'informations claires et fiables.</p>
+            <h3 id="calibration-convention">Calibration et Convention Mentale</h3>
+            <p>Avant chaque séance, il est indispensable d'établir ou de vérifier la convention mentale avec le pendule. Cette calibration consiste à définir clairement les mouvements correspondant aux réponses "oui", "non" et "je ne sais pas". Le processus implique de poser des questions dont la réponse est certaine et d'observer attentivement les mouvements du pendule.</p>
+            <hr>
+            <h2 id="conclusion">Conclusion</h2>
+            <p>Cette thèse a présenté un panorama exhaustif des planches de pendule existantes, démontrant la richesse et la diversité des outils disponibles en radiesthésie moderne. De la simple planche oui/non aux systèmes complexes multi-niveaux, chaque type de support répond à des besoins spécifiques et permet d'explorer des domaines variés de l'expérience humaine.</p>
+            <p>L'évolution historique de ces outils reflète l'expansion progressive de la radiesthésie depuis les travaux pionniers d'Alfred Bovis jusqu'aux développements contemporains. Cette progression témoigne de la vitalité d'une pratique qui continue de s'adapter aux besoins de ses utilisateurs tout en préservant ses fondements traditionnels.</p>
+            <p>La classification détaillée présentée révèle l'existence de plus de vingt catégories principales de planches, chacune avec ses protocoles d'utilisation spécifiques et ses questions types. Cette diversité permet d'aborder pratiquement tous les aspects de la vie humaine : santé, relations, spiritualité, développement personnel, géobiologie ou recherche pratique.</p>
+            <p>Les applications pratiques documentées démontrent l'utilité concrète de ces outils dans de nombreux domaines. Qu'il s'agisse d'optimiser le choix thérapeutique, d'harmoniser l'habitat, de faciliter l'introspection ou d'accompagner la quête spirituelle, les planches de pendule offrent une approche alternative précieuse.</p>
+            <p>Cependant, cette richesse s'accompagne de responsabilités importantes concernant l'usage éthique et les limites de la pratique. Le respect d'autrui, la prudence dans l'interprétation et la conscience des limites techniques constituent des garde-fous indispensables pour une pratique respectueuse et bénéfique.</p>
+            <p>Les perspectives d'évolution, notamment dans le domaine technologique et de la recherche scientifique, laissent entrevoir un avenir prometteur pour la radiesthésie. La digitalisation respectueuse des traditions et les protocoles d'évaluation rigoureux pourraient contribuer à une meilleure compréhension et reconnaissance de cette pratique millénaire.</p>
+            <p>En définitive, les planches de pendule représentent un patrimoine technique considérable, fruit de décennies d'expérimentation et de raffinement. Leur maîtrise requiert patience, pratique et discernement, mais offre en retour un outil d'exploration et de connaissance aux applications quasi-illimitées. Cette thèse constitue un guide de référence pour tous ceux qui souhaitent découvrir ou approfondir cet art subtil de la radiesthésie moderne.</p>
+            <hr>
+            <h2 id="sources">Sources</h2>
+            <ul>
+                <li><a href="https://www.majestics.fr/blog/planches-pendule-guide-complet-2/" target="_blank">https://www.majestics.fr/blog/planches-pendule-guide-complet-2/</a></li>
+                <li><a href="https://www.aroma-zen.com/333-planches-pendule-piece-editions-leducs-p-17534.html" target="_blank">https://www.aroma-zen.com/333-planches-pendule-piece-editions-leducs-p-17534.html</a></li>
+                <li><a href="https://www.editionsleduc.com/produit/3765/9782385640989/les-333-planches-du-pendule" target="_blank">https://www.editionsleduc.com/produit/3765/9782385640989/les-333-planches-du-pendule</a></li>
+                <li><a href="https://www.esensmana.fr/utiliser-le-pendule-pour-une-question-amoureuse/" target="_blank">https://www.esensmana.fr/utiliser-le-pendule-pour-une-question-amoureuse/</a></li>
+                <li><a href="https://thesurffamily.com/Planches-Pendule-Toutes-Nos-Planches-Et-Cadrans-De/971756" target="_blank">https://thesurffamily.com/Planches-Pendule-Toutes-Nos-Planches-Et-Cadrans-De/971756</a></li>
+                <li><a href="https://www.latelierdeva.com/it-it/blogs/pendule-divinatoire/planche-pour-pendule-divinatoire" target="_blank">https://www.latelierdeva.com/it-it/blogs/pendule-divinatoire/planche-pour-pendule-divinatoire</a></li>
+                <li><a href="https://auteldesbrumes.com/731-planche-artisanale-pour-pendule-arbre-de-vie-gravures-sur-bois-de-tilleul.html" target="_blank">https://auteldesbrumes.com/731-planche-artisanale-pour-pendule-arbre-de-vie-gravures-sur-bois-de-tilleul.html</a></li>
+                <li><a href="https://garaulion.fr/produit/planche-radiesthesie-questions-fermees/" target="_blank">https://garaulion.fr/produit/planche-radiesthesie-questions-fermees/</a></li>
+                <li><a href="https://www.subtil.net/fr/page/9/utilisation-planches-pendules" target="_blank">https://www.subtil.net/fr/page/9/utilisation-planches-pendules</a></li>
+                <li><a href="https://vibratis.fr/produit/200-planches-de-radiesthesie/" target="_blank">https://vibratis.fr/produit/200-planches-de-radiesthesie/</a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.majestics.fr/blog/planches-pendule-guide-complet-2/" target="_blank">https://www.majestics.fr/blog/planches-pendule-guide-complet-2/</a></li>
+                <li><a href="https://www.aroma-zen.com/333-planches-pendule-piece-editions-leducs-p-17534.html" target="_blank">https://www.aroma-zen.com/333-planches-pendule-piece-editions-leducs-p-17534.html</a></li>
+                <li><a href="https://www.editionsleduc.com/produit/3765/9782385640989/les-333-planches-du-pendule" target="_blank">https://www.editionsleduc.com/produit/3765/9782385640989/les-333-planches-du-pendule</a></li>
+                <li><a href="https://www.esensmana.fr/utiliser-le-pendule-pour-une-question-amoureuse/" target="_blank">https://www.esensmana.fr/utiliser-le-pendule-pour-une-question-amoureuse/</a></li>
+                <li><a href="https://thesurffamily.com/Planches-Pendule-Toutes-Nos-Planches-Et-Cadrans-De/971756" target="_blank">https://thesurffamily.com/Planches-Pendule-Toutes-Nos-Planches-Et-Cadrans-De/971756</a></li>
+                <li><a href="https://www.latelierdeva.com/it-it/blogs/pendule-divinatoire/planche-pour-pendule-divinatoire" target="_blank">https://www.latelierdeva.com/it-it/blogs/pendule-divinatoire/planche-pour-pendule-divinatoire</a></li>
+                <li><a href="https://auteldesbrumes.com/731-planche-artisanale-pour-pendule-arbre-de-vie-gravures-sur-bois-de-tilleul.html" target="_blank">https://auteldesbrumes.com/731-planche-artisanale-pour-pendule-arbre-de-vie-gravures-sur-bois-de-tilleul.html</a></li>
+                <li><a href="https://garaulion.fr/produit/planche-radiesthesie-questions-fermees/" target="_blank">https://garaulion.fr/produit/planche-radiesthesie-questions-fermees/</a></li>
+                <li><a href="https://www.subtil.net/fr/page/9/utilisation-planches-pendules" target="_blank">https://www.subtil.net/fr/page/9/utilisation-planches-pendules</a></li>
+                <li><a href="https://vibratis.fr/produit/200-planches-de-radiesthesie/" target="_blank">https://vibratis.fr/produit/200-planches-de-radiesthesie/</a></li>
+            </ul>
+        </main>
+    <div class="pagination-nav">
+        <a href="synchronicite-hasard-sens.html" class="prev-page">Page Précédente : La Synchronicité : Hasard, Sens et Mystère</a>
+    </div>
+    </div>
+    <!-- Pied de page -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script>
+        document.getElementById('toggle-toc').addEventListener('click', function() {
+            var tocContainer = document.getElementById('toc-container');
+            if (tocContainer.style.display === 'none') {
+                tocContainer.style.display = 'block';
+                this.textContent = 'Masquer la Table des Matières';
+            } else {
+                tocContainer.style.display = 'none';
+                this.textContent = 'Afficher la Table des Matières';
+            }
+        });
+    </script>
+    <script>
+        document.getElementById('toggle-toc').addEventListener('click', function() {
+            var tocContainer = document.getElementById('toc-container');
+            if (tocContainer.style.display === 'none') {
+                tocContainer.style.display = 'block';
+                this.textContent = 'Masquer la Table des Matières';
+            } else {
+                tocContainer.style.display = 'none';
+                this.textContent = 'Afficher la Table des Matières';
+            }
+        });
+    </script>
+      <div class="btn-accueil-wrapper">
+        <a href="/index.html" class="btn-accueil">Accueil</a>
+      </div>
+</body>
+</html>

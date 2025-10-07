@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Découvrez Thot, le dieu égyptien de la sagesse, de l'écriture, de la magie et le scribe des dieux." />
+    <meta name="keywords" content="Thot, dieu égyptien, sagesse, écriture, magie, scribe des dieux, Hermès Trismégiste, Hermopolis, ibis, babouin, Égypte ancienne" />
+    <title>Thot - Le Dieu de la Sagesse et de l'Écriture</title>
+    <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/egypt-expedition-threatful-shadows-119129.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+    </section>
+
+    <div id="text-to-read">
+    <header>
+        <h1>THOT - LE DIEU DE LA SAGESSE ET DE L'ÉCRITURE</h1>
+        <figure class="centered-image">
+            <img src="../images/dieux/thoth.jpg.webp" alt="Thot, le dieu de la sagesse et de l'écriture" style="max-width: 100%; height: auto; border-radius: 5px;" />
+            <figcaption>Source : <a href="https://www.britishmuseum.org/collection/object/Y_EA37984" target="_blank" rel="noopener">The British Museum</a></figcaption>
+        </figure>
+    </header>
+    <main>
+        <article>
+            <h2>Introduction Générale</h2>
+            <p>Thot (en grec ancien Θώθ, de l'égyptien ancien Djehouty) est l'une des divinités les plus importantes et les plus vénérées du panthéon égyptien antique. Dieu lunaire, scribe des dieux, inventeur de l'écriture et détenteur d'un savoir illimité, Thot occupe une position unique dans la mythologie égyptienne. Son influence s'étend bien au-delà des frontières de l'Égypte antique, ayant été assimilé par les Grecs à Hermès et devenant plus tard une figure centrale de l'hermétisme sous le nom d'Hermès Trismégiste.</p>
+            <p>Cette étude exhaustive explore les multiples facettes de cette divinité complexe, depuis ses origines mythologiques jusqu'à son héritage dans les traditions ésotériques modernes, en passant par ses attributions divines, son culte et son iconographie.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre I - Les Origines et la Nature Divine de Thot</h2>
+            <h3>1.1 Étymologie et Appellations</h3>
+            <p>Le nom "Thot" dérive de la transcription grecque du nom égyptien Djehouty (également transcrit Djehouti, Thehuti, ou Dyehuty), qui signifie "celui de Djehout". Djehout était le nom de l'ancien nome de Basse-Égypte, dont la capitale, Hermopolis parva, fut vraisemblablement le berceau originel du culte de cette divinité avant que les Égyptiens n'établissent son principal sanctuaire à Hermopolis magna, en Moyenne-Égypte.</p>
+            <p>Les anciens Égyptiens attribuaient à Thot de nombreux titres honorifiques qui témoignent de l'étendue de ses prérogatives divines :</p>
+            <ul>
+                <li>"Celui qui mesure les cieux, les étoiles et la terre"</li>
+                <li>"Comptable du temps et des saisons"</li>
+                <li>"Dieu et Maître de l'équilibre"</li>
+                <li>"Le Seigneur du Corps céleste et divin"</li>
+                <li>"Le Scribe du panthéon divin"</li>
+                <li>"La Voix de Râ"</li>
+                <li>"L'Auteur de tous les travaux sur toutes les branches de la connaissance humaine et divine"</li>
+                <li>"Celui qui a compris tout ce qui est caché sous la voûte céleste"</li>
+            </ul>
+            <h3>1.2 La Naissance Mystérieuse de Thot</h3>
+            <p>La genèse de Thot demeure l'un des mystères les plus fascinants de la mythologie égyptienne. Selon les textes sacrés, les anciens Égyptiens considéraient Thot comme un être né de lui-même, autogénéré et autoproduit simultanément avec Râ, le créateur de toutes choses. Cette auto-génération divine place Thot dans une catégorie particulière parmi les divinités égyptiennes.</p>
+            <p>Un texte d'Edfou relate sa naissance cosmogonique :</p>
+            <blockquote>"Au sein de l'océan primordial apparut la terre émergée. Sur celle-ci, les Huit vinrent à l'existence. Ils firent apparaître un lotus d'où sortit Rê, assimilé à Shou. Puis il vint un bouton de lotus d'où émergea une naine, auxiliaire féminin nécessaire, que Rê vit et désira. De leur union naquit Thot qui créa le monde par le Verbe."</blockquote>
+            <p>Cette version fait de Thot un démiurge créateur, utilisant la parole divine pour ordonner l'univers. Une autre tradition, plus surprenante, fait naître Thot du crâne de Seth, sans qu'il hérite pour autant des caractéristiques maléfiques de ce dernier.</p>
+            <h3>1.3 Thot, Divinité Lunaire et Maître du Temps</h3>
+            <p>Thot est fondamentalement un dieu lunaire qui régit les cycles de la lune et, par extension, le temps lui-même. Cette attribution découle d'un mythe cosmogonique majeur où Râ, fatigué des querelles humaines, décide de gagner les hauteurs célestes. S'adressant à Thot, il déclare :</p>
+            <blockquote>"Tu seras à ma place, mon substitut. On t'appellera Thot, celui qui est à la place de Rê. Tu entoureras les deux cieux de ta beauté et de ta clarté."</blockquote>
+            <p>Ainsi naquit la Lune qui marque la nuit de sa clarté, faisant de Thot le substitut nocturne du soleil. Cette fonction lui vaut le surnom de "Seigneur du temps" et fait de lui le responsable de la mesure temporelle.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre II - Les Attributions et Pouvoirs Divins de Thot</h2>
+            <h3>2.1 Inventeur de l'Écriture et du Langage</h3>
+            <p>Thot est universellement reconnu comme l'inventeur de l'écriture hiéroglyphique et du langage articulé. Il est la "langue d'Atoum" et incarne l'intelligence divine ainsi que la parole créatrice. Cette attribution fait de lui naturellement le patron des scribes, profession hautement respectée dans l'Égypte antique où la maîtrise de l'écriture hiéroglyphique était restreinte à un cercle restreint d'initiés.</p>
+            <p>Les Égyptiens croyaient fermement que toutes leurs connaissances leur avaient été transmises par des livres et des écrits que Thot avait volontairement abandonnés dans les temples. Cette croyance témoigne de la vénération dont jouissait cette divinité en tant que source ultime du savoir.</p>
+            <h3>2.2 Le Scribe des Dieux et Détenteur du Savoir Universel</h3>
+            <p>En sa qualité de scribe des dieux, Thot possède un savoir illimité qui s'étend à tous les domaines de la connaissance :</p>
+            <ul>
+                <li><strong>Les mathématiques :</strong> Il excelle dans ce domaine et a fixé les limites des nomes et du Double-Pays</li>
+                <li><strong>L'astronomie :</strong> Il dirige les mouvements des corps célestes</li>
+                <li><strong>La médecine :</strong> Il est un guérisseur céleste renommé</li>
+                <li><strong>L'architecture :</strong> Il est l'auteur des plans des sanctuaires des dieux, seul capable de tracer des plans et d'orienter correctement les bâtiments</li>
+                <li><strong>La géométrie :</strong> Toutes les mesures sont sous son contrôle</li>
+                <li><strong>La magie :</strong> Il connaît les formules auxquelles même les dieux ne peuvent résister</li>
+            </ul>
+            <h3>2.3 L'Arbitre Divin et Médiateur</h3>
+            <p>Thot joue un rôle crucial d'arbitre entre les dieux, intervenant pour régler les conflits divins et maintenir l'équilibre cosmique. Cette fonction d'arbitrage se manifeste particulièrement dans les grands mythes égyptiens :</p>
+            <p><strong>Dans le mythe d'Osiris</strong>, Thot protège Isis pendant sa grossesse et fournit les formules magiques nécessaires à la résurrection d'Osiris. Il participe également à la création du premier rituel de momification aux côtés d'Anubis.</p>
+            <p><strong>Dans le conflit entre Horus et Seth</strong>, Thot surveille les combats entre les deux divinités, veillant à ce qu'aucune aide extérieure ne puisse fausser l'issue des affrontements. Quand Seth arrache l'œil gauche d'Horus, c'est Thot qui reconstitue l'œil divin et le rend à son propriétaire légitime, créant ainsi le célèbre œil Oudjat.</p>
+            <h3>2.4 La Création du Calendrier de 365 Jours</h3>
+            <p>L'un des exploits les plus remarquables attribués à Thot est la création du calendrier de 365 jours. Selon le mythe, l'année ne comptait initialement que 360 jours, et la déesse Nout était frappée d'une malédiction qui l'empêchait d'accoucher durant ces jours connus du calendrier.</p>
+            <p>L'ingénieux Thot résolut ce problème en défiant Khonsou, le dieu-lune, à un jeu de hasard. Misant un soixante-douzième de sa lumière (soit 5 jours sur 360), Khonsou perdit face à l'omniscience de Thot. Ces cinq jours supplémentaires, appelés "jours épagomènes", permirent à Nout de donner naissance à Osiris, Seth, Isis, Nephthys et Haroëris.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre III - L'Iconographie et les Représentations de Thot</h2>
+            <h3>3.1 Les Formes Animales Sacrées</h3>
+            <p>Thot se manifeste sous deux formes animales principales, chacune porteuse d'un symbolisme particulier :</p>
+            <h4>3.1.1 L'Ibis Sacré</h4>
+            <p>L'ibis au plumage blanc et noir constitue la forme la plus courante de Thot. Cet oiseau échassier possède des caractéristiques qui en font un symbole parfait de la divinité :</p>
+            <ul>
+                <li>Sa capacité à différencier une eau potable d'une eau impropre à la consommation en fait un symbole du discernement et du savoir</li>
+                <li>Son long bec évoque le calame du scribe plongeant dans l'encre</li>
+                <li>Sa silhouette élégante correspond aux canons esthétiques égyptiens</li>
+            </ul>
+            <h4>3.1.2 Le Babouin Hamadryas (Cynocéphale)</h4>
+            <p>Sous sa forme de babouin, Thot incarne le Soleil levant. Cette association provient de l'observation comportementale : les babouins ont l'habitude de pousser de grands cris territoriaux au lever du jour, comme s'ils acclamaient l'apparition de l'astre solaire. Cette caractéristique leur valut d'être associés à la renaissance solaire quotidienne.</p>
+            <h3>3.2 Les Représentations Anthropomorphes</h3>
+            <p>Dans l'art égyptien, Thot apparaît le plus souvent sous la forme d'un homme à tête d'ibis, portant les attributs divins traditionnels :</p>
+            <ul>
+                <li>Le disque lunaire et le croissant de lune sur la tête, symboles de sa nature lunaire</li>
+                <li>Le pschent (double couronne d'Égypte) dans certaines représentations</li>
+                <li>Le sceptre was et l'ankh, symboles du pouvoir et de la vie</li>
+                <li>Une palette de scribe et un roseau, outils de l'écriture</li>
+            </ul>
+            <h3>3.3 Les Attributs Iconographiques</h3>
+            <p>Les représentations de Thot incluent régulièrement des éléments symboliques spécifiques :</p>
+            <ul>
+                <li><strong>La balance :</strong> instrument de mesure et de justice</li>
+                <li><strong>Le papyrus et le calame :</strong> outils de l'écriture et de l'enregistrement</li>
+                <li><strong>La coudée royale :</strong> unité de mesure architecturale sacrée</li>
+                <li><strong>L'arbre-ished :</strong> arbre sacré sur lequel Thot inscrit les années de règne des pharaons</li>
+            </ul>
+        </article>
+
+        <article>
+            <h2>Chapitre IV - Le Culte de Thot et ses Centres Religieux</h2>
+            <h3>4.1 Hermopolis Magna, Capitale Divine de Thot</h3>
+            <p>Hermopolis Magna (Khemenou en égyptien) constitue le principal centre de culte de Thot. Située en Moyenne-Égypte, cette ville fut l'un des centres religieux et intellectuels les plus importants de l'Égypte antique.</p>
+            <h4>4.1.1 Le Grand Temple de Thot</h4>
+            <p>Le temple principal, dédié à Thot et à l'Ogdoade primordiale, comportait des éléments architecturaux remarquables. Malheureusement, ce monument fut en grande partie détruit au début du XIXe siècle, ses matériaux étant réutilisés pour la construction locale.</p>
+            <h3>4.2 Le Culte des Animaux Sacrés</h3>
+            <p>À la Basse Époque, le culte de Thot prit une extension considérable à Hermopolis. La superficie consacrée à ce culte atteignait 25 feddans (environ 10,5 hectares).</p>
+            <h4>4.2.1 Les Nécropoles d'Ibis</h4>
+            <p>Des galeries souterraines furent creusées dans le roc sur une longueur de 1000 mètres. Les archéologues ont découvert plus de 4 millions de momies d'ibis dans le cimetière sacré d'Hermopolis.</p>
+            <h3>4.3 Les Autres Centres de Culte</h3>
+            <p>Outre Hermopolis Magna, Thot était vénéré dans plusieurs autres sites : Hermopolis Parva, Qasr el-Agoûz, et El Kab.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre V - Le Rôle de Thot dans l'Au-Delà et le Jugement des Morts</h2>
+            <h3>5.1 La Psychostasie : Pesée des Cœurs</h3>
+            <p>Thot joue un rôle fondamental dans le jugement des morts. Dans la salle de Maât, il assiste au tribunal d'Osiris et remplit plusieurs fonctions cruciales, notamment l'enregistrement du résultat de la pesée.</p>
+            <h3>5.2 Le Livre des Morts et les Formules Magiques</h3>
+            <p>Thot est reconnu comme l'auteur mythique du Livre des Morts (Per em hrou - "Sortir au jour"), recueil de formules magiques destinées à guider les défunts dans l'au-delà.</p>
+            <h3>5.3 Le Gardien des Archives Divines</h3>
+            <p>En tant que scribe des dieux, Thot tient les archives complètes de toutes les âmes jugées. Cette fonction administrative divine fait de lui le gardien de la mémoire cosmique.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre VI - Thot dans la Littérature et les Textes Sacrés</h2>
+            <h3>6.1 Le Livre de Thot Légendaire</h3>
+            <p>La tradition égyptienne évoque l'existence d'un livre mythique contenant tous les secrets de l'univers, attribué à Thot. Selon la légende, celui qui parvenait à déchiffrer les formules de ce livre pouvait espérer surpasser même les dieux en sagesse et en pouvoir magique.</p>
+            <h3>6.2 Les Textes des Pyramides</h3>
+            <p>Dans les plus anciens textes funéraires égyptiens, les Textes des Pyramides, Thot apparaît déjà comme une divinité majeure, établissant son rôle de guide spirituel.</p>
+            <h3>6.3 Les Hymnes et Invocations</h3>
+            <p>De nombreux hymnes lui sont dédiés dans la littérature religieuse égyptienne, témoignant de sa réputation de protecteur contre les forces du chaos.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre VII - L'Héritage de Thot : De l'Égypte à l'Hermétisme</h2>
+            <h3>7.1 L'Assimilation Gréco-Romaine</h3>
+            <p>Avec la conquête grecque de l'Égypte, Thot fut rapidement assimilé à Hermès. Cette assimilation donna naissance à la figure d'Hermès Trismégiste ("Hermès trois fois grand").</p>
+            <h3>7.2 La Tradition Hermétique</h3>
+            <p>L'héritage de Thot se perpétue dans la tradition hermétique, qui attribue à Hermès Trismégiste un corpus de textes révélateurs des mystères divins.</p>
+        </article>
+
+        <article>
+            <h2>Chapitre VIII - L'Archéologie et les Découvertes Modernes</h2>
+            <h3>8.1 Les Fouilles d'Hermopolis</h3>
+            <p>Les campagnes archéologiques menées à Hermopolis depuis le XIXe siècle ont révélé l'ampleur exceptionnelle du culte rendu à Thot, incluant des statues colossales et des catacombes d'ibis.</p>
+            <h3>8.3 L'Égyptologie Moderne et Thot</h3>
+            <p>Les égyptologues contemporains reconnaissent en Thot l'une des divinités les plus sophistiquées. Les travaux de Jean-François Champollion ont particulièrement mis en lumière le rôle central de Thot dans l'invention de l'écriture hiéroglyphique.</p>
+        </article>
+
+        <article>
+            <h2>Conclusion</h2>
+            <p>Thot demeure l'une des figures divines les plus fascinantes et les plus influentes de l'Égypte antique. Divinité aux multiples facettes - lunaire, scribe, arbitre, inventeur, magicien -, il incarne l'idéal égyptien de la sagesse divine unie à la connaissance pratique. Son héritage dépasse largement le cadre de la civilisation pharaonique pour irriguer les traditions spirituelles et ésotériques de l'Occident.</p>
+        </article>
+
+        <article>
+            <h2 class="sources-section">Bibliographie et Sources</h2>
+            <ul>
+                <li>Textes égyptiens antiques : Textes des Pyramides, Livre des Morts</li>
+                <li>Sources gréco-latines : Plutarque, Apulée, Clément d'Alexandrie</li>
+                <li>Corpus Hermeticum</li>
+                <li>Travaux égyptologiques modernes de Champollion, Lepsius, Barguet</li>
+                <li>Découvertes archéologiques d'Hermopolis Magna</li>
+            </ul>
+        </article>
+
+    </main>
+    </div>
+
+    <div class="btn-accueil-wrapper">
+        <a href="../index.html" class="btn-accueil">Accueil</a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+</body>
+</html>

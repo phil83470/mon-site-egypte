@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mythologie Égyptienne : Apprentissage et Connaissance</title>
+    <meta name="description" content="Une exploration détaillée de la mythologie égyptienne, de ses mythes fondateurs à ses divinités et concepts funéraires." />
+    <meta name="keywords" content="mythologie égyptienne, mythes fondateurs, dieux égyptiens, Osiris, Isis, Horus, Râ, Seth, Apophis, Noun, cosmogonie, âme, au-delà, Textes des Pyramides, Livre des Morts, Égypte ancienne" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../images/pyramides/icone-pyramide.ico"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <audio id="background-music" loop>
+      <source src="../audio/cinematic-duduk-192901.mp3" type="audio/mpeg" />
+      Votre navigateur ne supporte pas l'élément audio.
+    </audio>
+
+    <div id="nav-placeholder"></div>
+
+    <section class="accessibility-controls">
+      <div class="speech-rate-control">
+        <label for="speech-rate">Vitesse de lecture :</label>
+        <input
+          type="range"
+          id="speech-rate"
+          min="0.5"
+          max="2"
+          value="1"
+          step="0.1"
+        />
+      </div>
+      <div class="voice-gender-control">
+        <label>Voix :</label>
+        <input
+          type="radio"
+          id="voice-female"
+          name="voice-gender"
+          value="female"
+          checked
+        />
+        <label for="voice-female">Féminine</label>
+        <input type="radio" id="voice-male" name="voice-gender" value="male" />
+        <label for="voice-male">Masculine</label>
+      </div>
+      <div class="speech-pitch-control">
+        <label for="speech-pitch">Hauteur de la voix :</label>
+        <input
+          type="range"
+          id="speech-pitch"
+          min="0"
+          max="2"
+          value="1"
+          step="0.1"
+        />
+      </div>
+      <button id="play-text">Écouter</button>
+      <button id="pause-text">Pause</button>
+      <button id="stop-text">Arrêter</button>
+    </section>
+
+    <div id="text-to-read">
+      <header class="page-header">
+        <h1>Mythologie Égyptienne : Apprentissage et Connaissance</h1>
+        <p class="page-subtitle">
+          Une immersion dans le monde des dieux, des mythes et des rites de
+          l'Égypte ancienne.
+        </p>
+      </header>
+
+      <main>
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li>
+              <a href="#introduction">Introduction à la pensée mythologique</a>
+            </li>
+            <li>
+              <a href="#mythes-fondateurs">Les Grands Mythes Fondateurs</a>
+              <ul>
+                <li><a href="#creation-monde">La Création du Monde</a></li>
+                <li><a href="#mythe-osiris">Le Mythe d'Osiris</a></li>
+                <li><a href="#cycle-solaire">Le Cycle Solaire</a></li>
+              </ul>
+            </li>
+            
+            <li>
+              <a href="#au-dela">Les Concepts de l'Âme et de l'Au-delà</a>
+              <ul>
+                <li>
+                  <a href="#composantes-ame">Les Composantes de l'Être</a>
+                </li>
+                <li>
+                  <a href="#jugement-ame"
+                    >Le Jugement de l'Âme : La Pesée du Cœur</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li><a href="#textes-sacres">Les Textes Sacrés</a></li>
+          </ul>
+        </section>
+
+        <h2 id="introduction">
+          Introduction à la pensée mythologique égyptienne
+        </h2>
+        <p>
+          La mythologie n'était pas pour les anciens Égyptiens une simple
+          collection d'histoires ; elle était le fondement même de leur vision
+          du monde. Elle expliquait l'origine de l'univers, la nature des dieux,
+          le cycle de la vie et de la mort, et justifiait l'ordre social et
+          politique. Les mythes imprégnaient chaque aspect de la vie, des grands
+          rituels du temple aux amulettes protectrices portées par le peuple,
+          offrant un cadre pour comprendre et interagir avec les forces divines
+          qui gouvernaient leur existence.
+        </p>
+        <div class="callout">
+          <h4>Le Pharaon : un statut à part</h4>
+          <p>
+            Au cœur de cette mythologie se trouve le Pharaon, une figure unique
+            qui n'est ni tout à fait un dieu comme Rê, ni un simple mortel. Pour
+            comprendre en détail son rôle d'intermédiaire et sa nature divine,
+            <a href="pouvoir-royal.html#dieu-vs-pharaon"
+              >consultez notre analyse sur la page du pouvoir royal</a
+            >.
+          </p>
+        </div>
+
+        <h2 id="mythes-fondateurs">Les Grands Mythes Fondateurs</h2>
+
+        <h3 id="creation-monde">La Création du Monde</h3>
+        <p>
+          Il n'existait pas un seul mythe de la création, mais plusieurs
+          théologies développées par les grands centres religieux. Elles
+          offraient des perspectives complémentaires sur l'origine de l'univers.
+        </p>
+        <ul>
+          <li>
+            <strong>La cosmogonie d'Héliopolis :</strong> La plus répandue. Au
+            commencement était le Noun, l'océan primordial. De cet océan émergea
+            une butte de terre (le Benben) sur laquelle le dieu Atoum (ou
+            Rê-Atoum) se créa lui-même. Par un acte d'auto-création, il engendra
+            Shou (l'Air) et Tefnout (l'Humidité). Ce couple donna naissance à
+            Geb (la Terre) et Nout (le Ciel), qui à leur tour enfantèrent
+            Osiris, Isis, Seth et Nephtys. C'est la Grande Ennéade, une
+            généalogie divine qui organise le cosmos.
+          </li>
+          <li>
+            <strong>La cosmogonie de Memphis :</strong> Une vision plus
+            abstraite. Le dieu créateur est Ptah, patron des artisans. Il créa
+            l'univers par la pensée et le verbe. Tout ce qui existe fut d'abord
+            conçu dans son cœur (le siège de la pensée) puis prit vie lorsqu'il
+            prononça son nom. Dans ce système, les autres dieux ne sont que des
+            manifestations de la volonté de Ptah.
+          </li>
+          <li>
+            <strong>La cosmogonie d'Hermopolis :</strong> Ce mythe décrit l'état
+            du monde avant la création. Le Noun était habité par l'Ogdoade, un
+            groupe de huit divinités primordiales (quatre couples
+            grenouille-serpent) incarnant les forces du chaos. De leur
+            interaction naquit la butte primordiale, d'où jaillit le soleil,
+            apportant la lumière et l'ordre.
+          </li>
+        </ul>
+
+        <h3 id="mythe-osiris">Le Mythe d'Osiris</h3>
+        <p>
+          C'est le mythe central de la religion égyptienne, fondamental pour la
+          royauté et les croyances funéraires. Osiris, roi juste et bon, fut
+          assassiné par son frère jaloux, Seth, qui démembra son corps en
+          quatorze morceaux et les dispersa à travers l'Égypte. Isis, l'épouse
+          fidèle d'Osiris, aidée de sa sœur Nephtys, rassembla les morceaux du
+          corps. Avec l'aide d'Anubis, elle créa la première momie et, usant de
+          sa magie, ranima Osiris juste assez longtemps pour concevoir un fils :
+          Horus. Osiris devint alors le souverain du royaume des morts. Une fois
+          adulte, Horus vengea son père en affrontant et en triomphant de Seth,
+          devenant le roi légitime de l'Égypte. Chaque pharaon était ainsi
+          considéré comme l'incarnation d'Horus sur terre, et espérait devenir
+          un Osiris après sa mort.
+        </p>
+
+        <h3 id="cycle-solaire">Le Cycle Solaire</h3>
+        <p>
+          Ce mythe décrit le voyage perpétuel du dieu soleil, Rê, qui symbolise
+          le triomphe de l'ordre sur le chaos. Chaque jour, Rê traverse le ciel
+          sur sa barque (Mândjyt). Chaque nuit, il plonge dans le monde
+          souterrain (la Douat) sur une autre barque (Mesektet) pour y apporter
+          la lumière. Ce voyage nocturne est périlleux, car Rê doit affronter
+          son ennemi juré, Apophis, un serpent gigantesque qui tente de l'avaler
+          pour anéantir la création. Rê est aidé par d'autres divinités,
+          notamment Seth, qui se tient à l'avant de la barque pour transpercer
+          Apophis. La victoire de Rê chaque nuit assure la renaissance du soleil
+          chaque matin.
+        </p>
+        <figure class="image-container">
+          <img
+            src="../images/Seth-harponne-Apophis-pour-defendre-la-barque-de-Re.webp" alt="La barque solaire de Rê, protégée par Seth, repoussant le serpent Apophis."
+           class="mythologie-image"
+            />
+          <figcaption>
+            (<a href="https://1001dragons.com/le-serpent-dragon-apophis-dieu-du-mal-et-des-tenebres-dans-la-mythologie-egyptienne/" target="_blank" rel="noopener">1001dragons.com</a>)
+            </figcaption>
+        </figure> 
+        <h2 id="au-dela">Les Concepts de l'Âme et de l'Au-delà</h2>
+        <h3 id="composantes-ame">Les Composantes de l'Être</h3>
+        <p>
+          Pour les Égyptiens, l'individu était une entité complexe, composée de
+          plusieurs éléments :
+        </p>
+        <ul>
+          <li>
+            <strong>Le Ka :</strong> Le double vital, l'énergie de vie. Il
+            restait dans la tombe et avait besoin d'offrandes pour survivre.
+          </li>
+          <li>
+            <strong>Le Ba :</strong> L'âme-personnalité, ce qui rendait une
+            personne unique. Représenté comme un oiseau à tête humaine, il
+            pouvait voyager entre la tombe et le monde des vivants.
+          </li>
+          <li>
+            <strong>L'Akh :</strong> L'esprit glorifié, l'état bienheureux
+            atteint par le défunt après un jugement favorable, lui permettant de
+            rejoindre les dieux.
+          </li>
+          <li>
+            <strong>L'Ib (le cœur) :</strong> Siège de l'intelligence, de la
+            mémoire et de la conscience morale, il était le témoin des actions
+            du défunt.
+          </li>
+        </ul>
+        <figure class="image-container">
+          <img
+            src="../images/Le-Ba-oiseautetehumaine.jpg"
+            alt="Représentation du Ba (oiseau à tête humaine) visitant la momie dans la tombe"
+          />
+          <figcaption>
+            (<a href="https://www.pinterest.fr/pin/851110029571390610/" target="_blank" rel="noopener">pinterest.fr</a>)
+          </figcaption>
+        </figure>
+
+        <h3 id="jugement-ame">Le Jugement de l'Âme : La Pesée du Cœur</h3>
+        <p>
+          Après la mort, le défunt devait subir un jugement devant un tribunal
+          présidé par Osiris. C'est la scène de la psychostasie, ou pesée du
+          cœur. Le cœur (Ib) du défunt était placé sur un plateau d'une balance,
+          et sur l'autre se trouvait la plume de Maât, déesse de la vérité et de
+          la justice. Anubis procédait à la pesée, tandis que Thot notait le
+          résultat. Si le cœur était aussi léger que la plume, le défunt était
+          déclaré "juste de voix" et accédait à la vie éternelle. Si le cœur
+          était lourd de péchés, il était dévoré par la monstrueuse Ammit, et
+          l'âme était anéantie pour toujours.
+        </p>
+        <figure class="image-container">
+          <img
+            src="../images/la-pesee-du-coeur.jpg"
+            alt="Scène de la pesée du cœur du Papyrus d'Ani"
+          />
+          <figcaption>
+            (<a href="http://ancienegypte.fr/tribunal/balance.htm" target="_blank" rel="noopener">ancienegypte.fr</a>)
+          </figcaption>
+        </figure>
+        <h2 id="textes-sacres">Les Textes Sacrés</h2>
+        <p>
+          Pour aider le défunt dans son périlleux voyage, les Égyptiens
+          utilisaient des recueils de formules magiques et de prières :
+        </p>
+        <ul>
+          <li>
+            <strong>Les Textes des Pyramides (Ancien Empire) :</strong> Gravés
+            dans les pyramides royales, ils étaient destinés à assurer la
+            renaissance céleste du pharaon.
+          </li>
+          <li>
+            <strong>Les Textes des Sarcophages (Moyen Empire) :</strong>
+            Inscrits à l'intérieur des sarcophages, ils "démocratisent" l'accès
+            à l'au-delà pour les nobles et les particuliers.
+          </li>
+          <li>
+            <strong>Le Livre des Morts (Nouvel Empire) :</strong> Écrit sur des
+            papyrus, ce guide détaillé de l'au-delà contenait les formules pour
+            surmonter les obstacles et réussir le jugement divin.
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

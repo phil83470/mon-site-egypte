@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Découvrez un guide complet des tirages de cartes et d'oracle, explorant les méthodes les plus répandues en cartomancie pour la guidance et le développement personnel." />
+    <meta name="keywords" content="tirages de cartes, oracle, cartomancie, tarot, guide, méthodes de tirage, interprétation, spiritualité, développement personnel" />
+    <title>Guide Complet des Tirages de Cartes et d'Oracle</title>
+    <link rel="icon" type="image/jpeg" href="images/oeil-horus.jpg" />
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background-color: #d68c1e; /* Light orange background color */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.7); /* White veil, 70% opacity */
+            z-index: -1;
+        }
+        #text-to-read {
+            position: relative; /* Ensure content is above the veil */
+            z-index: 0;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 25px;
+            background-color: transparent; /* Ensure content background is transparent */
+        }
+        h1, h2, h3, h4 {
+            color: #2c3e50;
+            font-weight: 400;
+        }
+        h1 { font-size: 2.5em; text-align: center; margin-bottom: 1em; }
+        h2 { font-size: 2em; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; margin-top: 1.5em;}
+        h3 { font-size: 1.5em; color: #34495e; margin-top: 1.2em;}
+        p, li { font-size: 1.1em; }
+        hr { border: none; border-top: 1px solid #ecf0f1; margin: 2em 0; }
+        ul { list-style-type: disc; padding-left: 25px; }
+        li { margin-bottom: 12px; }
+        a { color: #2980b9; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        strong { font-weight: 600; }
+        .table-of-contents {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .table-of-contents h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        .table-of-contents ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .table-of-contents ul ul {
+            padding-left: 20px;
+        }
+        .table-of-contents a {
+            color: #2980b9;
+            text-decoration: none;
+            display: block;
+            padding: 5px 0;
+        }
+        .table-of-contents a:hover {
+            text-decoration: underline;
+        }
+        .pagination-nav {
+            display: flex;
+            justify-content: space-between; /* Align to the right */
+            margin-top: 30px;
+            padding: 15px 0;
+            border-top: 1px solid #eee;
+        }
+        .pagination-nav a {
+            font-family: 'policemeta', sans-serif;
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 15px;
+            background-color: #d68c1e; /* Orange color */
+            color: white !important;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+        .pagination-nav a:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+            color: white !important;
+            text-decoration: none;
+        }
+        .pagination-nav .prev-page::before {
+            content: "◄ ";
+            margin-right: 5px;
+        }
+        .pagination-nav .next-page::after {
+            content: " ►";
+            margin-left: 5px;
+        }
+        #toggle-toc {
+            background-color: #d68c1e; /* Orange color */
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-bottom: 15px;
+            display: block; /* Make it a block element */
+            width: fit-content; /* Adjust width to content */
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #toggle-toc:hover {
+            background-color: #c07b1a; /* Darker orange on hover */
+        }
+        #toc-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <audio loop id="background-music">
+        <source src="../audio/cinematic-duduk-192901.mp3" type="audio/mpeg">
+    </audio>
+    <!-- Barre de navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Contrôles d'accessibilité -->
+    <section class="accessibility-controls">
+          <div class="speech-rate-control">
+            <label for="speech-rate">Vitesse de lecture :</label>
+            <input type="range" id="speech-rate" min="0.7" max="1.3" value="0.9" step="0.1">
+          </div>
+
+          <div class="voice-gender-control">
+            <label>Voix :</label>
+            <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+            <label for="voice-female">Féminine</label>
+            <input type="radio" id="voice-male" name="voice-gender" value="male">
+            <label for="voice-male">Masculine</label>
+          </div>
+
+          <div class="speech-pitch-control">
+            <label for="speech-pitch">Hauteur de la voix :</label>
+            <input type="range" id="speech-pitch" min="0.8" max="1.4" value="1.1" step="0.1">
+          </div>
+
+          <button id="play-text">Écouter</button>
+          <button id="pause-text">Pause</button>
+          <button id="stop-text">Arrêter</button>
+        </section>
+    <div id="text-to-read">
+        <header>
+            <h1>Guide Complet des Tirages de Cartes et d'Oracle :<br><small style="font-size: 0.5em; color: #7f8c8d;">Méthodes les Plus Répandues</small></h1>
+        </header>
+        <main>
+            <button id="toggle-toc">Afficher la Table des Matières</button>
+            <div id="toc-container" style="display: none;">
+                <nav class="table-of-contents">
+                    <h2>Table des Matières</h2>
+                    <ul>
+                        <li><a href="#introduction-cartes">1. Introduction aux Cartes Divinatoires</a></li>
+                        <li><a href="#types-cartes">2. Types de Cartes Divinatoires</a></li>
+                        <li><a href="#preparation-rituels">3. Préparation et Rituels</a></li>
+                        <li><a href="#techniques-melange">4. Techniques de Mélange</a></li>
+                        <li><a href="#art-questions">5. Art de Poser les Bonnes Questions</a></li>
+                        <li><a href="#methodes-tirage">6. Méthodes de Tirage les Plus Répandues</a>
+                            <ul>
+                                <li><a href="#tirages-simples">Tirages Simples (1-3 cartes) :</a></li>
+                                <li><a href="#tirages-intermediaires">Tirages Intermédiaires (4-7 cartes) :</a></li>
+                                <li><a href="#tirages-avances">Tirages Avancés (8+ cartes) :</a></li>
+                                <li><a href="#methodes-specifiques">Méthodes Spécifiques :</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#interpretation-tirages">7. Interprétation des Tirages</a></li>
+                        <li><a href="#associations-cartes">8. Associations de Cartes</a></li>
+                        <li><a href="#erreurs-courantes">9. Erreurs Courantes à Éviter</a></li>
+                        <li><a href="#conseils-debuter">10. Conseils pour Débuter</a></li>
+                        <li><a href="#conclusion">Conclusion</a></li>
+                        <li><a href="#sources">Sources</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <p>Ce guide exhaustif et structuré sur les tirages de cartes et d'oracle couvre toutes les méthodes les plus répandues en cartomancie. Il constitue une véritable référence pour débuter ou approfondir cette pratique spirituelle.</p>
+
+            <h2 id="introduction-cartes">1. Introduction aux Cartes Divinatoires</h2>
+            <ul>
+                <li>Définitions essentielles (oracle, tarot, cartomancie)</li>
+                <li>Différences entre les types de cartes</li>
+                <li>Objectifs et applications</li>
+            </ul>
+            <ul>
+                <li>Définitions essentielles (oracle, tarot, cartomancie)</li>
+                <li>Différences entre les types de cartes</li>
+                <li>Objectifs et applications</li>
+            </ul>
+
+            <h2 id="types-cartes">2. Types de Cartes Divinatoires</h2>
+            <ul>
+                <li><strong>Oracles populaires :</strong> Belline (53 cartes), Gé (61 cartes), Triade, Lenormand</li>
+                <li><strong>Tarots classiques :</strong> Marseille, Rider-Waite, Crowley</li>
+                <li><strong>Jeu de 32 cartes</strong> traditionnel</li>
+                <li>Classifications par usage (prédictif, guidance, développement personnel)</li>
+            </ul>
+            <ul>
+                <li><strong>Oracles populaires :</strong> Belline (53 cartes), Gé (61 cartes), Triade, Lenormand</li>
+                <li><strong>Tarots classiques :</strong> Marseille, Rider-Waite, Crowley</li>
+                <li><strong>Jeu de 32 cartes</strong> traditionnel</li>
+                <li>Classifications par usage (prédictif, guidance, développement personnel)</li>
+            </ul>
+
+            <h2 id="preparation-rituels">3. Préparation et Rituels</h2>
+            <ul>
+                <li>Purification de l'espace (sauge, encens, cristaux)</li>
+                <li>Préparation personnelle (méditation, ancrage, protection)</li>
+                <li>Consécration du jeu de cartes</li>
+                <li>Formules et intentions recommandées</li>
+            </ul>
+
+            <h2 id="techniques-melange">4. Techniques de Mélange</h2>
+            <ul>
+                <li><strong>5 méthodes détaillées :</strong> classique, éventail, riffle, overhand, intuitif</li>
+                <li>Conseils pour obtenir des cartes inversées</li>
+                <li>Bonnes pratiques et traditions (7 mélanges pour le tarot)</li>
+            </ul>
+
+            <h2 id="art-questions">5. Art de Poser les Bonnes Questions</h2>
+            <ul>
+                <li>Principes de formulation (ouvertes, positives, précises)</li>
+                <li><strong>50+ exemples</strong> de reformulation</li>
+                <li>Questions par domaine (amour, travail, spiritualité)</li>
+                <li>Erreurs courantes à éviter</li>
+            </ul>
+
+            <h2 id="methodes-tirage">6. Méthodes de Tirage les Plus Répandues</h2>
+            <h3 id="tirages-simples">Tirages Simples (1-3 cartes) :</h3>
+            <ul>
+                <li>Tirage quotidien à 1 carte</li>
+                <li>Tirages à 2 cartes (situation/conseil)</li>
+                <li>4 variantes du tirage à 3 cartes</li>
+            </ul>
+            <h3 id="tirages-intermediaires">Tirages Intermédiaires (4-7 cartes) :</h3>
+            <ul>
+                <li>Tirage en croix (le plus répandu - 5 cartes)</li>
+                <li>Tirage pyramidal (6 cartes)</li>
+                <li>Tirage hebdomadaire (7 cartes)</li>
+            </ul>
+            <h3 id="tirages-avances">Tirages Avancés (8+ cartes) :</h3>
+            <ul>
+                <li>Tirage des 12 maisons astrologiques</li>
+                <li>Tirage du prénom</li>
+                <li>Tirage annuel (13 cartes)</li>
+            </ul>
+            <h3 id="methodes-specifiques">Méthodes Spécifiques :</h3>
+            <ul>
+                <li>Méthode Belline originale</li>
+                <li>Tirage Lenormand à 9 cartes</li>
+                <li>Tirages créés par différents auteurs</li>
+            </ul>
+
+            <h2 id="interpretation-tirages">7. Interprétation des Tirages</h2>
+            <ul>
+                <li>Approche holistique et intuitive</li>
+                <li>Techniques d'analyse (vue d'ensemble, position par position)</li>
+                <li>Relations et associations entre cartes</li>
+                <li>Développement de l'intuition</li>
+            </ul>
+
+            <h2 id="associations-cartes">8. Associations de Cartes</h2>
+            <ul>
+                <li>Principes des associations (renforcement, nuance, opposition)</li>
+                <li>Exemples concrets pour Oracle Belline et Oracle Gé</li>
+                <li>Plus de <strong>3500 combinaisons possibles</strong></li>
+                <li>Techniques de lecture des interactions</li>
+            </ul>
+
+            <h2 id="erreurs-courantes">9. Erreurs Courantes à Éviter</h2>
+            <ul>
+                <li><strong>15 erreurs principales</strong> détaillées avec solutions</li>
+                <li>Erreurs de pratique (retirer jusqu'à satisfaction, consulter "à chaud")</li>
+                <li>Erreurs d'interprétation (rigidité, manque d'objectivité)</li>
+                <li>Erreurs avec les consultants</li>
+            </ul>
+
+            <h2 id="conseils-debuter">10. Conseils pour Débuter</h2>
+            <ul>
+                <li>Critères de sélection du premier jeu</li>
+                <li><strong>Programme d'apprentissage progressif</strong> sur 3 mois</li>
+                <li>Habitudes à prendre et ressources pour progresser</li>
+                <li>Exercices pratiques recommandés</li>
+            </ul>
+
+            <hr>
+            <h2 id="conclusion">Conclusion</h2>
+            <p>Ce guide complet constitue un véritable manuel de référence pour tous ceux qui souhaitent découvrir ou perfectionner l'art des tirages de cartes oracle. Il reflète votre passion pour les pratiques spirituelles et votre désir d'épanouissement dans le domaine de l'ésotérisme.</p>
+            <p>L'approche respectueuse et bienveillante du document s'aligne parfaitement avec votre quête de guidance spirituelle, tandis que la richesse des informations pratiques vous donnera tous les outils nécessaires pour développer cette belle pratique au quotidien.</p>
+
+            <hr>
+            <h2 id="sources">Sources</h2>
+            <ul>
+                <li><a href="https://fr.scribd.com/document/710544795/Les-Methodes-de-Tirage-oracle-ge" target="_blank">https://fr.scribd.com/document/710544795/Les-Methodes-de-Tirage-oracle-ge</a></li>
+                <li><a href="https://kaevane.com/pages/exemples-de-tirage-et-tirage-special-kaevane" target="_blank">https://kaevane.com/pages/exemples-de-tirage-et-tirage-special-kaevane</a></li>
+                <li><a href="https://www.femmesdaujourdhui.be/bien-etre/psycho/rituel-tirage-oracle/" target="_blank">https://www.femmesdaujourdhui.be/bien-etre/psycho/rituel-tirage-oracle/</a></li>
+                <li><a href="https://blog.christophervoyance.com/methodes-tirage-cartes-cartomancie/" target="_blank">https://blog.christophervoyance.com/methodes-tirage-cartes-cartomancie/</a></li>
+                <li><a href="https://fr.scribd.com/document/516394633/Barbier-Gerard-1-Oracle-Ge-Methode-tirage" target="_blank">https://fr.scribd.com/document/516394633/Barbier-Gerard-1-Oracle-Ge-Methode-tirage</a></li>
+                <li><a href="https://www.elle.fr/Astrologie/Dossier-Astro/Apprendre-les-tirages-du-tarot-de-Marseille-3721385" target="_blank">https://www.elle.fr/Astrologie/Dossier-Astro/Apprendre-les-tirages-du-tarot-de-Marseille-3721385</a></li>
+                <li><a href="https://www.oracle-atwood.com/comment-choisir-et-utiliser-un-oracle-au-quotidien" target="_blank">https://www.oracle-atwood.com/comment-choisir-et-utiliser-un-oracle-au-quotidien</a></li>
+                <li><a href="https://www.le-chariot.com/methode-tirage-de-carte/" target="_blank">https://www.le-chariot.com/methode-tirage-de-carte/</a></li>
+                <li><a href="https.malingo.fr/oracle-ge-guide-ultime/" target="_blank">https://www.malingo.fr/oracle-ge-guide-ultime/</a></li>
+                <li><a href="https://www.apprendre-tarotdemarseille.com/methodes-de-tirage-tarot-de-marseille/" target="_blank">https://www.apprendre-tarotdemarseille.com/methodes-de-tirage-tarot-de-marseille/</a></li>
+            </ul>
+        </main>
+    <div class="pagination-nav">
+        <a href="chiromancie-guide.html" class="prev-page">Page Précédente : La Chiromancie : Ce que vos Mains Révèlent sur Vous</a>
+        <a href="guides-chamanisme.html" class="next-page">Page Suivante : Les Guides Spirituels et le Chamanisme : Un Chemin vers la Connaissance de Soi</a>
+    </div>
+    </div>
+    <!-- Pied de page -->
+    <div id="footer-placeholder"></div>
+
+    <script>
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+    <script>
+        fetch('../nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script>
+        document.getElementById('toggle-toc').addEventListener('click', function() {
+            var tocContainer = document.getElementById('toc-container');
+            if (tocContainer.style.display === 'none') {
+                tocContainer.style.display = 'block';
+                this.textContent = 'Masquer la Table des Matières';
+            } else {
+                tocContainer.style.display = 'none';
+                this.textContent = 'Afficher la Table des Matières';
+            }
+        });
+    </script>
+      <div class="btn-accueil-wrapper">
+        <a href="/index.html" class="btn-accueil">Accueil</a>
+      </div>
+</body>
+</html>

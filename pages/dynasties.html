@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explorez les dynasties de l'Égypte ancienne, de la première dynastie à l'apogée du Nouvel Empire, et découvrez les pharaons emblématiques."
+    />
+    <meta
+      name="keywords"
+      content="Égypte ancienne, dynasties, pharaons, histoire égyptienne, pyramides, temples"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Dynasties de l'Égypte ancienne</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+
+    <div id="text-to-read">
+    <header>
+      <h1>Les Dynasties de l'Égypte Ancienne</h1>
+      <p>Explorez les différentes périodes de l'histoire pharaonique</p>
+      <img
+        src="../images/generales/dynasties.jpg"
+        alt="Représentation des dynasties de l'Égypte ancienne"
+        class="page-banner-dynasties"
+      />
+    </header>
+    <main class="container">
+      
+      <h2>Les Grandes Dynasties</h2>
+      <section>
+        <article>
+          <h3>
+            <a href="dynastie1.html"
+              >1<sup>re</sup> dynastie : Les origines du pouvoir pharaonique</a
+            >
+          </h3>
+          <p>
+            Vers 3100 av. J.-C., Narmer unifie la Haute et la Basse-Égypte.
+            C’est le début de la civilisation pharaonique.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie2.html"
+              >2<sup>e</sup> dynastie : Consolidation du pouvoir</a
+            >
+          </h3>
+          <p>
+            Cette période voit la consolidation de l'État égyptien et le
+            développement des institutions royales.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie3.html"
+              >3<sup>e</sup> dynastie : L’essor monumental</a
+            >
+          </h3>
+          <p>
+            Sous Djoser, s’élève la première pyramide à degrés de Saqqarah. Le
+            règne de l’architecte Imhotep marque cette époque.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie4.html"
+              >4<sup>e</sup> dynastie : L’âge des grandes pyramides</a
+            >
+          </h3>
+          <p>
+            Khéops, Khéphren et Mykérinos édifient les pyramides de Gizeh,
+            symboles de l’Ancien Empire.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie5.html"
+              >5<sup>e</sup> dynastie : Le culte solaire et les temples</a
+            >
+          </h3>
+          <p>
+            Cette dynastie est marquée par l'importance croissante du culte du
+            dieu Rê et la construction de temples solaires.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie6.html"
+              >6<sup>e</sup> dynastie : Le déclin de l'Ancien Empire</a
+            >
+          </h3>
+          <p>
+            Le pouvoir des nomarques s'accroît, annonçant la fin de l'Ancien
+            Empire et une période d'instabilité.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="premiere-periode-intermediaire.html"
+              >1<sup>re</sup> Période Intermédiaire : Fragmentation et renouveau</a
+            >
+          </h3>
+          <p>
+            Après l'effondrement de l'Ancien Empire, l'Égypte connaît une
+            période de division avant la réunification sous le Moyen Empire.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie9.html"
+              >9<sup>e</sup> dynastie : Une période de transition</a
+            >
+          </h3>
+          <p>
+            Peu documentée, cette dynastie marque le début de la Première Période
+            Intermédiaire, caractérisée par une fragmentation du pouvoir.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie10.html"
+              >10<sup>e</sup> dynastie : Héracléopolis face à Thèbes</a
+            >
+          </h3>
+          <p>
+            Continuation de la 9e dynastie, elle lutte pour le contrôle de l'Égypte
+            contre les princes thébains, marquant la fin de la Première Période
+            Intermédiaire.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie11.html"
+              >11<sup>e</sup> dynastie : La réunification de l'Égypte</a
+            >
+          </h3>
+          <p>
+            Originaire de Thèbes, cette dynastie marque le début du Moyen Empire
+            avec la réunification du pays.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie12.html"
+              >12<sup>e</sup> dynastie : Le sommet du Moyen Empire</a
+            >
+          </h3>
+          <p>
+            Avec Sésostris III et Amenemhat III, l’État est puissant et
+            organisé. L’art et l’administration sont florissants.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="deuxieme-periode-intermediaire.html"
+              >2<sup>e</sup> Période Intermédiaire : Domination et libération</a
+            >
+          </h3>
+          <p>
+            L’Égypte est de nouveau divisée, avec la domination des Hyksôs dans le nord. Cette période se termine par la guerre de libération menée par les pharaons de Thèbes.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie18.html"
+              >18<sup>e</sup> dynastie : L’apogée impérial</a
+            >
+          </h3>
+          <p>
+            Thoutmôsis III, Akhenaton, Néfertiti, Toutankhamon et Ramsès Ier
+            marquent cette période glorieuse du Nouvel Empire.
+          </p>
+        </article>
+
+        <article>
+          <h3>
+            <a href="dynastie19.html"
+              >19<sup>e</sup> dynastie : Ramsès II et l’empire d’or</a
+            >
+          </h3>
+          <p>
+            Ramsès II étend l’influence de l’Égypte. La bataille de Qadesh, les
+            temples d’Abou Simbel, et l’art monumental dominent cette époque.
+          </p>
+        </article>
+      </section>
+      
+    </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="../index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="La XVIIIe dynastie d'Égypte, période clé du Nouvel Empire, marquée par des pharaons célèbres et des réformes religieuses."
+    />
+    <meta
+      name="keywords"
+      content="Égypte ancienne, XVIIIe dynastie, Ahmôsis Ier, Hatshepsout, Akhenaton, Toutânkhamon, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>La XVIIIe dynastie d'Égypte</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("../nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <header>
+      <h1>La XVIII<sup>e</sup> dynastie de l'Égypte ancienne</h1>
+      <p>Environ 1550 à 1292 av. J.-C.</p>
+      <p>Une période de grandeur, de conquêtes et de réformes religieuses</p>
+    </header>
+    <main class="container">
+      <section id="toc">
+        <h2>Table des matières</h2>
+        <ul>
+          <li><a href="#contexte">Contexte et fondation</a></li>
+          <li><a href="#pharaons">Pharaons notables</a></li>
+          <li><a href="#caracteristiques">Caractéristiques majeures</a></li>
+          <li><a href="#religion">Religion et réformes</a></li>
+          <li><a href="#fin-dynastie">Fin de la dynastie</a></li>
+          <li><a href="#chronologie">Chronologie indicative</a></li>
+        </ul>
+      </section>
+      
+      <section id="contexte">
+        <h2>Contexte et fondation</h2>
+        <p>
+          Une période clé du Nouvel Empire  marquée
+          par l’expansion, les réformes religieuses et des souverains célèbres.
+        </p>
+
+        <p>
+          La XVIII<sup>e</sup> dynastie inaugure le Nouvel Empire égyptien,
+          après l’expulsion des Hyksôs par Ahmôsis Ier. Elle marque le retour
+          d’un pouvoir fort, centralisé et militaire, avec Thèbes comme capitale
+          politique et religieuse.
+        </p>
+      </section>
+
+      <section id="pharaons">
+        <h2>Pharaons notables</h2>
+
+        <ul>
+          <li>
+            <strong>Ahmôsis Ier</strong> : fondateur de la dynastie, vainqueur
+            des Hyksôs.
+          </li>
+          <li>
+            <strong>Aménophis Ier</strong> : renforce la centralisation et
+            initie des constructions religieuses à Karnak.
+          </li>
+          <li>
+            <strong>Thoutmôsis Ier</strong> : étend l'empire jusqu'en Nubie et
+            en Syrie.
+          </li>
+          <li>
+            <strong>Hatshepsout</strong> : femme-pharaon, célèbre pour ses
+            constructions et son règne prospère.
+          </li>
+          <li>
+            <strong>Thoutmôsis III</strong> : grand conquérant, surnommé le
+            "Napoléon égyptien".
+          </li>
+          <li>
+            <strong>Aménophis III</strong> : règne fastueux, apogée artistique
+            et diplomatique.
+          </li>
+          <li>
+            <strong>Akhenaton (Aménophis IV)</strong> : introduit le culte
+            d’Aton et bouleverse la religion traditionnelle.
+          </li>
+          <li>
+            <strong>Toutânkhamon</strong> : successeur d’Akhenaton, célèbre pour
+            sa tombe intacte ; restaure les anciens cultes.
+          </li>
+          <li>
+            <strong>Aÿ</strong> : conseiller royal devenu pharaon, règne court
+            et mal documenté.
+          </li>
+          <li>
+            <strong>Horemheb</strong> : général et réformateur, met fin à la
+            dynastie et restaure l'ordre.
+          </li>
+        </ul>
+      </section>
+
+      <section id="caracteristiques">
+        <h2>Caractéristiques majeures</h2>
+
+        <ul>
+          <li>Expansion territoriale en Asie et en Nubie.</li>
+          <li>
+            Développement de l'art, de l'architecture et de la diplomatie.
+          </li>
+          <li>Réforme religieuse temporaire sous Akhenaton (culte d’Aton).</li>
+          <li>
+            Tombeaux royaux creusés dans la Vallée des Rois, près de Thèbes.
+          </li>
+          <li>Puissance grandissante du clergé d'Amon à Thèbes.</li>
+        </ul>
+      </section>
+
+      <section id="religion">
+        <h2>Religion et réformes</h2>
+        <p>
+          La période est marquée par la domination du clergé d’Amon jusqu’à
+          l’hérésie amarnienne d’Akhenaton, qui tente d’imposer un monothéisme
+          centré sur Aton. Après sa mort, Toutânkhamon et ses successeurs
+          restaurent les anciens cultes.
+        </p>
+      </section>
+
+      <section id="fin-dynastie">
+        <h2>Fin de la dynastie</h2>
+        <p>
+          Horemheb, dernier roi de la dynastie, n’ayant pas d’héritier, désigne
+          Paramesse comme successeur, qui devient Ramsès Ier et fonde la XIX<sup
+            >e</sup
+          >
+          dynastie. La transition est marquée par une volonté de rétablir
+          l'ordre traditionnel.
+        </p>
+      </section>
+
+      <section id="chronologie">
+        <h2>Chronologie indicative</h2>
+
+        <table border="10">
+          <thead>
+            <tr>
+              <th>Pharaon</th>
+              <th>Dates estimées</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ahmôsis Ier</td>
+              <td>v. 1550 – 1525 av. J.-C.</td>
+            </tr>
+            <tr>
+              <td>Aménophis Ier</td>
+              <td>v. 1525 – 1504 av. J.-C.</td>
+            </tr>
+            <tr>
+              <td>Thoutmôsis Ier</td>
+              <td>v. 1504 – 1492 av. J.-C.</td>
+            </tr>
+            <tr>
+              <td>Hatshepsout</td>
+              <td>v. 1479 – 1458 av. J.-C.</td>
+            </tr>
+            <tr>
+              <td>Thoutmôsis III</td>
+              <td>v. 1479 – 1425 av. J.-C.</td>
+            </tr>
+            <tr>
+              <td>Aménophis III</td>
+              <td>v. 1390 – 1352 av. J.-C.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <div class="pagination-nav no-speech">
+          <a href="./dynastie12.html" class="nav-prev">12e Dynastie</a>
+          <a href="./dynastie19.html" class="nav-next">19e Dynastie</a>
+      </div>
+    </main>
+    
+    <div class="btn-accueil-wrapper">
+      <a href="../index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("../footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

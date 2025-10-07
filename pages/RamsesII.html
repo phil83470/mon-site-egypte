@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ramsès II, le plus grand pharaon d'Égypte, connu pour ses campagnes militaires, ses projets de construction monumentaux et sa divinisation."
+    />
+    <meta
+      name="keywords"
+      content="Ramsès II, pharaon, Égypte ancienne, Abou Simbel, Pi-Ramsès, Bataille de Kadesh, pyramides, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Ramsès II - Le Roi Soleil d'Égypte</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/pharaohs-pursuit-of-israel-167187.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+
+    <div id="text-to-read">
+      <header>
+        <h1>Ramsès II - Le Roi Soleil d'Égypte</h1>
+        <p>Environ 1303 à 1213 av. J.-C. (Dynastie XIX)</p>
+        <p>Le plus grand pharaon de l'Égypte ancienne, connu pour ses exploits militaires et ses constructions monumentales.</p>
+        <figure class="centered-image">
+          <img src="../images/generales/ramses-II-grand-musee-egyptien.jpg" alt="Statue de Ramsès II" class="page-banner-img"/>
+          <figcaption>Statue colossale de Ramsès II. (Source: <a href="https://www.egyptianmuseumcairo.eg/" target="_blank" rel="noopener">Musée égyptien du Caire</a>)</figcaption>
+        </figure>
+      </header>
+      <main>
+        <section id="toc">
+          <h2>Table des matières</h2>
+          <ul>
+            <li><a href="#chronologie">Chronologie d'une Vie de Légende</a></li>
+            <li><a href="#batisseur">Le Grand Bâtisseur</a></li>
+            <li><a href="#guerrier">Le Guerrier et le Diplomate</a></li>
+            <li><a href="#heritage">Héritage et Postérité</a></li>
+          </ul>
+        </section>
+        <div class="container">
+        <section class="intro">
+           Considéré comme le plus grand pharaon du Nouvel Empire, Ramsès II a
+            régné sur l'Égypte pendant 66 ans. Son règne est synonyme de
+            prospérité, de constructions monumentales et d'une influence militaire
+            et diplomatique qui a marqué l'histoire.
+        </section>
+        <section id="chronologie">
+          <h2>Chronologie d'une Vie de Légende</h2>
+          <p>
+            <strong>Vers 1303 av. J.-C. :</strong> Naissance de Ramsès, fils du
+            pharaon Séthi Ier et de la reine Mout-Touya. Il grandit dans un
+            palais royal et reçoit une éducation militaire et administrative
+            poussée pour le préparer à son futur rôle.
+          </p>
+          <p>
+            <strong>Vers 1279 av. J.-C. :</strong> À la mort de son père, Ramsès
+            II monte sur le trône d'Égypte. Il est alors âgé d'environ 24 ans et
+            commence l'un des plus longs règnes de l'histoire égyptienne.
+          </p>
+          <p>
+            <strong>Vers 1274 av. J.-C. :</strong> Cinquième année de son règne,
+            marquée par la célèbre Bataille de Kadesh contre l'empire Hittite.
+            Cet événement deviendra un élément central de sa propagande royale.
+          </p>
+          <p>
+            <strong>Vers 1265 av. J.-C. :</strong> Inauguration des grands
+            travaux, notamment les temples d'Abou Simbel en Nubie, démontrant sa
+            puissance et sa dévotion aux dieux, ainsi qu'à son propre culte.
+          </p>
+          <p>
+            <strong>Vers 1259 av. J.-C. :</strong> Signature du traité de paix
+            avec les Hittites. Ce document historique établit une "paix
+            éternelle" et une alliance défensive entre les deux grandes
+            puissances de l'époque.
+          </p>
+          <p>
+            <strong>Vers 1255 av. J.-C. :</strong> Mort de sa Grande Épouse
+            Royale, Néfertari, la plus aimée de ses femmes. Ramsès lui construit
+            une tombe somptueuse dans la Vallée des Reines, l'une des plus
+            belles d'Égypte.
+          </p>
+          <p>
+            <strong>Vers 1213 av. J.-C. :</strong> Mort de Ramsès II à un âge
+            avancé (plus de 90 ans), après un règne de 66 ans. Il est inhumé
+            dans la Vallée des Rois, laissant derrière lui un royaume stable et
+            un héritage monumental.
+          </p>
+        </section>
+
+        <section id="batisseur">
+          <h2>Le Grand Bâtisseur</h2>
+          <p>
+            Surnommé le "pharaon bâtisseur", Ramsès II a développé une activité
+            architecturale sans précédent, visant à la fois à honorer les dieux
+            et à graver sa propre légende dans la pierre pour l'éternité. Son
+            ambition était telle qu'il a non seulement commandé des édifices
+            entièrement nouveaux, mais a aussi systématiquement fait agrandir,
+            modifier ou usurper les monuments de ses prédécesseurs en y apposant
+            son nom.
+          </p>
+          <p>
+            Parmi ses réalisations les plus spectaculaires, les
+            <strong>temples d'Abou Simbel</strong>, creusés à même la falaise de
+            Nubie, sont un chef-d'œuvre d'ingénierie et de propagande. Le grand
+            temple, avec ses quatre statues colossales du pharaon, était aligné
+            de telle sorte que le soleil illumine le sanctuaire deux fois par
+            an, le jour de son anniversaire et celui de son couronnement. Le
+            <strong>Ramesseum</strong>, son temple funéraire sur la rive ouest
+            de Thèbes, était un complexe immense dédié à son propre culte, bien
+            qu'il soit aujourd'hui en ruines. Il a également achevé la
+            majestueuse <strong>salle hypostyle du temple de Karnak</strong>,
+            l'une des plus vastes salles de culte jamais construites, et a
+            ajouté de nombreuses cours et pylônes au
+            <strong>temple de Louxor</strong>. Enfin, il a fondé une nouvelle
+            capitale dans le delta du Nil, <strong>Pi-Ramsès</strong>, qui
+            devint l'une des plus grandes cités de son temps.
+          </p>
+          <div class="gallery">
+       <div class="image-container">
+        <figure>
+           <img src="/images/temple-d-abou-simbel.jpg" alt="Temple d'Abou Simbel avec les statues colossales de Ramsès II">
+           <figcaption>L’extérieur de la façade du temple d’Abou Simbel en Égypte. <a href="https://www.dreamstime.com/exterior-facade-abu-simbel-temple-egypt-exterior-facade-abu-simbel-temple-egypt-image303412476" target="_blank" rel=
+      "noopener noreferrer">dreamstime.com</a></figcaption>
+         </figure>
+       </div>
+       <div class="image-container">
+         <figure>
+          <img src="/images/pyramides/pyramde-gizhet.jpg" alt="Grande Pyramide de Gizeh">
+          <figcaption>La grande pyramide de Gizeh <a href="https://www.lelivrescolaire.fr/manuel/1598176/mathematiques-cycle-4-2016/chapitre/1598183/puissances/page/1598286/je-resous-des-problemes/lecon/document/1694427" target="_blank" rel=
+      "noopener noreferrer"><example class="com">lelivrescolaire.fr</example></a></figcaption>
+       </figure>
+      </div>
+      <div class="image-container">
+        <figure>
+          <img src="/images/temples/karnak.jpg" alt="Vue du Temple de Karnak">
+          <figcaption>Lac sacré <a href="https://exploreluxor.org/karnak-temple/" target="_blank" rel=
+      "noopener noreferrer">exploreluxor.org</a></figcaption>
+        </figure>
+      </div>
+      <!-- Ajoutez d'autres images de la même manière -->
+    </div>
+
+        </section>
+
+        <section id="guerrier">
+          <h2>Le Guerrier et le Diplomate</h2>
+          <p>
+            Le règne de Ramsès II n'a pas été seulement pacifique. Jeune, il a
+            mené plusieurs campagnes militaires pour sécuriser les frontières de
+            l'Égypte. L'affrontement le plus célèbre de son règne est sans
+            conteste la <strong>Bataille de Kadesh</strong> (vers 1274 av.
+            J.-C.), qui l'opposa à l'armée hittite pour le contrôle de la Syrie.
+            Surpris par une attaque ennemie, Ramsès se retrouva isolé avec une
+            partie de son armée. Faisant preuve d'un courage exceptionnel selon
+            les récits égyptiens, il aurait invoqué le dieu Amon et repoussé
+            l'ennemi presque seul.
+          </p>
+          <p>
+            Si la bataille fut en réalité un match nul sur le plan stratégique,
+            Ramsès la présenta comme une victoire personnelle écrasante, la
+            faisant graver en détail sur les murs de nombreux temples. Cet
+            événement illustre son génie de la propagande. Cependant, le
+            véritable triomphe fut diplomatique : environ 15 ans après la
+            bataille, conscient de la menace assyrienne grandissante, Ramsès II
+            négocia avec le roi hittite Hattusili III le
+            <strong>premier traité de paix international</strong> dont nous
+            ayons conservé la trace. Ce traité instaura une paix durable et une
+            alliance militaire, scellée par le mariage de Ramsès avec une
+            princesse hittite.
+          </p>
+        </section>
+
+        <section id="heritage">
+          <h2>Héritage et Postérité</h2>
+          <p>
+            L'héritage de Ramsès II est colossal, à l'image de ses statues. Sa
+            longévité exceptionnelle (il est mort à plus de 90 ans) a assuré une
+            stabilité politique durable à l'Égypte. Père d'une famille nombreuse
+            comptant plus de 100 enfants de ses nombreuses épouses, dont la
+            célèbre <strong>Néfertari</strong>, il a assuré sa lignée, bien que
+            beaucoup de ses fils soient morts avant lui.
+          </p>
+          <p>
+            Après sa mort, son souvenir fut si puissant que neuf pharaons de la
+            période ramesside prirent son nom pour tenter de s'inscrire dans sa
+            gloire. Sa momie, découverte en 1881 dans la cachette de Deir
+            el-Bahari, est un témoignage inestimable. Fait unique, elle a été
+            envoyée à Paris en 1976 pour être traitée contre une infection
+            fongique. Pour ce voyage, un passeport égyptien fut émis au nom du
+            pharaon, dont la profession indiquée était "Roi (décédé)". Il
+            demeure aujourd'hui dans l'imaginaire collectif, de la Bible (où il
+            est souvent considéré comme le pharaon de l'Exode) à la culture
+            populaire, comme le symbole absolu de la grandeur et de la puissance
+            de l'Égypte des pharaons.
+          </p>
+        </section>
+      </div>
+    </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

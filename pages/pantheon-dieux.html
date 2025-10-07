@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explorez la mythologie égyptienne, ses dieux, ses mythes fondateurs et les croyances des anciens Égyptiens."
+    />
+    <meta
+      name="keywords"
+      content="mythologie égyptienne, dieux égyptiens, mythes, Rê, Osiris, Isis, Horus, Anubis, religion égyptienne, panthéon égyptien"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>Panthéon des Dieux Égyptiens – Dieux et Mythes</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <audio loop id="background-music">
+      <source src="../audio/egypt-expedition-threatful-shadows-119129.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+    <div id="text-to-read">
+    <header>
+      <h1>Le Panthéon des Dieux Égyptiens</h1>
+      <p>Un panthéon riche et des mythes fondateurs de l'univers</p>
+      <img
+        src="/images/generales/papyrus-pharaons.jpg"
+        alt="Dieux égyptiens"
+        class="page-banner-img"
+      />
+    </header>
+    <main>
+      
+      <h2>Les Divinités et Croyances du Nil</h2>
+      <p>
+        La religion et la mythologie étaient omniprésentes dans la vie des
+        anciens Égyptiens. Elles expliquaient la création du monde, les
+        phénomènes naturels et le cycle de la vie et de la mort. Le panthéon
+        égyptien compte des centaines de divinités, chacune avec ses propres
+        fonctions et attributs.
+      </p>
+      <article>
+        <h3>Rê (ou Râ) – Le Dieu Soleil</h3>
+        <p>
+          Râ est la divinité solaire centrale de la mythologie égyptienne, créateur de l'univers et père des pharaons. Il parcourt le ciel chaque jour sur sa barque solaire, symbolisant le cycle éternel de la naissance, de la vie et de la mort. Ses multiples formes, comme Khépri (le soleil levant) et Atoum (le soleil couchant), illustrent les différentes facettes de son pouvoir sur le cosmos.
+        </p>
+        <a href="ra.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Osiris – Le Dieu du Royaume des Morts</h3>
+        <p>
+          Osiris est le dieu des morts et de la résurrection, une figure centrale du panthéon égyptien. Assassiné par son frère Seth et ramené à la vie par la magie d'Isis, il devint le souverain juste de l'au-delà, offrant à tous l'espoir d'une vie éternelle. Son mythe incarne le cycle de la mort et de la renaissance, étroitement lié à la fertilité de la terre d'Égypte.
+        </p>
+        <a href="osiris.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Isis – La Déesse Mère et Magicienne</h3>
+        <p>
+          Isis est l'une des divinités les plus vénérées de l'Égypte antique, incarnant l'épouse fidèle, la mère dévouée et la magicienne suprême. Son mythe, lié à Osiris et Horus, symbolise l'amour, la résurrection et la protection. Son culte s'est répandu bien au-delà des frontières égyptiennes, faisant d'elle une déesse universelle.
+        </p>
+        <a href="isis.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Horus – Le Dieu Faucon, Protecteur de la Royauté</h3>
+        <p>
+          Horus, le faucon divin, est l'une des divinités les plus anciennes et vénérées d'Égypte, incarnant la protection royale et la puissance céleste. Fils d'Osiris et d'Isis, il est le vengeur de son père et le modèle du pharaon. Son Œil, l'Oudjat, est un symbole universel de protection et de clairvoyance.
+        </p>
+        <a href="horus.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Anubis – Le Maître de la Nécropole</h3>
+        <p>
+          Anubis est le dieu égyptien des morts, de la momification et des rites funéraires, représenté par un homme à tête de canidé. Il guide les âmes dans l'au-delà et préside à la pesée du cœur, assurant la justice divine. Son rôle de protecteur des défunts et de maître des mystères funéraires en fait une divinité essentielle du panthéon égyptien.
+        </p>
+        <a href="anubis.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Apophis – Le Serpent du Chaos</h3>
+        <p>
+          Apophis est l'incarnation du chaos et l'ennemi éternel de Rê dans la mythologie égyptienne. Représenté comme un serpent gigantesque, il tente chaque nuit de dévorer la barque solaire, symbolisant la lutte perpétuelle entre l'ordre et le désordre. Il n'est pas vénéré mais combattu, représentant le mal absolu.
+        </p>
+        <a href="apophis.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Thot – Le Dieu de la Sagesse et de l'Écriture</h3>
+        <p>
+          Représenté avec une tête d'ibis, Thot est le dieu de la connaissance, de l'écriture, de la magie et de la lune. Il est le scribe des dieux, enregistrant les événements importants et le résultat de la pesée du cœur des défunts. On lui attribue l'invention des hiéroglyphes.
+        </p>
+        <a href="thot.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Seth – Le Dieu du Chaos et du Désert</h3>
+        <p>
+          Frère d'Osiris, Seth est une divinité complexe et ambivalente. Il est le dieu du désert, des tempêtes et de la violence. C'est lui qui assassina Osiris par jalousie, mais il joue aussi un rôle protecteur en défendant la barque de Rê contre le serpent Apophis.
+        </p>
+        <a href="seth.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Amon-Rê – Le Roi des Dieux</h3>
+        <p>
+          Issu de la fusion du dieu thébain Amon et du dieu solaire Rê, Amon-Rê est devenu la divinité la plus importante du panthéon égyptien au Nouvel Empire. Il est le dieu créateur, le roi des dieux et le père des pharaons, symbolisant la puissance et la majesté de l'Égypte.
+        </p>
+        <a href="amon-re.html" class="read-more">En savoir plus...</a>
+      </article>
+      <article>
+        <h3>Le Mythe de la Création</h3>
+        <p>
+          Il existe plusieurs versions, mais la plus répandue est celle
+          d'Héliopolis. Au commencement était le Noun, l'océan primordial. De
+          cet océan émergea Atoum (ou Rê), qui créa le premier couple divin,
+          Shou (l'air) et Tefnout (l'humidité). Ils donnèrent naissance à Geb
+          (la terre) et Nout (le ciel), qui à leur tour engendrèrent Osiris,
+          Isis, Seth et Nephtys.
+        </p>
+        <a href="mythe-creation.html" class="read-more">En savoir plus...</a>
+      </article>
+    </main>
+    </div>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/active-nav.js"></script>
+    <script src="../js/speech.js"></script>
+  </body>
+</html>

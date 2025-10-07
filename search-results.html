@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Consultez les résultats de votre recherche sur l'Égypte ancienne et explorez les pages pertinentes de notre site." />
+    <meta name="keywords" content="recherche, résultats, Égypte ancienne, mots-clés, exploration" />
+    <title>Résultats de Recherche sur l'Égypte ancienne</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <audio id="background-music" src="audio/egypt-expedition-the-kingdom-119123.mp3" loop></audio>
+    <div id="nav-placeholder"></div>
+
+    <main>
+      <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+      <div id="text-to-read">
+      <div class="container">
+        <h1>Résultats de Recherche</h1>
+        <p>Pour la recherche : <strong id="search-query"></strong></p>
+        <div id="results-container"></div>
+        <p id="no-results" style="display: none;">Aucun résultat trouvé.</p>
+      </div>
+      </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/speech.js"></script>
+    <script src="/js/active-nav.js"></script>
+    <script>
+      // Charger la navigation et le pied de page
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <audio id="background-music" src="audio/egypt-expedition-the-kingdom-119123.mp3" loop></audio>
+  </body>
+</html>

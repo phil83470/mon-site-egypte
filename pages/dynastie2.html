@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="La IIe dynastie égyptienne, une période de transition marquant la fin de l'époque thinite et préparant l'avènement de l'Ancien Empire."
+    />
+    <meta
+      name="keywords"
+      content="Égypte ancienne, IIe dynastie, Hotepsekhemouy, Nebrê, Nynetjer, Péribsen, Khâsekhemouy, histoire égyptienne"
+    />
+    <meta name="author" content="Site Egypte Ancienne" />
+    <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
+    <title>La IIe dynastie - Egypte ancienne</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+    <audio loop id="background-music">
+      <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="nav-placeholder"></div>
+    <script>
+      fetch("/nav.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("nav-placeholder").innerHTML = data;
+        });
+    </script>
+
+    <section class="accessibility-controls">
+        <div class="speech-rate-control">
+          <label for="speech-rate">Vitesse de lecture :</label>
+          <input type="range" id="speech-rate" min="0.5" max="2" value="1" step="0.1">
+        </div>
+
+        <div class="voice-gender-control">
+          <label>Voix :</label>
+          <input type="radio" id="voice-female" name="voice-gender" value="female" checked>
+          <label for="voice-female">Féminine</label>
+          <input type="radio" id="voice-male" name="voice-gender" value="male">
+          <label for="voice-male">Masculine</label>
+        </div>
+
+        <div class="speech-pitch-control">
+          <label for="speech-pitch">Hauteur de la voix :</label>
+          <input type="range" id="speech-pitch" min="0" max="2" value="1" step="0.1">
+        </div>
+
+        <button id="play-text">Écouter</button>
+        <button id="pause-text">Pause</button>
+        <button id="stop-text">Arrêter</button>
+      </section>
+
+    <div id="text-to-read">
+    <header>
+      <h1>La IIe dynastie Égyptienne</h1>
+      <p>Environ 2890 à 2686 av. J.-C.</p>
+      <p>Les Débuts de l'Ancien Empire</p>
+    </header>
+    <main>
+      <section id="introduction">
+        <h2>Introduction</h2>
+        
+        <p>
+          La deuxième dynastie se situe vers 2890–2686 av. J.-C., durant la période thinite qui suit l’unification de l’Égypte. Elle est marquée par des tensions internes : rivalités entre Haute et Basse-Égypte, incertitudes sur la succession et évolutions religieuses. Malgré le peu de documentation, on y perçoit les prémices d’une administration royale centralisée et d’unité culturelle. Cette dynastie fait le lien entre le gouvernement fondateur de la Iʳᵉ dynastie et l’âge d’or de l’Ancien Empire.
+        </p>
+        <div class="image-container">
+          <img src="/images/peribsen/Peribsen_stelae.jpg" alt="Stèle de Péribsen" class="content-image">
+          <p class="image-caption">Stèle de Péribsen. Source: <a href="https://laciviltaegizia.org/2022/03/12/peribsen-il-faraone-dimenticato/" target="_blank">laciviltaegizia.org</a></p>
+        </div>
+      </section>
+      <section id="toc">
+        <h2>Table des matières</h2>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#souverains">Les souverains marquants</a></li>
+          <li><a href="#evenements">Événements majeurs</a></li>
+          <li><a href="#heritage">Héritage</a></li>
+        </ul>
+      </section>
+
+      <section id="souverains">
+        <h2>Les souverains marquants</h2>
+        <ul>
+          <li>
+            <strong><a href="hotepsekhemouy.html">Hotepsekhemouy</a> :</strong> Fondateur de la dynastie, 30ans de règne, son nom signifie « les deux puissances sont réconciliées », suggérant une réunification après des troubles à la fin de la Ire dynastie.
+          </li>
+          <li>
+            <strong><a href="nebre-ou-raneb.html">Nebrê (ou Raneb)</a> :</strong> Premier souverain à associer le nom du dieu Rê au sien. Sous son pouvoir, la déesse Bastet apparaît pour la première fois.
+          </li>
+          <li>
+            <strong><a href="nynetjer.html">Nynetjer</a> :</strong> Son long règne est mieux documenté, mais semble s'être achevé par une division du royaume.Il envoie une expédition en Basse-Nubie.
+          </li>
+          <li>
+            <strong><a href="peribsen.html">Péribsen</a> :</strong> Fait exceptionnel, il remplace le dieu Horus par Seth dans sa titulature royale, ce qui pourrait indiquer une crise politique et religieuse majeure.
+          </li>
+          <li>
+            <strong><a href="khasekhemouy.html">Khâsekhemouy</a> :</strong> Dernier roi de la dynastie, il réunit le pays. Son nom, qui intègre à la fois Horus et Seth, symbolise cette réconciliation. Il est considéré comme le père de Djéser, fondateur de la IIIe dynastie.
+          </li>
+        </ul>
+      </section>
+
+      <section id="evenements">
+        <h2>Événements majeurs</h2>
+        <p>
+          Troubles internes Témoignages d’une guerre ou de rivalités entre la Haute et la Basse-Égypte, perturbant la continuité dynastique.
+
+          Innovations religieuses Adoption du dieu Seth par Peribsen, première grande remise en cause du culte traditionnel d’Horus.
+
+          Réunification sous Khasekhemwy Fusion des symboles sacrés (double couronne, double titulature) pour marquer la fin des conflits.
+
+          Développement administratif Renforcement de la bureaucratie : multiplication des scribes et des inscriptions sur vases et sceaux pour contrôler récoltes et projets de construction.
+        </p>
+      </section>
+      <section id="heritage">
+        <h2>Héritage</h2>
+        <p>
+          La IIᵉ dynastie a assis les bases de la royauté théocratique égyptienne : le pharaon se veut incarnation vivante d’une divinité unique. Elle construit les principes d’une administration centralisée, préalable indispensable à la construction des grandes pyramides. Les experiments religieuses, comme l’usage de Seth, illustrent la plasticité du panthéon égyptien avant sa stabilisation au Nouvel Empire. Le retour à l’unité nationale par Khasekhemwy ouvre la voie à l’expansion culturelle et architecturale de la IIIᵉ dynastie. Cette période obscure reste un pont entre les débuts de la monarchie et l’apogée des pouvoirs pharaoniques.
+        </p>
+      </section>
+      </div>
+      </main>
+    <div class="btn-accueil-wrapper">
+      <a href="/index.html" class="btn-accueil">Accueil</a>
+    </div>
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/speech.js"></script>
+    <script src="../js/active-nav.js"></script>
+  </body>
+</html>
