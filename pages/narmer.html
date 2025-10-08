@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Narmer : L'Unificateur Fondateur de l'Égypte Dynastique</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -66,7 +66,7 @@
           Narmer, figure emblématique de l'Égypte ancienne, est universellement reconnu comme le premier pharaon à avoir régné sur l'ensemble de la vallée du Nil. Son avènement marque le début de la Iʳᵉ dynastie égyptienne, vers 3100 av. J.-C.. Son règne fut un tournant majeur, posant les fondations d'une civilisation qui allait perdurer pendant des millénaires.
         </p>
         <div class="image-container">
-          <img src="/images/narmer/Narmer1.jpg" alt="Représentation de Narmer" class="content-image">
+          <img src="/mon-site-egypte/images/narmer/Narmer1.jpg" alt="Représentation de Narmer" class="content-image">
           <p class="image-caption">Représentation de Narmer: <a href="https://farafinadhe.blogspot.com/2018/04/histoire-de-legypte-pharaonique.html" target="_blank" rel="noopener">farafinadhe.blogspot.com</a></p>
         </div>
         <section id="toc">
@@ -184,11 +184,11 @@
     </main>
     </div>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

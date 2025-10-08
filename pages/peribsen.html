@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Péribsen - Un Pharaon Enigmatique de la IIe Dynastie</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -170,18 +170,18 @@
           </ul>
         </section>
       <div class="pagination-nav no-speech">
-          <a href="/pages/nynetjer.html" class="nav-prev">Nynetjer</a>
-          <a href="/pages/khasekhemouy.html" class="nav-next">Khâsekhemouy</a>
+          <a href="/mon-site-egypte/pages/nynetjer.html" class="nav-prev">Nynetjer</a>
+          <a href="/mon-site-egypte/pages/khasekhemouy.html" class="nav-next">Khâsekhemouy</a>
         </div>
       </div>
     </main>
     </div>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

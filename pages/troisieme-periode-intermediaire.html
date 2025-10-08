@@ -8,7 +8,7 @@
     <title>La Troisième Période Intermédiaire</title>
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio id="background-music" loop>
@@ -99,7 +99,7 @@
     </div>
 
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
 
     <div id="footer-placeholder"></div>
@@ -109,12 +109,12 @@
     <script src="../js/speech.js"></script>
     <script src="../js/active-nav.js"></script>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
         });
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

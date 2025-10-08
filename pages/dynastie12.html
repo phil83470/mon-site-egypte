@@ -17,7 +17,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("../nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -113,12 +113,12 @@
     </div>
 
     <div class="btn-accueil-wrapper">
-      <a href="../index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
 
     <div id="footer-placeholder"></div>
     <script>
-      fetch("../footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

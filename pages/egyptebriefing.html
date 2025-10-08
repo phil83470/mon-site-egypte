@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Synthèse Complète sur l'Égypte Antique</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
     <style>
       .page-banner-img {
         max-height: 200px; /* Réduit la hauteur de l'image de la bannière */
@@ -42,7 +42,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -75,8 +75,7 @@
     <div id="text-to-read">
     <header>
       <h1>Synthèse sur l'Égypte</h1>
-      <img
-        src="/images/generales/briefing_resized.png"
+<img src="/mon-site-egypte/images/generales/briefing_resized.png"
         alt="Synthèse sur l'Égypte antique"
         class="page-banner-img"
       />
@@ -428,11 +427,11 @@ de l'ordre de l'univers.
       </div>
     </main>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

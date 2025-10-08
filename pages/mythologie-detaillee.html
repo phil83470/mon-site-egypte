@@ -11,7 +11,7 @@
       type="image/x-icon"
       href="../images/pyramides/icone-pyramide.ico"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio id="background-music" loop>
@@ -196,8 +196,7 @@
           chaque matin.
         </p>
         <figure class="image-container">
-          <img
-            src="../images/Seth-harponne-Apophis-pour-defendre-la-barque-de-Re.webp" alt="La barque solaire de Rê, protégée par Seth, repoussant le serpent Apophis."
+<img src="/mon-site-egypte/images/Seth-harponne-Apophis-pour-defendre-la-barque-de-Re.webp" alt="La barque solaire de Rê, protégée par Seth, repoussant le serpent Apophis."
            class="mythologie-image"
             />
           <figcaption>
@@ -232,8 +231,7 @@
           </li>
         </ul>
         <figure class="image-container">
-          <img
-            src="../images/Le-Ba-oiseautetehumaine.jpg"
+<img src="/mon-site-egypte/images/Le-Ba-oiseautetehumaine.jpg"
             alt="Représentation du Ba (oiseau à tête humaine) visitant la momie dans la tombe"
           />
           <figcaption>
@@ -254,8 +252,7 @@
           l'âme était anéantie pour toujours.
         </p>
         <figure class="image-container">
-          <img
-            src="../images/la-pesee-du-coeur.jpg"
+<img src="/mon-site-egypte/images/la-pesee-du-coeur.jpg"
             alt="Scène de la pesée du cœur du Papyrus d'Ani"
           />
           <figcaption>
@@ -288,7 +285,7 @@
     </div>
 
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
 
     <div id="footer-placeholder"></div>
@@ -298,12 +295,12 @@
     <script src="../js/speech.js"></script>
     <script src="../js/active-nav.js"></script>
     <script>
-      fetch("../nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
         });
-      fetch("../footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

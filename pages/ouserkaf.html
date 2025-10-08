@@ -8,7 +8,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Ouserkaf - Le Fondateur de la Ve Dynastie</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
 </head>
 <body>
     <audio loop id="background-music">
@@ -16,7 +16,7 @@
     </audio>
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -55,11 +55,7 @@
         <section id="introduction">
             <h2>Introduction</h2>
             <figure class="centered-image">
-          <img
-            src="../../../images/ouserkaf/statue-de-Ouserkaf.jpg"
-            alt="Statuette du pharaon Ouserkaf"
-            class="Statuette de Ouserkaf-img"
-          />
+<img src="/mon-site-egypte/images/ouserkaf/statue-de-Ouserkaf.jpg"
           <figcaption>Statuette de Ouserkaf
             (<a href="https://www.flickr.com/photos/menesje/33282405996" target="_blank" rel="noopener">flickr.com</a>)</figcaption>
         </figure>
@@ -95,8 +91,7 @@
         <section id="pyramide">
             <h2>La Pyramide d'Ouserkaf à Saqqarah</h2>
             <figure class="centered-image">
-          <img
-            src="../../../images/ouserkaf/pyramide-de-ouserkaf.jpg"
+          <img src="/mon-site-egypte/images/ouserkaf/pyramide-de-ouserkaf.jpg"
             alt="Pyramide du pharaon Ouserkaf à Saqqarah"
             class="pyramide-de-ouserkaf-img"
           />
@@ -124,13 +119,13 @@
     </div>
 
     <div class="btn-accueil-wrapper">
-        <a href="/index.html" class="btn-accueil">Accueil</a>
+        <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
 
     <div id="footer-placeholder"></div>
 
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

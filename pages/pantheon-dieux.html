@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Panthéon des Dieux Égyptiens – Dieux et Mythes</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -57,8 +57,7 @@
     <header>
       <h1>Le Panthéon des Dieux Égyptiens</h1>
       <p>Un panthéon riche et des mythes fondateurs de l'univers</p>
-      <img
-        src="/images/generales/papyrus-pharaons.jpg"
+      <img src="/mon-site-egypte/images/generales/papyrus-pharaons.jpg"
         alt="Dieux égyptiens"
         class="page-banner-img"
       />
@@ -151,11 +150,11 @@
     </main>
     </div>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>La VIe dynastie - Le Crépuscule de l'Ancien Empire</title>
-    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/mon-site-egypte/nav.html")
+      fetch("/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;

@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>La IIe dynastie - Egypte ancienne</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
     <audio loop id="background-music">
       <source src="../audio/akhet-the-inundation-of-the-nile-egyptian-double-reed-flute-music-176525.mp3" type="audio/mpeg">
@@ -22,7 +22,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -67,7 +67,7 @@
           La deuxième dynastie se situe vers 2890–2686 av. J.-C., durant la période thinite qui suit l’unification de l’Égypte. Elle est marquée par des tensions internes : rivalités entre Haute et Basse-Égypte, incertitudes sur la succession et évolutions religieuses. Malgré le peu de documentation, on y perçoit les prémices d’une administration royale centralisée et d’unité culturelle. Cette dynastie fait le lien entre le gouvernement fondateur de la Iʳᵉ dynastie et l’âge d’or de l’Ancien Empire.
         </p>
         <div class="image-container">
-          <img src="/images/peribsen/Peribsen_stelae.jpg" alt="Stèle de Péribsen" class="content-image">
+          <img src="/mon-site-egypte/images/peribsen/Peribsen_stelae.jpg" alt="Stèle de Péribsen" class="content-image">
           <p class="image-caption">Stèle de Péribsen. Source: <a href="https://laciviltaegizia.org/2022/03/12/peribsen-il-faraone-dimenticato/" target="_blank">laciviltaegizia.org</a></p>
         </div>
       </section>
@@ -123,11 +123,11 @@
       </div>
       </main>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

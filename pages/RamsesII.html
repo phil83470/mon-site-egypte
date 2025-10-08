@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Ramsès II - Le Roi Soleil d'Égypte</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -155,21 +155,21 @@
           <div class="gallery">
        <div class="image-container">
         <figure>
-           <img src="/images/temple-d-abou-simbel.jpg" alt="Temple d'Abou Simbel avec les statues colossales de Ramsès II">
+           <img src="/mon-site-egypte/images/temple-d-abou-simbel.jpg" alt="Temple d'Abou Simbel avec les statues colossales de Ramsès II">
            <figcaption>L’extérieur de la façade du temple d’Abou Simbel en Égypte. <a href="https://www.dreamstime.com/exterior-facade-abu-simbel-temple-egypt-exterior-facade-abu-simbel-temple-egypt-image303412476" target="_blank" rel=
       "noopener noreferrer">dreamstime.com</a></figcaption>
          </figure>
        </div>
        <div class="image-container">
          <figure>
-          <img src="/images/pyramides/pyramde-gizhet.jpg" alt="Grande Pyramide de Gizeh">
+          <img src="/mon-site-egypte/images/pyramides/pyramde-gizhet.jpg" alt="Grande Pyramide de Gizeh">
           <figcaption>La grande pyramide de Gizeh <a href="https://www.lelivrescolaire.fr/manuel/1598176/mathematiques-cycle-4-2016/chapitre/1598183/puissances/page/1598286/je-resous-des-problemes/lecon/document/1694427" target="_blank" rel=
       "noopener noreferrer"><example class="com">lelivrescolaire.fr</example></a></figcaption>
        </figure>
       </div>
       <div class="image-container">
         <figure>
-          <img src="/images/temples/karnak.jpg" alt="Vue du Temple de Karnak">
+          <img src="/mon-site-egypte/images/temples/karnak.jpg" alt="Vue du Temple de Karnak">
           <figcaption>Lac sacré <a href="https://exploreluxor.org/karnak-temple/" target="_blank" rel=
       "noopener noreferrer">exploreluxor.org</a></figcaption>
         </figure>
@@ -234,11 +234,11 @@
       </div>
     </main>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

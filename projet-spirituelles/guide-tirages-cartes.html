@@ -17,6 +17,10 @@
             margin: 0; /* Remove default body margin */
             padding: 0; /* Remove default body padding */
         }
+        .subtitle {
+            font-size: 0.5em;
+            color: #7f8c8d;
+        }
         body::before {
             content: '';
             position: fixed;
@@ -130,6 +134,7 @@
         }
         #toc-container {
             margin-top: 20px;
+            display: none;
         }
     </style>
 </head>
@@ -162,15 +167,15 @@
 
           <button id="play-text">Écouter</button>
           <button id="pause-text">Pause</button>
-          <button id="stop-text">Arrêter</button>
+            <h1>Guide Complet des Tirages de Cartes et d'Oracle :<br><small class="subtitle">Méthodes les Plus Répandues</small></h1>
         </section>
     <div id="text-to-read">
         <header>
-            <h1>Guide Complet des Tirages de Cartes et d'Oracle :<br><small style="font-size: 0.5em; color: #7f8c8d;">Méthodes les Plus Répandues</small></h1>
+            <h1>Guide Complet des Tirages de Cartes et d'Oracle :<br><small class="subtitle">Méthodes les Plus Répandues</small></h1>
         </header>
         <main>
-            <button id="toggle-toc">Afficher la Table des Matières</button>
-            <div id="toc-container" style="display: none;">
+            <div id="toc-container">
+            <div id="toc-container">
                 <nav class="table-of-contents">
                     <h2>Table des Matières</h2>
                     <ul>
@@ -313,16 +318,16 @@
             <hr>
             <h2 id="sources">Sources</h2>
             <ul>
-                <li><a href="https://fr.scribd.com/document/710544795/Les-Methodes-de-Tirage-oracle-ge" target="_blank">https://fr.scribd.com/document/710544795/Les-Methodes-de-Tirage-oracle-ge</a></li>
-                <li><a href="https://kaevane.com/pages/exemples-de-tirage-et-tirage-special-kaevane" target="_blank">https://kaevane.com/pages/exemples-de-tirage-et-tirage-special-kaevane</a></li>
-                <li><a href="https://www.femmesdaujourdhui.be/bien-etre/psycho/rituel-tirage-oracle/" target="_blank">https://www.femmesdaujourdhui.be/bien-etre/psycho/rituel-tirage-oracle/</a></li>
-                <li><a href="https://blog.christophervoyance.com/methodes-tirage-cartes-cartomancie/" target="_blank">https://blog.christophervoyance.com/methodes-tirage-cartes-cartomancie/</a></li>
-                <li><a href="https://fr.scribd.com/document/516394633/Barbier-Gerard-1-Oracle-Ge-Methode-tirage" target="_blank">https://fr.scribd.com/document/516394633/Barbier-Gerard-1-Oracle-Ge-Methode-tirage</a></li>
-                <li><a href="https://www.elle.fr/Astrologie/Dossier-Astro/Apprendre-les-tirages-du-tarot-de-Marseille-3721385" target="_blank">https://www.elle.fr/Astrologie/Dossier-Astro/Apprendre-les-tirages-du-tarot-de-Marseille-3721385</a></li>
-                <li><a href="https://www.oracle-atwood.com/comment-choisir-et-utiliser-un-oracle-au-quotidien" target="_blank">https://www.oracle-atwood.com/comment-choisir-et-utiliser-un-oracle-au-quotidien</a></li>
-                <li><a href="https://www.le-chariot.com/methode-tirage-de-carte/" target="_blank">https://www.le-chariot.com/methode-tirage-de-carte/</a></li>
-                <li><a href="https.malingo.fr/oracle-ge-guide-ultime/" target="_blank">https://www.malingo.fr/oracle-ge-guide-ultime/</a></li>
-                <li><a href="https://www.apprendre-tarotdemarseille.com/methodes-de-tirage-tarot-de-marseille/" target="_blank">https://www.apprendre-tarotdemarseille.com/methodes-de-tirage-tarot-de-marseille/</a></li>
+                <li><a href="https://fr.scribd.com/document/710544795/Les-Methodes-de-Tirage-oracle-ge" target="_blank" rel="noopener">https://fr.scribd.com/document/710544795/Les-Methodes-de-Tirage-oracle-ge</a></li>
+                <li><a href="https://kaevane.com/pages/exemples-de-tirage-et-tirage-special-kaevane" target="_blank" rel="noopener">https://kaevane.com/pages/exemples-de-tirage-et-tirage-special-kaevane</a></li>
+                <li><a href="https://www.femmesdaujourdhui.be/bien-etre/psycho/rituel-tirage-oracle/" target="_blank" rel="noopener">https://www.femmesdaujourdhui.be/bien-etre/psycho/rituel-tirage-oracle/</a></li>
+                <li><a href="https://blog.christophervoyance.com/methodes-tirage-cartes-cartomancie/" target="_blank" rel="noopener">https://blog.christophervoyance.com/methodes-tirage-cartes-cartomancie/</a></li>
+                <li><a href="https://fr.scribd.com/document/516394633/Barbier-Gerard-1-Oracle-Ge-Methode-tirage" target="_blank" rel="noopener">https://fr.scribd.com/document/516394633/Barbier-Gerard-1-Oracle-Ge-Methode-tirage</a></li>
+                <li><a href="https://www.elle.fr/Astrologie/Dossier-Astro/Apprendre-les-tirages-du-tarot-de-Marseille-3721385" target="_blank" rel="noopener">https://www.elle.fr/Astrologie/Dossier-Astro/Apprendre-les-tirages-du-tarot-de-Marseille-3721385</a></li>
+                <li><a href="https://www.oracle-atwood.com/comment-choisir-et-utiliser-un-oracle-au-quotidien" target="_blank" rel="noopener">https://www.oracle-atwood.com/comment-choisir-et-utiliser-un-oracle-au-quotidien</a></li>
+                <li><a href="https://www.le-chariot.com/methode-tirage-de-carte/" target="_blank" rel="noopener">https://www.le-chariot.com/methode-tirage-de-carte/</a></li>
+                <li><a href="https.malingo.fr/oracle-ge-guide-ultime/" target="_blank" rel="noopener">https://www.malingo.fr/oracle-ge-guide-ultime/</a></li>
+                <li><a href="https://www.apprendre-tarotdemarseille.com/methodes-de-tirage-tarot-de-marseille/" target="_blank" rel="noopener">https://www.apprendre-tarotdemarseille.com/methodes-de-tirage-tarot-de-marseille/</a></li>
             </ul>
         </main>
     <div class="pagination-nav">

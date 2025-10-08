@@ -1,6 +1,6 @@
 /* ---------- HEADER minimaliste ---------- */
 header {
-  background: url("/images/generales/papyruse.jpg") center/cover repeat,
+  background: url("/mon-site-egypte/images/generales/papyruse.jpg") center/cover repeat,
     linear-gradient(90deg, #ede7d3cc 0%, #f9e79fcc 100%);
   color: #5c3a21;
   text-align: center;
@@ -361,7 +361,7 @@ h3::before {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-image: url("/images/pyramides/logo-pyramides-soleil.png");
+  background-image: url("/mon-site-egypte/images/pyramides/logo-pyramides-soleil.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -372,7 +372,7 @@ h3::before {
 .projet-spirituel h1::before,
 .projet-spirituel h2::before,
 .projet-spirituel h3::before {
-  background-image: url("/projet-spirituelles/images/oeil-horus.jpg");
+  background-image: url("/mon-site-egypte/projet-spirituelles/images/oeil-horus.jpg");
   width: 24px;
   height: 24px;
   margin-right: 8px;

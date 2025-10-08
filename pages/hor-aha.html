@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Hor-Aha : Le Consolideur de l'Égypte Unifiée</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -64,7 +64,7 @@
         <h2>Période de Règne</h2>
         <p>Première Dynastie (Thinite)</p>
         <figure class="image-container">
-          <img src="/images/pyramides/hor-aha.jpg" alt="Représentation de Hor-Aha" class="content-image">
+          <img src="/mon-site-egypte/images/pyramides/hor-aha.jpg" alt="Représentation de Hor-Aha" class="content-image">
           <figcaption>
             Représentation de Hor-Aha, le deuxième pharaon de la Première Dynastie égyptienne.
             (<a href="http://ancientegyptianfacts.com/early-dynastic-egyptian-period.html" target="_blank" rel="noopener">ancientegyptianfacts.com</a>)
@@ -171,12 +171,12 @@
       </div>
     </main>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

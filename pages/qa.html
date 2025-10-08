@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>Qâ : Dernier Pharaon de la Première Dynastie</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -72,7 +72,7 @@
           chronologies modernes.
         </p>
         <figure class="image-container">
-          <img src="/images/qa/Qa-a.webp" alt="Cartouche du pharaon Qâ" class="content-image">
+          <img src="/mon-site-egypte/images/qa/Qa-a.webp" alt="Cartouche du pharaon Qâ" class="content-image">
           <figcaption>
             Cartouche du pharaon Qâ
             (<a href="https://en.wikipedia.org/wiki/Qa'a" target="_blank" rel="noopener">wikipedia.org</a>)
@@ -268,11 +268,11 @@
     </main>
     </div>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

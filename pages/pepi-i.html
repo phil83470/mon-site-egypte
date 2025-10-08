@@ -9,7 +9,7 @@
     <meta name="author" content="Site Egypte Ancienne">
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg">
     <title>Pepi Ier - Le Pharaon Bâtisseur</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mon-site-egypte/style.css">
 </head>
 <body>
     <audio loop id="background-music">
@@ -18,7 +18,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-        fetch("/nav.html")
+        fetch("/mon-site-egypte/nav.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("nav-placeholder").innerHTML = data;
@@ -55,7 +55,7 @@
             <section id="introduction">
                 <h2>Introduction</h2>
                 <figure class="centered-image">
-                    <img src="/images/generales/StoneReliefWithNameOfPepiI_RosicrucianEgyptianMuseum.JPG" alt="Relief en pierre avec le nom de Pepi Ier" class="page-banner-img">
+                    <img src="/mon-site-egypte/images/generales/StoneReliefWithNameOfPepiI_RosicrucianEgyptianMuseum.JPG" alt="Relief en pierre avec le nom de Pepi Ier" class="page-banner-img">
                     <figcaption>Relief en pierre avec le nom de Pepi Ier. (<a href="https://egyptianmuseum.org/" target="_blank" rel="noopener">Rosicrucian Egyptian Museum</a>)</figcaption>
                 </figure>
                 <p>Pepi Ier, dont le nom de trône était Meryrê ("Aimé de Rê"), fut le troisième pharaon de la VIe dynastie de l'Ancien Empire. Son règne, d'une durée d'environ 50 ans, est l'un des plus dynamiques de cette période. Il a hérité d'un royaume en proie à des tensions internes et à la montée en puissance des gouverneurs locaux, mais a su imposer son autorité par une politique habile, des campagnes militaires audacieuses et, surtout, un programme de construction monumental qui a laissé son empreinte sur toute l'Égypte.</p>
@@ -112,9 +112,21 @@
         
 
         <div class="btn-accueil-wrapper">
-            <a href="/index.html" class="btn-accueil">Accueil</a>
+            <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
         </div>
         <div id="footer-placeholder"></div>
+        <script>
+            fetch("/mon-site-egypte/nav.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+            fetch("/mon-site-egypte/footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                });
+        </script>
         <script src="../js/jquery-3.6.0.min.js"></script>
         <script src="../js/main.js"></script>
         <script src="../js/speech.js"></script>

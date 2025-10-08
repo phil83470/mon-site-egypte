@@ -19,7 +19,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("../nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -77,7 +77,7 @@
             <h3>Environnement socio-économique :</h3>
             <p>Les témoignages et fouilles indiquent un royaume du Nord fragmenté, où l’autorité royale cohabitait avec des pouvoirs locaux forts. Les cités méridionales bénéficiaient parfois de contacts commerciaux (le Sycomore fig sur palette, etc.), mais l’ensemble est marqué par une crise de subsistance. Des études géologiques récentes suggèrent qu’un épisode de pluies diluviennes a mis fin à la stabilité de l’Ancien Empire, établissant le contexte de pénuries alimentaires persistantes. Les nomarques, comme Ânkhtyfy, sont décrits entrant en concurrence pour ravitailler leur population, et les documents moraux (maximes, enseignements) de l’époque font état d’une société en crise (taxes élevées, troubles politiques).</p>
             <figure>
-                <img src="../images/generales/carte-shémantique-egypte.webp" alt="Carte schématique de l’Égypte antique">
+                <img src="/mon-site-egypte/images/generales/carte-shémantique-egypte.webp" alt="Carte schématique de l’Égypte antique">
                 <figcaption>
                    (<a href="https://fantasticegypt.com/francais/carteegypteantique.htm" target="_blank" rel="noopener">fantasticegypt.com</a>)
             </figcaption>
@@ -242,12 +242,12 @@
     </main>
 
     <div class="btn-accueil-wrapper">
-      <a href="../index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
 
     <div id="footer-placeholder"></div>
     <script>
-      fetch("../footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;

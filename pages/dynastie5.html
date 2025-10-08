@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("../nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -63,8 +63,7 @@
       <section id="introduction">
         <h2>Introduction</h2>
        <figure class="centered-image">
-          <img
-            src="/images/generales/5th-dynastie.webp"
+          <img src="/mon-site-egypte/images/generales/5th-dynastie.webp"
             alt="La Ve dynastie de l'Égypte ancienne"
             class="page-banner-img"/>
           <figcaption>Image de le 5e dynastie (<a href="https://hurghadalovers.com/fifth-dynasty-of-ancient-egypt/" target="_blank" rel="noopener">hurghadalovers.com</a>)</figcaption>
@@ -124,9 +123,21 @@
     
     
     <div class="btn-accueil-wrapper">
-      <a href="../index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
+    <script>
+        fetch("/mon-site-egypte/nav.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("nav-placeholder").innerHTML = data;
+            });
+        fetch("/mon-site-egypte/footer.html")
+            .then((response) => response.text())
+            .then((data) => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+    </script>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/speech.js"></script>

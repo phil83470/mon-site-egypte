@@ -9,7 +9,7 @@
     <meta name="author" content="Site Egypte Ancienne">
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg">
     <title>Téti - Le Fondateur de la VIe Dynastie</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/mon-site-egypte/style.css">
 </head>
 <body>
     <audio loop id="background-music">
@@ -18,7 +18,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-        fetch("/nav.html")
+        fetch("/mon-site-egypte/nav.html")
             .then(response => response.text())
             .then(data => {
                 document.getElementById("nav-placeholder").innerHTML = data;
@@ -101,9 +101,21 @@
         
 
         <div class="btn-accueil-wrapper">
-            <a href="/index.html" class="btn-accueil">Accueil</a>
+            <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
         </div>
         <div id="footer-placeholder"></div>
+        <script>
+            fetch("/mon-site-egypte/nav.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+            fetch("/mon-site-egypte/footer.html")
+                .then((response) => response.text())
+                .then((data) => {
+                    document.getElementById("footer-placeholder").innerHTML = data;
+                });
+        </script>
         <script src="../js/jquery-3.6.0.min.js"></script>
         <script src="../js/main.js"></script>
         <script src="../js/speech.js"></script>
