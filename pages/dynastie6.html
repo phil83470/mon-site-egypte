@@ -14,7 +14,7 @@
     <meta name="author" content="Site Egypte Ancienne" />
     <link rel="icon" type="image/jpeg" href="../projet-spirituelles/images/oeil-horus.jpg" />
     <title>La VIe dynastie - Le Crépuscule de l'Ancien Empire</title>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/mon-site-egypte/style.css" />
   </head>
   <body>
     <audio loop id="background-music">
@@ -23,7 +23,7 @@
 
     <div id="nav-placeholder"></div>
     <script>
-      fetch("/nav.html")
+      fetch("/mon-site-egypte/nav.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("nav-placeholder").innerHTML = data;
@@ -63,7 +63,7 @@
       <section id="introduction">
         <h2>Introduction</h2>
       <figure class="centered-image">
-  <img src="/images/generales/StoneReliefWithNameOfPepiI_RosicrucianEgyptianMuseum.JPG" 
+  <img src="/mon-site-egypte/images/generales/StoneReliefWithNameOfPepiI_RosicrucianEgyptianMuseum.JPG" 
        alt="Relief en pierre avec le nom de Pépi Ier, pharaon de la VIe dynastie" 
        class="page-banner-img"/>
   <figcaption>
@@ -119,11 +119,11 @@
       </div>
     </main>
     <div class="btn-accueil-wrapper">
-      <a href="/index.html" class="btn-accueil">Accueil</a>
+      <a href="/mon-site-egypte/index.html" class="btn-accueil">Accueil</a>
     </div>
     <div id="footer-placeholder"></div>
     <script>
-      fetch("/footer.html")
+      fetch("/mon-site-egypte/footer.html")
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("footer-placeholder").innerHTML = data;
